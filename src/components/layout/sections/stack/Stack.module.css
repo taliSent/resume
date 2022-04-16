@@ -1,0 +1,32 @@
+.Stack {
+    list-style: none;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.HTML {
+    width: 85%;
+}
+
+.CSS {
+    width: 70%;
+}
+
+.React {
+    width: 90%;
+}
+
+.Js {
+    width: 60%;
+}
+
+.Typescript {
+    width: 85%;
+}

@@ -1,0 +1,32 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: clamp(1.2em, 3.4vw, 2.6em);
+    text-align: center;
+}
+
+.TextSecondary {
+    margin-bottom: 1.5em;
+    color: var(--text-secondary);
+    font-size: clamp(1.1em, 2vw, 1.5em);
+    letter-spacing: .3rem;
+}
+
+h1, h2, h3 {
+    font-family: Comfortaa, Nunito, cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+h2, h3 {
+    font-size: clamp(1.2em, 4vw, 1.9em);
+}
+
+h1 {
+    font-size: clamp(1.4em, 4vw, 1.9em);
+    margin-bottom: clamp(.6em, 1.1vw, 0.7em);
+}

@@ -1,0 +1,10 @@
+.Headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.XP {
+    display: flex;
+    justify-content: space-between;
+}

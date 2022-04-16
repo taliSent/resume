@@ -1,0 +1,73 @@
+
+.ButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Button {
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 0.82em;
+    padding: 1.1em;
+    border: 0;
+    letter-spacing: .09em;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.ButtonLabel {
+    display: flex;
+    align-items: center;
+}
+
+.Download {
+    background-color: var(--button-color);
+    border: 6px var(--button-color) solid;
+    animation: fadeButton 0.5s ease-in-out 3s forwards;
+    -webkit-animation: fadeButton 0.5s ease-in-out 3s forwards;
+    -moz-animation: fadeButton 0.5s ease-in-out 3s forwards;
+    -o-animation: fadeButton 0.5s ease-in-out 3s forwards;
+    margin-right: 1.5em;
+}
+
+@keyframes fadeButton {
+    100% {
+        opacity: 1;
+    }
+}
+
+.Download:hover {
+    background-color: var(--plate-color);
+    border: 6px var(--button-color) solid;
+    transition: all 0.2s ease;
+}
+
+.ShowDetails {
+    background-color: var(--button-background-color);
+    border-bottom: 6px var(--button-color) solid;
+    animation: fadeButton 0.5s ease-in-out 3.5s forwards;
+    -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
+    -moz-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
+    -o-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
+}
+
+
+.ShowDetails:hover {
+    background-color: var(--text-secondary);
+    color: var(--background-color);
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-device-width: 910px) {
+    .ButtonContainer {
+        display: grid;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .Download {
+        margin-right: 0;
+    }
+}

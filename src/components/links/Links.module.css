@@ -1,0 +1,12 @@
+.Link {
+    margin-right: 1.2em;
+    color: var(--header-color);
+}
+
+.Links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 2em;
+}

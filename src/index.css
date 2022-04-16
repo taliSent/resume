@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  --text-color: #262526;
+  --text-secondary: #73594B;
+  --selected-text-background: #525073;
+  --background-color: #D9D9D9; 
+  --plate-color: white;
+  --shadow-color: #A6A580;
+  --header-color: #807CBF;
+  --button-color: #C2DEBD;
+  --progress-accent: #DFFFD9;
+  --ff-primary: Quicksand, NanumMyeongjo, sans-serif;
+  --ff-accent: Comfortaa, Nunito, cursive;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.315rem;
+  line-height: 1.2;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.icon {
+  margin-left: 0.35em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+section {
+  margin-bottom: 8em;
+}
+
+section:last-child {
+  margin-bottom: 0em;
+}
+
+::selection {
+  background-color: var(--selected-text-background);
+  color: var(--background-color);
+}

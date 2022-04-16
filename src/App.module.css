@@ -1,0 +1,23 @@
+
+.Container {
+    padding: 3em 4em; 
+    width: clamp(300px, 90%, 70.5rem); 
+    margin-inline: auto; 
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    background-color: var(--plate-color);
+    margin-bottom: 2em;
+    border: 4px var(--button-color) solid;
+}
+
+@media screen and (max-device-width: 480px) {
+    .Container {
+        width: 100%;
+        padding: 1em .5em; 
+        box-shadow: none;
+        border: 4px var(--plate-color) solid;
+    }
+}
+

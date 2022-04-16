@@ -1,0 +1,47 @@
+.Unit {
+    display: flex;
+    line-height: 1.5;
+    font-size: clamp(1em, 2.7vw, 1.151em);
+    transition: font-size .2s ease-in-out;
+}
+
+
+.Years {    
+    color: var(--text-secondary);
+    font-size: 0.8em;
+    margin-top: 4px;
+    margin-bottom: 2em;
+} 
+
+.Name {
+    font-size: clamp(1.001em, 3.001vw, 1.051em);
+    transition: font-size .2s ease-in-out;
+}
+
+.isMirrored { 
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 25ch;
+    text-align: right;
+} 
+
+.isMirroredText {
+    margin-right: 14px;
+}
+
+.TimePoint {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin-right: 14px;
+    position: relative;
+    transform: translate(0,13px);
+}
+
+.TimeLine {
+    width: 2px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translate(8px,0);
+}

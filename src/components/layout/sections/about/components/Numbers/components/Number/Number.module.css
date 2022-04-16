@@ -1,0 +1,19 @@
+.NumberContainer {
+    display: grid;
+    justify-items: center;
+    gap: 0.3em;
+}
+
+.Number {
+    color: var(--header-color);
+    font-size: clamp(1.3em, 1.8vw, 2.3em);
+    font-weight: bolder;
+}
+
+.Text {
+    color: var(--text-secondary);
+    font-size: clamp(1.1em, 1.1vw, 1.3em);
+    letter-spacing: .15rem;
+    width: 15ch;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+.Name { 
+    margin-right: 20px;
+    margin-bottom: 5px;
+    width: 120px;
+    font-size: clamp(1em, 3vw, 1.3em);
+}
+
+.Bar {
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    width: 10em;
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 4px 0px var(--shadow-color);
+}
+
+.ProgressLevel {
+    height: 25px;
+    border-radius: 15px;    
+    position: absolute;
+    background: linear-gradient(41deg, var(--button-color) 0%, rgba(219,250,212,1) 50%); 
+}
+

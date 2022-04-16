@@ -1,0 +1,60 @@
+.Testimonial {
+    width: clamp(100%, 95%, 25em);
+    aspect-ratio: 378 / 487;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,245,245,1)  50%);
+    padding: 2em clamp(1em, 3vw, 2.6em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px var(--header-color) solid; 
+    box-shadow: 1px 1px 2px 0px var(--shadow-color); 
+    margin-inline: auto;
+}
+
+.Photo {
+    display: flex;
+    justify-content: center;
+    width: 5em;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    margin-bottom: 1em;
+}
+
+.CoworkerName {  
+    font-family: var(--ff-accent);
+    font-weight: 600;
+    font-size: clamp(1.001em, 3.001vw, 1.051em);
+    margin-bottom: 0.35em;
+    font-family: var(--ff-accent);
+}
+
+.CoworkerPosition {
+    font-family: var(--ff-primary);    
+    font-size: clamp(0.8em, 2.3vw, 0.9em);
+    letter-spacing: .3rem;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.Line {
+    height: 2px;
+    width: 3em;
+    color: var(--header-color); 
+    background-color: var(--header-color);       
+    margin-bottom: 1.35em;
+}
+
+.Review {
+    margin-bottom: 1.4em;
+    font-family: var(--ff-primary);
+    font-size: clamp(.65em, 2.001vw, 1.051em);
+}
+
+.IconsSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    color: var(--header-color);
+}

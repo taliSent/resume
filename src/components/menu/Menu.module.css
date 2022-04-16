@@ -1,0 +1,61 @@
+.Menu {
+    margin-bottom: 4em;
+}
+
+.HashLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media screen and (max-device-width: 690px) {
+    .Menu {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 2%;
+        
+    }
+
+    .MenuOpen {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(184deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0.1) 100%);
+        backdrop-filter: blur(4px);        
+        padding: 0.5em 1.1em;
+    }
+
+    .OpenClose {
+        position: absolute;
+        top: 0.7em;
+        right: 1.1em;
+    }
+
+    .HashLinks {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-device-width: 690px) {
+    .OpenClose {
+        opacity: 0;
+    }
+}
+
+.HashLink {
+    padding: 0 clamp(0.5em, calc(2vw + .2em), 2em) 1vw;
+    text-align: center;
+    transition: all .3s ease;
+    font-size: clamp(0.9em, 2.76vw, 1.3em);
+    letter-spacing: .1rem;
+}
+
+.HashLink:hover {
+    letter-spacing: .3rem;
+    transition: all .3s ease;
+}
+
+.HashLink:active {
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.Contact {
+    font-size: clamp(1.2em, 0.8vw, 1.7em);
+    display: flex;
+    align-items: center;
+    transition: color .5s ease-in-out;
+}
+
+.TextPrimary {
+    font-weight: 600;
+}
+
+.TextSecondary {
+    color: var(--text-secondary);
+    font-size: clamp(0.8em, .6vw, 1.5vw);
+}
+
+.Contact:hover {
+    color: var(--selected-text-background);
+    transition: color .5s ease-in-out;
+}
+
+.Contact:hover .TextSecondary {
+    color: var(--header-color);
+    transition: color .5s ease-in-out;
+}

@@ -1,0 +1,153 @@
+.About {
+    display: flex;
+    justify-content: center;
+}
+
+.Photo {
+    width: clamp(10em, 18vw, 13.5em);
+    height: clamp(10em, 18vw, 13.5em);
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    border: 4px var(--background-color) solid;
+    animation: fadePhoto 1.5s ease-in-out forwards;
+    -webkit-animation: fadePhoto 1.5s ease-in-out forwards;
+    -moz-animation: fadePhoto 1.5s ease-in-out forwards;
+    -o-animation: fadePhoto 1.5s ease-in-out forwards;
+    transition: all 0.2s ease-in-out;
+}
+
+.Photo:hover {
+    border: 4px var(--button-color) solid;
+    transition: all 0.2s ease-in-out;
+}
+
+@keyframes fadePhoto {
+    from {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Text {
+    align-self: center;
+    margin-left: clamp(1.4em, 1.2vw, 2.5em);
+}
+
+
+.Profession {
+    color: var(--header-color);
+    font-family: var(--ff-accent);
+    font-size: clamp(calc(0.3vw + 1.3em), 3.2vw, 2.3em);
+    text-align: right;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+    transform: translateY(-25%);
+    opacity: 0;
+    animation: fadeProfession 2s ease-in 0.7s forwards;
+    -webkit-animation: fadeProfession 2s ease-in 0.7s forwards;
+    -moz-animation: fadeProfession 2s ease-in 0.7s forwards;
+    -o-animation: fadeProfession 2s ease-in 0.7s forwards;
+}
+
+@keyframes fadeProfession {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Text, .Profession {
+        margin-inline: 1em;
+    }
+
+    .Photo {
+        margin-top: .9em;
+    }
+
+}
+
+.Stack {
+    font-size: clamp(1em, .7vw, 1.4em);
+    text-align: right;
+    margin-bottom: 1.8em;
+    letter-spacing: .19rem;
+    opacity: 0;
+    animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+    -webkit-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+    -moz-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+    -o-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+}
+
+@keyframes fadeStack {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-device-width: 857px) {
+    .About {
+        flex-wrap: wrap;
+    }
+
+    .Photo {
+        margin-bottom: 2em;
+    }
+
+    .Text .Stack {
+        text-align: center;
+    }
+
+    .Text .Profession {
+        text-align: center;
+    }
+
+    .ButtonContainer {
+        display: grid;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .Download {
+        margin-right: 0;
+    }
+}
+
+.Description {
+    padding: 0 clamp(1em, 6vw, 8em) clamp(4em, 2vw, 3em);
+    font-size: clamp(0.7em, 1.7vw, 1.3em);
+    opacity: 0;
+    line-height: 0.9;
+    animation: fadeDescription 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeDescription {
+    100% {
+        opacity: 1;
+        line-height: 1.8;
+        transform: translateY(15%);
+    }
+}
+
+.Hidden {
+    opacity: 1;
+    line-height: 1.8;
+    transform: translateY(15%);
+    animation: hideDescription 0.3s ease-in-out forwards;
+}
+
+@keyframes hideDescription {
+    100% {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+    }
+}
