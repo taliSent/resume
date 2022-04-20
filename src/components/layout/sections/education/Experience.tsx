@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserView, MobileView } from "react-device-detect";
 import { FaGraduationCap } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
 import Header from "../../header/Header";
 import ProgressEducation from "./components/ProgressEducation";
 import ProgressWork from "./components/ProgressWork";
 import styles from "./Experience.module.css";
+import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 const Experience: React.FC = () => {
   const HeaderEducation = (
@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
 
   return (
     <section id="experience">
-      <BrowserView>
+      <MediaQuery minWidth={849}>
         <div className={styles.Headers}>
           {HeaderEducation}
           {HeaderExperience}
@@ -33,14 +33,14 @@ const Experience: React.FC = () => {
         <div className={styles.XP}>
           <ProgressEducation />
           <ProgressWork />
-        </div>
-      </BrowserView>
-      <MobileView>
+        </div></MediaQuery>
+      <MediaQuery maxWidth={847}>
         {HeaderEducation}
         <ProgressEducation />
         {HeaderExperience}
-        <ProgressWork />
-      </MobileView>
+        <div >
+          <ProgressWork className={styles.Experience}  /></div>
+      </MediaQuery>
     </section>
   );
 };

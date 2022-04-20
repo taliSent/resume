@@ -1,4 +1,3 @@
-import ReactPDF from "@react-pdf/renderer";
 import React from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { HiDownload } from "react-icons/hi";

@@ -10,7 +10,7 @@ const About: React.FC = () => {
   return (
     <section id="about">
       <div className={styles.About}>
-        <img src="img/photo.jpg" alt="" className={styles.Photo} />
+        <img src="img/photo.jpg" alt="" className={styles.Photo} loading="lazy" />
         <div className={styles.Text}>
           <div className={styles.Profession}>Frontend developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>
@@ -19,8 +19,7 @@ const About: React.FC = () => {
       </div>
       <Numbers />
       <div
-        className={`${styles.Description} ${!showDetails && styles.Hidden
-          }`}
+        className={`${styles.Description} ${!showDetails && styles.Hidden}`}
       >
           Hello! My Name is Nataly. I've come a long way from QA to what I love the most - frontend developement.
           <br />

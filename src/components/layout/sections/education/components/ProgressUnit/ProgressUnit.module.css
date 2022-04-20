@@ -1,7 +1,7 @@
 .Unit {
     display: flex;
     line-height: 1.5;
-    font-size: clamp(1em, 2.7vw, 1.151em);
+    font-size: clamp(0.85em, 2.7vw, 1.151em);
     transition: font-size .2s ease-in-out;
 }
 
@@ -14,7 +14,7 @@
 } 
 
 .Name {
-    font-size: clamp(1.001em, 3.001vw, 1.051em);
+    font-size: clamp(0.9em, 3.001vw, 1.051em);
     transition: font-size .2s ease-in-out;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .TimePoint {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.6em;
+    height: 0.6em;
     border-radius: 50%;
     background-color: var(--text-color);
     margin-right: 14px;

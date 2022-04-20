@@ -1,6 +1,5 @@
-.Carousel * {
-   /* width: 70%;
-   display: grid;
-   justify-content: center; */
+.Button {
+   width: 3em;   
+   aspect-ratio: 1 / 1;
+   border-radius: 100%;
 }
-

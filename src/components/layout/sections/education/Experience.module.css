@@ -8,3 +8,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-device-width: 1024px) {
+    .Experience{
+        display: grid;
+        justify-content: end;
+    }
+}

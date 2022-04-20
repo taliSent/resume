@@ -1,9 +1,13 @@
 import React from "react";
 import ProgressUnit from "./ProgressUnit/ProgressUnit";
 
-const ProgressWork: React.FC = () => {
+type ProgressWorkProps = {
+  className?: string
+}
+
+  const ProgressWork: React.FC<ProgressWorkProps> = ({className}) => {
   return (
-    <div>
+    <div className={className}>
       <ProgressUnit
         string1="Researcher"
         string2="MSU"

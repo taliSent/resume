@@ -1,43 +1,54 @@
 import React, { useState } from "react";
-import {
-  isMobileOnly,
-  MobileView
-} from "react-device-detect";
 import { IoMdClose } from "react-icons/io";
 import { RiMenu3Line } from "react-icons/ri";
+import MediaQuery, { useMediaQuery } from 'react-responsive';
 import { HashLink } from "react-router-hash-link";
 import styles from "./Menu.module.css";
 
+const Links = [
+  {
+    name: "Stack",
+    anchor: "#stack",
+  },
+  {
+    name: "Timeline",
+    anchor: "#experience",
+  },
+  {
+    name: "Testimonials",
+    anchor: "#testimonials",
+  },
+  {
+    name: `Contact\xa0me`,
+    anchor: "#contact-me",
+  },
+];
+
 const Menu: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(!isMobileOnly);
-  const handleClick = () => setIsMenuOpen((prev) => !prev);
-  const closeMenu = () => setIsMenuOpen(false);
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 857px)' })
+  const [isMenuOpen, setIsMenuOpen] = useState(!isTabletOrMobile);
+  const handleClick = () => isTabletOrMobile && setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => isTabletOrMobile && setIsMenuOpen(false);
   const openCloseButton = (
-    <div className={styles.OpenClose} onClick={handleClick}>
+    <div className={styles.ToggleButton} onClick={handleClick}>
       {isMenuOpen ? <IoMdClose /> : <RiMenu3Line />}
     </div>
   );
+  const menuClasses = `${styles.Menu} ${!isMenuOpen && styles.MenuClosing}`;
+  const hashLinksClasses = `${styles.HashLinks} ${!isMenuOpen && styles.HidingLinks}`;
+
   const navigation = (
-    <>
-      {isMenuOpen && (
-        <div className={styles.HashLinks}>
-          <HashLink onClick={closeMenu} to="#stack" smooth className={styles.HashLink}>
-            Stack
+    <div className={menuClasses}>
+      <div className={hashLinksClasses}>
+        {Links.map(
+          ({ name, anchor }) => <HashLink onClick={closeMenu} to={anchor} smooth className={`${styles.HashLink}`}>
+            {name}
           </HashLink>
-          <HashLink onClick={closeMenu} to="#experience" smooth className={styles.HashLink}>
-            Timeline
-          </HashLink>
-          <HashLink onClick={closeMenu} to="#testimonials" smooth className={styles.HashLink}>
-            Testimonials
-          </HashLink>
-          <HashLink onClick={closeMenu} to="#contact-me" smooth className={styles.HashLink}>
-            Contact me
-          </HashLink>
-        </div>
-      )}
-      <MobileView>{openCloseButton}</MobileView>
-    </>
+        )}
+      </div>
+      <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>
+    </div>
   );
-  return <div className={`${styles.Menu} ${isMenuOpen && styles.MenuOpen}`}>{navigation}</div>;
+  return <>{navigation}</>;
 };
 export default Menu;

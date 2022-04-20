@@ -7,8 +7,8 @@
 .Button {
     font-family: var(--ff-primary);
     font-weight: 500;
-    font-size: 0.82em;
-    padding: 1.1em;
+    font-size: 0.78em;
+    padding: 0.9em;
     border: 0;
     letter-spacing: .09em;
     opacity: 0;
@@ -51,13 +51,34 @@
     -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
     -moz-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
     -o-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
+    position: relative;
 }
 
+ .ShowDetails:after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0);
+    background-color: rgb(128,124,191);
+    width: 100%;
+    height: 100%;    
+    z-index: -1;
+    transform-origin: bottom;
+    transition: transform 0.3s ease-out; 
+} 
 
 .ShowDetails:hover {
-    background-color: var(--text-secondary);
     color: var(--background-color);
-    transition: all 0.2s ease;
+    background-color: rgb(128,124,191);
+    transition: all 0.3s ease-out;
+}
+
+.ShowDetails:hover:after {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.2s ease-out; 
 }
 
 @media screen and (max-device-width: 910px) {
