@@ -41,10 +41,6 @@ section {
   margin-bottom: 8em;
 }
 
-section:last-child {
-  margin-bottom: 0em;
-}
-
 ::selection {
   background-color: var(--selected-text-background);
   color: var(--background-color);

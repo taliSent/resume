@@ -3,26 +3,8 @@ import { IoMdClose } from "react-icons/io";
 import { RiMenu3Line } from "react-icons/ri";
 import MediaQuery, { useMediaQuery } from 'react-responsive';
 import { HashLink } from "react-router-hash-link";
+import LINKS from "./constants";
 import styles from "./Menu.module.css";
-
-const Links = [
-  {
-    name: "Stack",
-    anchor: "#stack",
-  },
-  {
-    name: "Timeline",
-    anchor: "#experience",
-  },
-  {
-    name: "Testimonials",
-    anchor: "#testimonials",
-  },
-  {
-    name: `Contact\xa0me`,
-    anchor: "#contact-me",
-  },
-];
 
 const Menu: React.FC = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 857px)' })
@@ -40,10 +22,16 @@ const Menu: React.FC = () => {
   const navigation = (
     <div className={menuClasses}>
       <div className={hashLinksClasses}>
-        {Links.map(
-          ({ name, anchor }) => <HashLink onClick={closeMenu} to={anchor} smooth className={`${styles.HashLink}`}>
-            {name}
-          </HashLink>
+        {LINKS.map(
+          ({ name, anchor }) =>
+            <HashLink
+              onClick={closeMenu}
+              to={anchor}
+              smooth
+              className={`${styles.HashLink}`}
+              key={name}>
+              {name}
+            </HashLink>
         )}
       </div>
       <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>

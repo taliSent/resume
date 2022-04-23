@@ -1,20 +1,9 @@
 .Contacts {
-    display: flex;    
-    justify-content: space-between;
-    margin-bottom: 4em;
+    display: grid;
+    justify-content: center;
+    gap: 1.3em;
 }
 
 .Icon {
     margin-right: 12px;
-}
-
-@media screen and (max-device-width: 910px) {
-    .Contacts {
-        display: grid;
-        gap: 1em;
-    }
-
-    .Contact {
-        margin-right: 0;
-    }
 }

@@ -30,9 +30,10 @@ const Buttons: React.FC<ButtonsProps> = ({
 
   return (
     <div className={styles.ButtonContainer}>
-      <button className={`${styles.Button} ${styles.Download}`}>
-        <div onClick={downloadPDF}>Download CV</div> <HiDownload />
+      <a href="/CV_Sentemova.pdf" download>  <button className={`${styles.Button} ${styles.Download}`}>
+        <div onClick={downloadPDF}>Download CV</div><HiDownload />
       </button>
+      </a>
       <button
         className={`${styles.Button} ${styles.ShowDetails}`}
         onClick={onClick}

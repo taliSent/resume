@@ -1,5 +1,5 @@
 .Testimonial {
-    width: min(25em, 100%);
+    width: min(25em, 90%);
     aspect-ratio: 378 / 487;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,245,245,1)  50%);
     padding: min(2em, 4vw) clamp(1em, 3vw, 2.6em) 2em;
@@ -39,10 +39,10 @@
 }
 
 .Line {
-    height: 2px;
+    height: 1px;
     width: 3em;
     color: var(--header-color); 
-    background-color: var(--header-color);       
+    background-color: rgb(128, 124, 191, 0.7);
     margin-bottom: 1.35em;
 }
 

@@ -36,12 +36,14 @@
     background-color: var(--text-color);
     margin-right: 14px;
     position: relative;
+    z-index: 100;
     transform: translate(0,13px);
 }
 
 .TimeLine {
     width: 2px;
     height: 100%;
-    background-color: var(--text-color);
-    transform: translate(8px,0);
+    background-color: var(--background-color);
+    z-index: -100;
+    transform: translate(0.25em,0);
 }

@@ -1,38 +1,24 @@
 import React from "react";
+import { PROGRESS_WORK } from "./constants";
 import ProgressUnit from "./ProgressUnit/ProgressUnit";
 
 type ProgressWorkProps = {
   className?: string
 }
 
-  const ProgressWork: React.FC<ProgressWorkProps> = ({className}) => {
+const ProgressWork: React.FC<ProgressWorkProps> = ({ className }) => {
   return (
     <div className={className}>
-      <ProgressUnit
-        string1="Researcher"
-        string2="MSU"
-        string3="2014-2016"
-        isMirrored
-      />
-      <ProgressUnit
-        string1="QA Engineer"
-        string2="AT Consulting"
-        string3="2018-2019"
-        isMirrored
-      />
-      <ProgressUnit
-        string1="Junior Software Developer"
-        string2="AT Consulting"
-        string3="2019"
-        isMirrored
-      />
-      <ProgressUnit
-        string1="Frontend developer"
-        string2="Cinimex"
-        string3="2019-present"
-        isLast
-        isMirrored
-      />
+      {PROGRESS_WORK.map(({ string1, string2, string3, isLast, isMirrored, }) =>
+        <ProgressUnit
+          string1={string1}
+          string2={string2}
+          string3={string3}
+          isLast={isLast}
+          isMirrored={isMirrored}
+          key={string1}
+        />
+      )}
     </div>
   );
 };

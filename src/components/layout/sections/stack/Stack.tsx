@@ -16,7 +16,7 @@ const Stack: React.FC = () => {
         <Bar technologyName="HTML" className={styles.HTML} />
         <Bar technologyName="CSS" className={styles.CSS} />
         <Bar technologyName="React" className={styles.React}  />
-        <Bar technologyName="Js"  className={styles.Js} />
+        <Bar technologyName="Vanilla&nbsp;Js"  className={styles.Js} />
         <Bar technologyName="Typescript"  className={styles.Typescript} />
       </ul>
     </section>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProgressUnit.module.css";
 
-type ProgressUnitProps = {
+export type ProgressUnitProps = {
   string1: string;
   string2?: string;
   string3?: string;

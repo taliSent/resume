@@ -7,6 +7,42 @@
     justify-content: space-around;
     height: 0;
     width: 100%;
+    position: relative;
+}
+
+.HashLink {
+    padding: 0 clamp(0.5em, calc(2vw + .2em), 2em) 1vw;
+    transition: all .3s ease;
+    text-align: center;
+    font-size: clamp(0.9em, 2.76vw, 1.12em);
+    letter-spacing: .12rem;
+}
+
+.HashLink:hover {
+    letter-spacing: .25rem;
+}
+
+.HashLink:active {
+    font-weight: bold;
+}
+
+.HashLink:hover:after,
+.HashLink:hover:before {
+    content: "";
+    position: absolute;
+    width: 0.7ch;
+    height: 0.7ch;
+    border-radius: 100%;
+    top: 0.6ch;
+    background-color: var(--header-color);
+}
+
+.HashLink:hover:after {
+    transform: translateX(0.7ch);
+}
+
+.HashLink:hover:before {
+    transform: translateX(-1.6ch);
 }
 
 
@@ -43,29 +79,13 @@
 
     .HidingLinks {
         opacity: 0;
-        transition: all .2s ease-in; 
+        transition: all .2s ease-in;
     }
 }
 
 
 @media screen and (min-device-width: 690px) {
-    .OpenClose {
+    .ToggleButton {
         opacity: 0;
     }
-}
-
-.HashLink {
-    padding: 0 clamp(0.5em, calc(2vw + .2em), 2em) 1vw;
-    text-align: center;
-    transition: all .3s ease;
-    font-size: clamp(0.9em, 2.76vw, 1.3em);
-    letter-spacing: .1rem;
-}
-
-.HashLink:hover {
-    letter-spacing: .25rem;
-}
-
-.HashLink:active {
-    font-weight: bold;
 }
