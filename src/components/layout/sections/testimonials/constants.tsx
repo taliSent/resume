@@ -1,9 +1,4 @@
-import Carousel from "nuka-carousel";
 import React from "react";
-import { RiDoubleQuotesR } from "react-icons/ri";
-import Header from "../../header/Header";
-import Testimonial from "./components/Testimonials/Testimonial";
-import styles from "./Testimonials.module.css";
 
 const CARDS = [
   {

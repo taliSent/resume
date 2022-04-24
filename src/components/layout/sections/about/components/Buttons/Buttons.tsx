@@ -2,7 +2,6 @@ import React from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { HiDownload } from "react-icons/hi";
 import { RiEyeCloseLine } from "react-icons/ri";
-import App from "../../../../../../App";
 import styles from "./Buttons.module.css";
 
 type ButtonsProps = {

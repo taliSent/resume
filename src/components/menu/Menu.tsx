@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { BsFillSunFill } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
-import { RiMenu3Line, RiMoonFill, RiSunFill, RiSunLine } from "react-icons/ri";
+import { RiMenu3Line, RiMoonFill } from "react-icons/ri";
 import MediaQuery, { useMediaQuery } from 'react-responsive';
 import { HashLink } from "react-router-hash-link";
 import { ThemeContext } from "../../context/context";

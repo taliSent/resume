@@ -1,11 +1,11 @@
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
+import MediaQuery from 'react-responsive';
 import Header from "../../header/Header";
 import ProgressEducation from "./components/ProgressEducation";
 import ProgressWork from "./components/ProgressWork";
 import styles from "./Experience.module.css";
-import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 const Experience: React.FC = () => {
   const HeaderEducation = (
