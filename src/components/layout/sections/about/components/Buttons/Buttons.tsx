@@ -24,13 +24,10 @@ const Buttons: React.FC<ButtonsProps> = ({
     </div>
   );
 
-  const downloadPDF = () => {
-  };
-
   return (
     <div className={styles.ButtonContainer}>
       <a href="/CV_Sentemova.pdf" download>  <button className={`${styles.Button} ${styles.Download}`}>
-        <div onClick={downloadPDF}>Download CV</div><HiDownload />
+        <div>Download CV</div><HiDownload />
       </button>
       </a>
       <button

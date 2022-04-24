@@ -14,7 +14,7 @@
     padding: 0 clamp(0.5em, calc(2vw + .2em), 2em) 1vw;
     transition: all .3s ease;
     text-align: center;
-    font-size: clamp(0.6em, 1.2vw, 0.9em);
+    font-size: min(0.65em, 4.5vw);
     letter-spacing: .1rem;
 }
 

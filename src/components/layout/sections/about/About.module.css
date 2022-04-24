@@ -39,7 +39,7 @@
 .Profession {
     color: var(--header-color);
     font-family: var(--ff-accent);
-    font-size: clamp(calc(0.3vw + 1.1em), 1.6vw, 1.8em);
+    font-size: clamp(calc(0.2vw + .8em), 3.2vw, 1em);
     text-align: right;
     margin-bottom: 0.4em;
     font-weight: 400;

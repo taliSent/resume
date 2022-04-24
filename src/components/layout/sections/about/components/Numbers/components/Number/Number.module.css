@@ -6,7 +6,7 @@
 
 .Number {
     color: var(--header-color);
-    font-size: clamp(1.3em, 1.8vw, 1.6em);
+    font-size: clamp(1em, 1.4vw, 1.3em);
     font-weight: bolder;
 }
 

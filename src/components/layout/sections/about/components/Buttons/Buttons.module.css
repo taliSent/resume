@@ -84,7 +84,7 @@
     transition: transform 0.2s ease-out; 
 }
 
-@media screen and (max-device-width: 910px) {
+@media screen and (max-device-width: 810px) {
     .ButtonContainer {
         display: grid;
         gap: 1em;
