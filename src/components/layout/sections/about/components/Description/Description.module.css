@@ -37,24 +37,3 @@
 .Interchangeble {
     position: relative;
 }
-
-/* .Interchangeble::after {
-    position: absolute;
-    content: attr(data-replace);
-    width: 100%;
-    left: 0;
-    animation: slide-in 3s infinite;
-}
-
-@keyframes slide-in {
-    100%{
-        content: "";
-        background-color: transparent;
-        transform: rotate3d();
-    }
-
-    0%{
-        background-color: white;
-        content: attr(data-replace);
-    }
-} */

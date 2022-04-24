@@ -9,7 +9,8 @@
     box-shadow: 4px 4px 8px 0px var(--shadow-color);
     background-color: var(--plate-color);
     margin-bottom: 2em;
-    border: 4px var(--button-color) solid;
+    border: 4px var(--border-color) solid;
+    transition: background-color .3s ease-in-out;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -20,4 +21,3 @@
         border: 4px var(--plate-color) solid;
     }
 }
-

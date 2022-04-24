@@ -23,7 +23,6 @@ const CARDS = [
     coworkerName: "Nizami Mamedov",
     coworkerPosition: "senior product manager",
     text: <>
-      {/* Advantages: */}
       <ul>
         <li>
           Communication soft skills (life and work communications are pleasant)
@@ -31,16 +30,6 @@ const CARDS = [
         <li>Team player</li>
         <li>Quickly puzzled out the project and started to deal with serious tasks</li>
       </ul>
-      {/* <br />
-      What might be improved:
-      <ul>
-        <li>
-          Proactivity might be increased
-        </li>
-        <li>
-          I feel like she migh be more assertive when asking for help
-        </li> 
-      </ul>*/}
       <br />
     </>,
     telegram: "@Jessie_Fox",

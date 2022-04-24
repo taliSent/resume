@@ -43,7 +43,7 @@
 .TimeLine {
     width: 2px;
     height: 100%;
-    background-color: var(--background-color);
+    background-color: var(--timeline-detail);
     z-index: -100;
     transform: translate(0.25em,0);
 }

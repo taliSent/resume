@@ -22,7 +22,7 @@ const Testimonials = () => {
           prevButtonClassName: styles.Button,
         }}
         wrapAround={true}
-        >
+      >
         {CARDS.map(({ photoSrc, coworkerName, coworkerPosition, text, telegram, linkedIn, instagram }) =>
           <Testimonial
             photoSrc={photoSrc}
@@ -35,7 +35,7 @@ const Testimonials = () => {
             key={coworkerName}
           />
         )}
-        </Carousel>
+      </Carousel>
     </section>
   );
 };

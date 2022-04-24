@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { useContext } from "react";
+import { BsFillSunFill } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
-import { RiMenu3Line } from "react-icons/ri";
+import { RiMenu3Line, RiMoonFill, RiSunFill, RiSunLine } from "react-icons/ri";
 import MediaQuery, { useMediaQuery } from 'react-responsive';
 import { HashLink } from "react-router-hash-link";
+import { ThemeContext } from "../../context/context";
 import LINKS from "./constants";
 import styles from "./Menu.module.css";
 
 const Menu: React.FC = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 857px)' })
   const [isMenuOpen, setIsMenuOpen] = useState(!isTabletOrMobile);
   const handleClick = () => isTabletOrMobile && setIsMenuOpen((prev) => !prev);
@@ -33,6 +37,9 @@ const Menu: React.FC = () => {
               {name}
             </HashLink>
         )}
+        <div className={styles.ToggleThemeButton}>{theme === 'dark' ?
+          <BsFillSunFill size="32" color="white" onClick={toggleTheme} /> :
+          <RiMoonFill size="32" onClick={toggleTheme} />}</div>
       </div>
       <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>
     </div>

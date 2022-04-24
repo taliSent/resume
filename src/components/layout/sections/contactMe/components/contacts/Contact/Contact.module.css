@@ -6,7 +6,7 @@
 
 .TextContainer {
     display: grid;
-    gap: .1em;
+    gap: .15em;
 }
 
 .TextPrimary {
@@ -19,7 +19,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -.1em;
+    bottom: -.15em;
     width: 100%;
     height: 4px;
     background: linear-gradient(90deg, var(--header-color) 0%, var(--hover-accent) 35%);

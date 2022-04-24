@@ -14,7 +14,7 @@
     position: relative;
     border-radius: 15px;
     background-color: var(--background-color);
-    box-shadow: 2px 2px 4px 0px var(--shadow-color);
+    box-shadow: 2px 2px 4px 0px var(--button-color);
 }
 
 .ProgressLevel {

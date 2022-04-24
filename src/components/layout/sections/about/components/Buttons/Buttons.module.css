@@ -11,6 +11,7 @@
     padding: 0.9em;
     border: 0;
     letter-spacing: .09em;
+    justify-content: center;
     opacity: 0;
     transition: all 0.2s ease-in-out;
     display: flex;
@@ -39,12 +40,14 @@
 }
 
 .Download:hover {
+    color: var(--text-color);
     background-color: var(--plate-color);
     border: 6px var(--button-color) solid;
     transition: all 0.2s ease;
 }
 
 .ShowDetails {
+    color: var(--text-color);
     background-color: var(--button-background-color);
     border-bottom: 6px var(--button-color) solid;
     animation: fadeButton 0.5s ease-in-out 3.5s forwards;

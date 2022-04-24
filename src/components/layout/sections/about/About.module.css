@@ -7,10 +7,10 @@
     width: clamp(7.5em, 18vw, 12em);
     height: clamp(7.5em, 18vw, 12em);
     border-radius: 50%;
-    box-shadow: 4px 4px 8px 0px var(--button-color);
+    box-shadow: 4px 4px 8px 0px var(--shadow-color);
     -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
     -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    border: 4px var(--plate-color) solid;
+    border: 4px white solid;
     animation: fadePhoto 1.5s ease-in-out forwards;
     -webkit-animation: fadePhoto 1.5s ease-in-out forwards;
     -moz-animation: fadePhoto 1.5s ease-in-out forwards;

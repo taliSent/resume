@@ -8,8 +8,8 @@ type DescriptionProps = {
 const Description: React.FC<DescriptionProps> = ({ showDetails }: DescriptionProps) => {
   return (
     <div
-      className={`${styles.Description} ${!showDetails && styles.Hidden}`}
-    >Hello! My Name is Nataly. I've come from QA to what I love the most - <span className={styles.Underline}>frontend development.</span>
+      className={`${styles.Description} ${!showDetails && styles.Hidden}`}>
+      Hello! My Name is Nataly. I've come from QA to the specialty I love the most - <span className={styles.Underline}>frontend development.</span>
       <br />
       I've been working on a project job for <span className={styles.Underline}>three years</span> now. On some of these projects I worked solely, on some of them - in a team of specialists. Whenever necessary, I learn all the new technologies needed for the project.
       <br />
