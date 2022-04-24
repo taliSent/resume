@@ -1,7 +1,7 @@
 
 .Container {
-    padding: 3em 4em; 
-    width: clamp(300px, 90%, 70.5rem); 
+    padding: 1.1em 5%; 
+    width: clamp(300px, 90%, 42.5rem); 
     margin-inline: auto; 
     border-radius: 0 0 8px 8px;
     -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);

@@ -33,10 +33,10 @@ const CARDS = [
     photoSrc: "img/Sveta.jpg",
     coworkerName: "Svetlana Pedan",
     coworkerPosition: "senior QA",
-    text: <>I like that Nataly tests her tasks on stands. Before her, developers almost have done that, and now they took that as a rule. 
+    text: <>I like that Nataly tests her tasks on stands. Before her, developers have almost never done that, and now they took that as a rule. 
     It's good that she isn't afraid to ask questions.
     They're problems with estimation of tasks, but I think it'll go away with the dive in.
-    Communication is very comfortable.
+    Communication with Nataly is very comfortable.
     </>,
   },
 ]

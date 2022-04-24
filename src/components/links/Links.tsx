@@ -10,11 +10,11 @@ const Links: React.FC = () => {
   return (
     <div className={styles.Links}>
       <a href={gitHubLink} className={styles.Link} target="_blank" rel="noreferrer">
-        <FiGithub size="65" />
+        <FiGithub size="45" />
       </a>
 
       <a href={linkedinLink} className={styles.Link} target="_blank" rel="noreferrer">
-        <FaLinkedin size="65" />
+        <FaLinkedin size="45" />
       </a>
     </div>
   );

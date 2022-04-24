@@ -2,7 +2,7 @@
     margin-right: 20px;
     margin-bottom: 5px;
     width: 120px;
-    font-size: clamp(0.7em, 3vw, 1.3em);
+    font-size: clamp(0.5em, 2vw, 0.7em);
 }
 
 .Bar {

@@ -1,7 +1,8 @@
 .Unit {
     display: flex;
     line-height: 1.5;
-    font-size: clamp(0.85em, 2.7vw, 1.151em);
+    font-size: 18px;
+    font-size: clamp(0.7em, 1.2vw, 0.5em); 
     transition: font-size .2s ease-in-out;
 }
 
@@ -14,7 +15,8 @@
 } 
 
 .Name {
-    font-size: clamp(0.9em, 3.001vw, 1.051em);
+    font-size: 20px;
+    font-size: clamp(0.9em, 1.4vw, 0.7em); 
     transition: font-size .2s ease-in-out;
 }
 
@@ -30,14 +32,14 @@
 }
 
 .TimePoint {
-    width: 0.6em;
-    height: 0.6em;
+    width: 0.8em;
+    height: 0.8em;
     border-radius: 50%;
     background-color: var(--text-color);
     margin-right: 14px;
     position: relative;
     z-index: 100;
-    transform: translate(0,13px);
+    transform: translate(0, .5ch);
 }
 
 .TimeLine {
@@ -45,5 +47,5 @@
     height: 100%;
     background-color: var(--timeline-detail);
     z-index: -100;
-    transform: translate(0.25em,0);
+    transform: translate(0.32em, 0);
 }

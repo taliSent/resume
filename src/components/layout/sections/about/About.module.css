@@ -4,8 +4,8 @@
 }
 
 .Photo {
-    width: clamp(7.5em, 18vw, 12em);
-    height: clamp(7.5em, 18vw, 12em);
+    width: clamp(7em, 8vw, 8em);
+    height: clamp(7em, 8vw, 8em);
     border-radius: 50%;
     box-shadow: 4px 4px 8px 0px var(--shadow-color);
     -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
@@ -32,14 +32,14 @@
 
 .Text {
     align-self: center;
-    margin-left: clamp(1.4em, 1.2vw, 2.5em);
+    margin-left: clamp(1.4em, 1vw, 2.1em);
 }
 
 
 .Profession {
     color: var(--header-color);
     font-family: var(--ff-accent);
-    font-size: clamp(calc(0.3vw + 1.1em), 3.1vw, 2.1em);
+    font-size: clamp(calc(0.3vw + 1.1em), 1.6vw, 1.8em);
     text-align: right;
     margin-bottom: 0.4em;
     font-weight: 400;
@@ -71,7 +71,7 @@
 }
 
 .Stack {
-    font-size: clamp(0.8em, .8vw, 1.4em);
+    font-size: clamp(0.6em, .4vw, 1.2em);
     text-align: right;
     margin-bottom: 1.8em;
     letter-spacing: .19rem;

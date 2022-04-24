@@ -10,11 +10,10 @@
 }
 
 .TextPrimary {
-    font-size: clamp(.85em, 1.6vw, 1.25em);
+    font-size: clamp(0.6em, 1.4vw, 0.95em);
     font-weight: 600;
     position: relative;
 }
-
 .TextPrimary::after {
     content: "";
     position: absolute;
@@ -36,5 +35,5 @@
 
 .TextSecondary {
     color: var(--text-secondary);
-    font-size: clamp(0.8em, 1.4vw, 1.05em);
+    font-size: clamp(0.5em, 1.2vw, 0.85em);
 }

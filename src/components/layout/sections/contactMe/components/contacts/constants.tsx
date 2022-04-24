@@ -15,19 +15,19 @@ const CONTACTS = [
     href: myTg,
     textPrimary: "Text me",
     textSecondary: "TaliSent",
-    icon: <BsTelegram style={style} size="36" />
+    icon: <BsTelegram style={style} size="30" />
   },
   {
     href: `mailto: ${myMail}`,
     textPrimary: "Email me",
     textSecondary: "ns.sent@yandex.ru",
-    icon: <MdOutlineAlternateEmail style={style} size="36" />
+    icon: <MdOutlineAlternateEmail style={style} size="30" />
   },
   {
     href: `tel: ${myPhone}`,
     textPrimary: "Call me",
     textSecondary: myPhone,
-    icon: <FiPhone style={style} size="36" />
+    icon: <FiPhone style={style} size="30" />
   },
 ];
 

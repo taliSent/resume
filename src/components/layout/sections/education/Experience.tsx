@@ -11,14 +11,14 @@ const Experience: React.FC = () => {
   const HeaderEducation = (
     <Header
       name="Education"
-      icon={<FaGraduationCap className="icon" size="46" />}
+      icon={<FaGraduationCap className="icon" size="36" />}
       h2={true}
     />
   );
   const HeaderExperience = (
     <Header
       name="Experience"
-      icon={<MdOutlineWork className="icon" size="38" />}
+      icon={<MdOutlineWork className="icon" size="28" />}
       h2={true}
     />
   );

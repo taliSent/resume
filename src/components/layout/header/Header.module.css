@@ -10,7 +10,7 @@
 .TextSecondary {
     margin-bottom: 1.5em;
     color: var(--text-secondary);
-    font-size: clamp(0.8em, 2vw, 1.1em);
+    font-size: clamp(0.7em, 1.8vw, 0.8em);
     letter-spacing: .4rem;
 }
 
@@ -23,10 +23,10 @@ h1, h2, h3 {
 }
 
 h2, h3 {
-    font-size: clamp(0.9em, 4vw, 1.9em);
+    font-size: clamp(0.9em, 1.8vw, 1em);
 }
 
 h1 {
-    font-size: clamp(1em, 4vw, 1.5em);
+    font-size: clamp(0.9em, 2vw, 1.1em);
     margin-bottom: 0.4em;
-}
+} 

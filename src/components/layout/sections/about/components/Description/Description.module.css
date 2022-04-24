@@ -1,6 +1,7 @@
 .Description {
-    padding: 0 clamp(1em, 6vw, 8em) clamp(4em, 2vw, 3em);
-    font-size: clamp(0.7em, 1.7vw, 1.3em);
+    padding: 0 max(2.5rem, 15%);
+    font-size: 0.6em;
+    margin-top: 1.5em;
     opacity: 0;
     line-height: 0.9;
     animation: fadeDescription 0.6s ease-in-out forwards;

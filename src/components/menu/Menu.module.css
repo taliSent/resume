@@ -1,5 +1,5 @@
 .Menu {
-    margin-bottom: 6em;
+    margin-bottom: 4.5em;
 }
 
 .HashLinks {
@@ -14,7 +14,7 @@
     padding: 0 clamp(0.5em, calc(2vw + .2em), 2em) 1vw;
     transition: all .3s ease;
     text-align: center;
-    font-size: clamp(0.9em, 2.76vw, 1.1em);
+    font-size: clamp(0.6em, 1.2vw, 0.9em);
     letter-spacing: .1rem;
 }
 
@@ -89,8 +89,14 @@
 }
 
 
-@media screen and (min-device-width: 690px) {
+@media screen and (min-device-width: 857px) {
     .ToggleButton {
         opacity: 0;
+    }
+}
+
+@media screen and (min-device-width: 760px) {
+    .ToggleButton {
+        right: 2em;
     }
 }

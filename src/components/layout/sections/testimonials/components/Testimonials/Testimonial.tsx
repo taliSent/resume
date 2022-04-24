@@ -31,9 +31,9 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <span className={styles.Line} />
       <div className={styles.Review}>{text}</div>
       <div className={styles.IconsSocial}>
-        {telegram && <a href={`https://t.me/${telegram}`} target="_blank" rel="noreferrer"><ImTelegram size="38" /></a>}
-        {linkedIn && <a href={linkedIn} target="_blank" rel="noreferrer"><TiSocialLinkedinCircular size="52" /></a>}
-        {instagram && <a href={`https://instagram.com/${instagram}`} target="_blank" rel="noreferrer"><BsInstagram size="34" /></a>}
+        {telegram && <a href={`https://t.me/${telegram}`} target="_blank" rel="noreferrer"><ImTelegram size="22" /></a>}
+        {linkedIn && <a href={linkedIn} target="_blank" rel="noreferrer"><TiSocialLinkedinCircular size="30" /></a>}
+        {instagram && <a href={`https://instagram.com/${instagram}`} target="_blank" rel="noreferrer"><BsInstagram size="20" /></a>}
       </div>
     </div>
   );
