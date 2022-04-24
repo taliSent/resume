@@ -63,6 +63,7 @@
     .MenuClosing {
         height: 0;
         backdrop-filter: none;
+        background: transparent;
         transition: all 0.3s ease-in;
     }
 
