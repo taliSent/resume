@@ -46,6 +46,11 @@
 }
 
 
+.ToggleThemeButton {
+    display: flex;
+    align-self: baseline;
+}
+
 @media screen and (max-device-width: 857px) {
     .Menu {
         position: fixed;
@@ -83,8 +88,7 @@
         transition: all .2s ease-in;
     }
     .ToggleThemeButton {
-        display: flex;
-        justify-content: center;
+        align-self: center;
     }
 }
 
