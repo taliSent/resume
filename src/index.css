@@ -18,7 +18,8 @@
   --header-color: #807CBF;
   --hover-accent: #c3b1ff;
   --button-color: #C2DEBD;
-  --shadow-color: var(--button-color);
+  --shadow-color: var(--button-color);  
+  --border-color: #DFFFD9;
   --progress-accent: #DFFFD9;
   --timeline-detail: var(--background-color);
   --testimonial-border: 1px var(--header-color) solid;
@@ -31,16 +32,16 @@
   --text-secondary: #EDD9CE;
   --selected-text-background: #c3b1ff;
   --background-color: #121212;
-  --plate-color: #1D1D1D;
-  --shadow-color: #151516;
-  --border-color: var(--plate-color);
+  --plate-color: #1D1D1D;  
   --header-color: #b7b1cd;
   --hover-accent: #807CBF;
   --button-color: #A7BFA3;
+  --shadow-color: #151516;
+  --border-color: var(--plate-color);
   --progress-accent: #DFFFD9;
   --timeline-detail: #DFFFD9;
   --testimonial-gradient: linear-gradient(180deg, #2D2D2D 0%, #49445a 50%);
-  --testimonial-border: none;
+  --testimonial-border: 1px transparent solid;
   --controls-color: #2D2D2D;
 }
 
