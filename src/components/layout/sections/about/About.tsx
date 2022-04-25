@@ -13,7 +13,7 @@ const About: React.FC = () => {
       <div className={styles.About}>
         <img src="img/photo.jpg" alt="" className={styles.Photo} loading="lazy" />
         <div className={styles.Text}>
-          <div className={styles.Profession}>Frontend developer</div>
+          <div className={styles.Profession}>Frontend&nbsp;developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>
           <Buttons showDetails={showDetails} onClick={handleClick} />
         </div>

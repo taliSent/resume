@@ -8,9 +8,6 @@ import { useEffect } from "react";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
-  useEffect(() => {
-    console.log('theme', theme === 'dark');
-  })
   return (
     <div data-theme={theme} id="root_">
       <div className={styles.Container}>
