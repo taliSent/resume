@@ -13,8 +13,8 @@ export const PROGRESS_WORK: ProgressUnitProps[] = [
     isMirrored: true,
   },
   {
-    string1: "Junior Software Developer",
-    string2: "Cinimex",
+    string1: "SQL Developer",
+    string2: "AT Consulting",
     string3: "2019",
     isMirrored: true,
   },
