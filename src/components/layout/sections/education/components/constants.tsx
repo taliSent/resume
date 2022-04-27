@@ -2,50 +2,56 @@ import { ProgressUnitProps } from "./ProgressUnit/ProgressUnit"
 
 export const PROGRESS_WORK: ProgressUnitProps[] = [
   {
-    string1: "Researcher",
-    string2: "MSU",
-    string3: "2014-2016",
-    isMirrored: true,
-  }, {
-    string1: "QA Engineer",
-    string2: "AT Consulting",
-    string3: "2018-2019",
+    name: "Frontend developer",
+    place: "Cinimex",
+    years: "2019-present",
+    achievement: "Developed a bank application that allows user to configure, watch as PDF and sign documents",
     isMirrored: true,
   },
   {
-    string1: "SQL Developer",
-    string2: "AT Consulting",
-    string3: "2019",
+    name: "SQL Developer",
+    place: "AT Consulting",
+    achievement: "Developed a 30-pages printed form with around 50 SQL queries, each with complex business logic.",
+    years: "2019",
     isMirrored: true,
   },
   {
-    string1: "Frontend developer",
-    string2: "Cinimex",
-    string3: "2019-present",
+    name: "QA Engineer",
+    place: "AT Consulting",    
+    achievement: "Fixed critical bugs in autotests.",
+    years: "2018-2019",
+    isMirrored: true,
+  },
+  {
+    name: "Researcher",
+    place: "MSU",
+    years: "2014-2016",
     isLast: true,
     isMirrored: true,
-  }
-]
+  },
+];
 
 export const PROGRESS_EDUCATION: ProgressUnitProps[] = [
   {
-    string1: "Bachelor of Physics",
-    string2: "MSU",
-    string3: "2012-2016",
+    name: "React Maraphon",
+    place: "Zar Zacharov",
+    achievement: "A month of intense work on a card game.",
+    years: "2021",
   }, {
-    string1: "Learn React Course",
-    string2: "Codecademy",
-    string3: "2021",
+    name: "Learn React Part II Course",
+    place: "Codeacademy",
+    achievement: "Built several educational React applications",
+    years: "2021",
+  }, {
+    name: "Learn React Course",
+    place: "Codeacademy",
+    years: "2021",
   },
   {
-    string1: "Learn React Part II Course",
-    string2: "Codecademy",
-    string3: "2021",
-  },
-  {
-    string1: "React Maraphon",
-    string2: "Zar Zacharov",
-    string3: "2021",
+    name: "Bachelor of Physics",
+    place: "MSU",    
+    years: "2012-2016",
+    achievement: "Predicted electron fluxes with neural networks, data proccesed with Python & Numpy",
     isLast: true,
-  }
+  },
 ]

@@ -5,14 +5,15 @@ import ProgressUnit from "./ProgressUnit/ProgressUnit";
 const ProgressEducation: React.FC = () => {
   return (
     <div>
-      {PROGRESS_EDUCATION.map(({ string1, string2, string3, isLast, isMirrored, }) =>
+      {PROGRESS_EDUCATION.map(({ name, place, years, achievement, isLast, isMirrored, }) =>
         <ProgressUnit
-          string1={string1}
-          string2={string2}
-          string3={string3}
+          name={name}
+          place={place}
+          achievement={achievement}
+          years={years}
           isLast={isLast}
           isMirrored={isMirrored}
-          key={string1}
+          key={name}
         />
       )}
     </div>

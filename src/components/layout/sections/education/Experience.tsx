@@ -33,13 +33,13 @@ const Experience: React.FC = () => {
         <div className={styles.XP}>
           <ProgressEducation />
           <ProgressWork />
-        </div></MediaQuery>
+        </div>
+      </MediaQuery>
       <MediaQuery maxWidth={847}>
+        {HeaderExperience}
+        <ProgressWork className={styles.Experience} />
         {HeaderEducation}
         <ProgressEducation />
-        {HeaderExperience}
-        <div >
-          <ProgressWork className={styles.Experience}  /></div>
       </MediaQuery>
     </section>
   );

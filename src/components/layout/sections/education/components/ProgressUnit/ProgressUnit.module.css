@@ -4,31 +4,36 @@
     font-size: 18px;
     font-size: clamp(0.7em, 1.2vw, 0.5em); 
     transition: font-size .2s ease-in-out;
+    max-width: 25ch;
 }
 
+.Name {
+    font-size: 20px;
+    font-size: clamp(1.05em, 1.4vw, 0.7em); 
+    transition: font-size .2s ease-in-out;
+}
+
+.Achievement {
+    color: var(--text-secondary);
+    font-size: clamp(.9em, 1vw, 0.5em);
+    margin: 0.5em 0 2.5em;
+}
 
 .Years {    
     color: var(--text-secondary);
     font-size: 0.8em;
-    margin-top: 4px;
-    margin-bottom: 2em;
 } 
-
-.Name {
-    font-size: 20px;
-    font-size: clamp(0.9em, 1.4vw, 0.7em); 
-    transition: font-size .2s ease-in-out;
-}
 
 .isMirrored { 
     display: flex;
     flex-direction: row-reverse;
-    max-width: 25ch;
     text-align: right;
+    max-width: 25ch;
+    transform: translate(14px, 0);
 } 
 
 .isMirroredText {
-    margin-right: 14px;
+    margin-right: 14px; 
 }
 
 .TimePoint {

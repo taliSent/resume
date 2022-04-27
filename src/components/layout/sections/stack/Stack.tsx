@@ -13,11 +13,12 @@ const Stack: React.FC = () => {
         textSecondary="technologies I use"
       />
       <ul className={styles.Stack}>
-        <Bar technologyName="HTML" className={styles.HTML} />
+        <Bar technologyName="React" className={styles.React} />
+        <Bar technologyName="Typescript" className={styles.Typescript} />
+        <Bar technologyName="Vanilla&nbsp;Js" className={styles.Js} />
         <Bar technologyName="CSS" className={styles.CSS} />
-        <Bar technologyName="React" className={styles.React}  />
-        <Bar technologyName="Vanilla&nbsp;Js"  className={styles.Js} />
-        <Bar technologyName="Typescript"  className={styles.Typescript} />
+        <Bar technologyName="HTML" className={styles.HTML} />
+
       </ul>
     </section>
   );
