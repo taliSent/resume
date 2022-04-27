@@ -20,7 +20,7 @@ const Buttons: React.FC<ButtonsProps> = ({
   );
   const hideDetailsLabel = (
     <div className={styles.ButtonLabel}>
-      HideDetails <RiEyeCloseLine className="icon" />
+      Hide Details <RiEyeCloseLine className="icon" />
     </div>
   );
 
