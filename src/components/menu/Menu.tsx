@@ -38,7 +38,7 @@ const Menu: React.FC = () => {
             </HashLink>
         )}
         <div className={styles.ToggleThemeButton}>{theme === 'dark' ?
-          <BsFillSunFill size="20" color="white" onClick={toggleTheme} /> :
+          <BsFillSunFill size="20" onClick={toggleTheme} /> :
           <RiMoonFill size="20" onClick={toggleTheme} />}</div>
       </div>
       <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>

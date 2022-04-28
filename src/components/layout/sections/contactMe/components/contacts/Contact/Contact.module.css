@@ -10,7 +10,7 @@
 }
 
 .TextPrimary {
-    font-size: clamp(0.6em, 1.4vw, 0.95em);
+    font-size: clamp(0.6em, 1.4vw, 0.85em);
     font-weight: 600;
     position: relative;
 }
@@ -35,5 +35,5 @@
 
 .TextSecondary {
     color: var(--text-secondary);
-    font-size: clamp(0.5em, 1.2vw, 0.85em);
+    font-size: clamp(0.5em, 1.2vw, 0.75em);
 }

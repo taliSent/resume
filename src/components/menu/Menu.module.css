@@ -35,7 +35,7 @@
     width: 100%;
     left: 0;
     color: var(--header-color);
-    transform: translate3d(200%, 0, 0);
+    transform: translate3d(100%, 0, 0);
 }
 .HashLink:before {
     bottom: 5px;    
@@ -67,21 +67,29 @@
 }
 
 .HashLink:hover span {
-    transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
 }
-
-
-/* .HashLink:hover::before,
-.HashLink:focus::before {
-  transform-origin: 0% 50%;
-  transform: scaleX(1);
-} */
-
-
 
 .ToggleThemeButton {
     display: flex;
     align-self: baseline;
+}
+
+.ToggleThemeButton:hover {
+    animation: pulse 1s ease-in-out infinite; 
+
+}
+
+@keyframes pulse {
+    100% {
+        color: var(--text-color);
+    }
+    50% {
+        color: var(--header-color);
+    }
+    0% {
+        color: var(--text-color);
+    }
 }
 
 @media screen and (max-device-width: 857px) {

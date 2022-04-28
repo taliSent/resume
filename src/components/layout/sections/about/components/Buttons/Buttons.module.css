@@ -16,13 +16,12 @@
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
-    transition: letter-spacing 0.8s ease-in-out;
+    transition: letter-spacing 0.3s ease-in-out;
 }
-
 
 .Button:hover {
     letter-spacing: 0.13em;
-    transition: letter-spacing 0.8s ease-in-out;
+    transition: letter-spacing 0.3s ease-in-out;
 }
 
 .Button:active {
@@ -36,12 +35,13 @@
 
 .Download {
     background-color: var(--button-color);
-    border: 6px var(--button-color) solid;
+    border: 6px transparent solid;
     margin-right: 1.5em;
     animation: fadeButton 0.5s ease-in-out 3s forwards;
     -webkit-animation: fadeButton 0.5s ease-in-out 3s forwards;
     -moz-animation: fadeButton 0.5s ease-in-out 3s forwards;
     -o-animation: fadeButton 0.5s ease-in-out 3s forwards;
+    position: relative;
 }
 
 @keyframes fadeButton {
@@ -52,7 +52,7 @@
 
 .Download:hover {
     background-color: var(--progress-accent);
-    border: 6px var(--progress-accent) solid;
+    border: 6px transparent solid;
     transition: all 0.2s ease;
 }
 

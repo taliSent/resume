@@ -59,6 +59,7 @@
 
 @media screen and (max-width: 480px) {
     .About {
+        margin-top: 0;
         display: grid;
         justify-content: center;
         justify-items: center;
@@ -96,6 +97,7 @@
 
 @media screen and (max-device-width: 857px) {
     .About {
+        margin-top: 1em;
         flex-wrap: wrap;
     }
 
