@@ -7,15 +7,14 @@
     width: clamp(7em, 8vw, 8em);
     height: clamp(7em, 8vw, 8em);
     border-radius: 50%;
-    box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    box-shadow: 4px 4px .25em var(--shadow-color);
+    -webkit-box-shadow: 4px 4px .25em var(--shadow-color);
+    -moz-box-shadow: 4px 4px .25em var(--shadow-color);
     border: 4px white solid;
     animation: fadePhoto 1.5s ease-in-out forwards;
     -webkit-animation: fadePhoto 1.5s ease-in-out forwards;
     -moz-animation: fadePhoto 1.5s ease-in-out forwards;
     -o-animation: fadePhoto 1.5s ease-in-out forwards;
-    transition: all 0.2s ease-in-out;
 }
 
 @keyframes fadePhoto {

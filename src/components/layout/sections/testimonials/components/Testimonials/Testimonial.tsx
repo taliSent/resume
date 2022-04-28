@@ -25,7 +25,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 }: TestimonialProps) => {
   return (
     <div className={styles.Testimonial}>
-      <img src={photoSrc} alt="" className={styles.Photo} loading="lazy" />      
+      <img src={`${process.env.PUBLIC_URL}/${photoSrc}`} alt="" className={styles.Photo} loading="lazy" />      
       <div className={styles.CoworkerName}>{coworkerName}</div>
       <div className={styles.CoworkerPosition}>{coworkerPosition}</div>
       <span className={styles.Line} />

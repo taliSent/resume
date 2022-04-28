@@ -18,7 +18,7 @@
   --header-color: #807CBF;
   --hover-accent: #c3b1ff;
   --button-color: #C2DEBD;
-  --shadow-color: var(--button-color);  
+  --shadow-color: rgb(195, 177, 255, 0.25);
   --border-color: #DFFFD9;
   --progress-accent: #DFFFD9;
   --timeline-detail: var(--background-color);
@@ -38,7 +38,7 @@
   --button-color: #A7BFA3;
   --shadow-color: #151516;
   --border-color: var(--plate-color);
-  --progress-accent: #DFFFD9;
+  --progress-accent: #c7e7c1;
   --timeline-detail: #DFFFD9;
   --testimonial-gradient: linear-gradient(180deg, #2D2D2D 0%, #49445a 50%);
   --testimonial-border: 1px transparent solid;

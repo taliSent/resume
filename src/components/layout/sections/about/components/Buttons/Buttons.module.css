@@ -16,6 +16,15 @@
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
+    /* box-shadow: 0.3em 0.3em 1em var(--shadow-color);
+    -webkit-box-shadow: 0.3em 0.3em 1em var(--shadow-color);
+    -moz-box-shadow: 0.3em 0.3em 1em var(--shadow-color); */
+}
+
+.Button:hover {
+    box-shadow: 0.1em 0.1em .2em var(--shadow-color);
+    -webkit-box-shadow: 0.1em 0.1em 0.2em var(--shadow-color);
+    -moz-box-shadow: 0.1em 0.1em 0.2em var(--shadow-color);
 }
 
 .ButtonLabel {
@@ -40,9 +49,8 @@
 }
 
 .Download:hover {
-    color: var(--text-color);
-    background-color: var(--plate-color);
-    border: 6px var(--button-color) solid;
+    background-color: var(--progress-accent);
+    border: 6px var(--progress-accent) solid;
     transition: all 0.2s ease;
 }
 
@@ -50,6 +58,7 @@
     color: var(--text-color);
     background-color: var(--button-background-color);
     border-bottom: 6px var(--button-color) solid;
+    width: 18ch; 
     animation: fadeButton 0.5s ease-in-out 3.5s forwards;
     -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
     -moz-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
@@ -75,6 +84,7 @@
 .ShowDetails:hover {
     color: var(--background-color);
     background-color: rgb(128,124,191);
+    border-bottom: 6px var(--progress-accent) solid;
     transition: all 0.3s ease-out;
 }
 

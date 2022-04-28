@@ -11,7 +11,7 @@ const About: React.FC = () => {
   return (
     <section id="about">
       <div className={styles.About}>
-        <img src="img/photo.jpg" alt="" className={styles.Photo} loading="lazy" />
+        <img src={`${process.env.PUBLIC_URL}/img/photo.jpg`} alt="" className={styles.Photo} loading="lazy" />
         <div className={styles.Text}>
           <div className={styles.Profession}>Frontend&nbsp;developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>
