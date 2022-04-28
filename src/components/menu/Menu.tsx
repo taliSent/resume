@@ -31,9 +31,10 @@ const Menu: React.FC = () => {
               onClick={closeMenu}
               to={anchor}
               smooth
-              className={`${styles.HashLink}`}
+              className={styles.HashLink}
+              data-replace={name}
               key={name}>
-              {name}
+              <span>{name}</span>
             </HashLink>
         )}
         <div className={styles.ToggleThemeButton}>{theme === 'dark' ?
