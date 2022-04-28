@@ -23,14 +23,15 @@ const Testimonials = () => {
         }}
         wrapAround={true}
       >
-        {CARDS.map(({ photoSrc, coworkerName, coworkerPosition, text, telegram, linkedIn, instagram }) =>
+        {CARDS.map(({ photoSrc, coworkerName, coworkerPosition, text, telegram, linkedIn, habr, instagram }) =>
           <Testimonial
             photoSrc={photoSrc}
             coworkerName={coworkerName}
             coworkerPosition={coworkerPosition}
             text={text}
             telegram={telegram}
-            linkedIn={linkedIn}
+            linkedIn={linkedIn}            
+            habr={habr}
             instagram={instagram}
             key={coworkerName}
           />
