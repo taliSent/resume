@@ -19,7 +19,7 @@ const Description: React.FC<DescriptionProps> = ({ showDetails }: DescriptionPro
       <br />
       Web-development is not only my job, it's also my <span className={styles.Underline}>hobby</span>. I like learning new features, taking courses and running marathons.
       <br />
-      My goal is to create <span className={styles.Underline}>comfortable</span> working atmosphere for my collegues, my customers, and myself.
+      My goal is to create a <span className={styles.Underline}>comfortable</span> workspace for my colleagues, my customers, and myself.
     </div>
   );
 };

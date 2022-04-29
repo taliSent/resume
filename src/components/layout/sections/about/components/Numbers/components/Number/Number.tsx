@@ -4,7 +4,7 @@ import styles from "./Number.module.css";
 type NumberProps = {
   number: string;
   text: string;
-  className: any;
+  className: string;
 };
 
 const Number: React.FC<NumberProps> = ({
