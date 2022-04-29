@@ -43,7 +43,7 @@ const CARDS = [
     coworkerName: "Nizami Mamedov",
     coworkerPosition: "senior product manager",
     text: <>
-    During my work with Natalya I've got the following impression about her:
+    During my work with Natalya I've got the following impression of her:
       <ul>
         <li>
           She's got great communication soft skills (life and work communications are pleasant)
