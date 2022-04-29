@@ -36,7 +36,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className={styles.IconsSocial}>
         {telegram && <a href={`https://t.me/${telegram}`} target="_blank" rel="noreferrer"><ImTelegram className={styles.ImTelegram} size="22" /></a>}
         {linkedIn && <a href={linkedIn} target="_blank" rel="noreferrer"><TiSocialLinkedinCircular className={styles.TiSocialLinkedinCircular} size="30" /></a>}
-        {habr && <a href={habr} target="_blank" rel="noreferrer"><SiHabr size="28" className={styles.SiHabr} /></a>}
+        {habr && <a href={habr} target="_blank" rel="noreferrer"><SiHabr size="24" className={styles.SiHabr} /></a>}
         {instagram && <a href={`https://instagram.com/${instagram}`} target="_blank" rel="noreferrer"><BsInstagram size="20" /></a>}
       </div>
     </div>

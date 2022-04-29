@@ -7,3 +7,8 @@
 .Icon {
     margin-right: 12px;
 }
+
+.LinkToTheTop {
+    display: flex;
+    justify-content: end;
+}

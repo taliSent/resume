@@ -22,7 +22,7 @@
   --border-color: #DFFFD9;
   --progress-accent: #DFFFD9;
   --timeline-detail: var(--background-color);
-  --testimonial-border: 1px var(--header-color) solid;
+  --testimonial-border: thin var(--header-color) solid;
   --testimonial-gradient: linear-gradient(180deg, var(--plate-color) 0%, rgba(247, 245, 245, 1) 50%);
   --controls-color: #D9D9D9;
 }
@@ -41,7 +41,7 @@
   --progress-accent: #c7e7c1;
   --timeline-detail: #DFFFD9;
   --testimonial-gradient: linear-gradient(180deg, #2D2D2D 0%, #49445a 50%);
-  --testimonial-border: 1px transparent solid;
+  --testimonial-border: thin transparent solid;
   --controls-color: #2D2D2D;
 }
 

@@ -43,12 +43,13 @@ const CARDS = [
     coworkerName: "Nizami Mamedov",
     coworkerPosition: "senior product manager",
     text: <>
+    During my work with Natalya I've got the following impression about her:
       <ul>
         <li>
-          Communication soft skills (life and work communications are pleasant)
+          She's got great communication soft skills (life and work communications are pleasant)
         </li>
-        <li>Team player</li>
-        <li>Quickly puzzled out the project and started to deal with serious tasks</li>
+        <li>She's a team player</li>
+        <li>She quickly puzzled out the project and started to deal with serious tasks</li>
       </ul>
       <br />
     </>,
