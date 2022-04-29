@@ -17,3 +17,32 @@
     width: 15ch;
     text-align: center;
 }
+
+.One {
+    opacity: 0;
+    animation: fadeOne 0.8s ease-in-out 1.2s forwards;
+}
+
+
+.Two {
+    opacity: 0;
+    animation: fadeOne 1.5s ease-in-out 2s forwards;
+}
+
+.Three {
+    opacity: 0;
+    animation: fadeOne 1s ease-in-out 1.6s forwards;
+}
+
+
+@keyframes fadeOne {
+    from {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

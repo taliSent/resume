@@ -4,13 +4,14 @@ import styles from "./Number.module.css";
 type NumberProps = {
   number: string;
   text: string;
+  className: any;
 };
 
 const Number: React.FC<NumberProps> = ({
-  number, text
+  number, text, className
 }: NumberProps) => {
   return (
-    <div className={styles.NumberContainer}>
+    <div className={`${styles.NumberContainer} ${styles[className]}`}>
         <div className={styles.Number}>
           {number}
         </div>
