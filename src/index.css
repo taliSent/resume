@@ -12,7 +12,7 @@
   6px 6.7px 17.9px rgba(0, 0, 0, 0.042),
   11.3px 12.5px 33.4px rgba(0, 0, 0, 0.05),
   27px 30px 80px rgba(0, 0, 0, 0.07);
-  /* transition: background-color .1s ease-out; */
+  transition: background-color .2s ease-out; 
 }
 
 [data-theme='light'] {
@@ -26,12 +26,11 @@
   --button-color: #C2DEBD;
   --show-details-background-color: rgb(100%, 100%, 100%, 0.07);
   --show-details-color: var(--progress-accent);
-  --shadow-color: rgb(195, 177, 255, 0.25);
   --border-color: transparent;
   --progress-accent: #DFFFD9;
   --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
-  --testimonial-gradient: linear-gradient(180deg, var(--plate-color) 0%, rgba(247, 245, 245, 1) 50%);
+  --testimonial-gradient: linear-gradient(180deg, var(--plate-color) 0%, #e7e6eb 50%);
   --controls-color: #D9D9D9;
 }
 
@@ -46,7 +45,6 @@
   --header-color: #cdc3f1;
   --hover-accent: #807CBF;
   --button-color: #A7BFA3;
-  --shadow-color: #151516;
   --border-color: var(--plate-color);
   --progress-accent: #c7e7c1;
   --timeline-detail: #9494941c;
@@ -92,9 +90,4 @@ section:last-child {
 ::selection {
   background-color: var(--selected-text-background);
   color: var(--background-color);
-}
-
-.Wave {
-  background: url('./../public/img/wave.png') bottom no-repeat;
-  background-size: 100%;
 }

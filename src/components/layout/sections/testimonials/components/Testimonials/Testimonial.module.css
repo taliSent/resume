@@ -9,14 +9,6 @@
     border-radius: 8px;
     margin-bottom: 2.5em;
     border: var(--testimonial-border);
-    box-shadow:
-        0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02),
-        1.8px 2px 5.3px rgba(0, 0, 0, 0.028),
-        3.4px 3.8px 10px rgba(0, 0, 0, 0.035),
-        6px 6.7px 17.9px rgba(0, 0, 0, 0.042),
-        11.3px 12.5px 33.4px rgba(0, 0, 0, 0.05),
-        27px 30px 80px rgba(0, 0, 0, 0.07);
-
     margin-inline: auto;
     position: relative;
 }
@@ -27,6 +19,8 @@
     width: min(2.6em, 14vw);
     height: min(2.6em, 14vw);
     border-radius: 100%;
+    border: 2px var(--header-color) solid;
+    box-shadow: var(--box-shadow);
     margin-bottom: 1em;
 }
 
