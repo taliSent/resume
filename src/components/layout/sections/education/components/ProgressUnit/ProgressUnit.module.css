@@ -40,7 +40,7 @@
     width: 0.8em;
     height: 0.8em;
     border-radius: 50%;
-    background-color: var(--text-color);
+    background-color: var(--header-color);
     margin-right: 14px;
     position: relative;
     z-index: 1;
