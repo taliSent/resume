@@ -1,5 +1,7 @@
 .Menu {
-    margin-bottom: 3.5em;
+    padding: 1.2em 0 0.8em;
+    width: 60vw;
+    margin-inline: auto; 
 }
 
 .HashLinks {
@@ -20,7 +22,56 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    opacity: 0;
 }
+
+.HashLink:nth-child(1) {
+    animation: blurText 1.5s ease-in-out forwards;
+    -webkit-animation: blurText 1.5s ease-in-out forwards;
+    -moz-animation: blurText 1.5s ease-in-out forwards;
+    -o-animation: blurText 1.5s ease-in-out forwards; 
+}
+
+.HashLink:nth-child(2) {
+    animation: blurText .5s ease-in-out forwards;
+    -webkit-animation: blurText .5s ease-in-out forwards;
+    -moz-animation: blurText .5s ease-in-out forwards;
+    -o-animation: blurText .5s ease-in-out forwards; 
+}
+
+.HashLink:nth-child(3) {
+    animation: blurText 1s ease-in-out forwards;
+    -webkit-animation: blurText 1s ease-in-out forwards;
+    -moz-animation: blurText 1s ease-in-out forwards;
+    -o-animation: blurText 1s ease-in-out forwards; 
+}
+.HashLink:nth-child(4) {
+    animation: blurText 1.8s ease-in-out forwards;
+    -webkit-animation: blurText 1.8s ease-in-out forwards;
+    -moz-animation: blurText 1.8s ease-in-out forwards;
+    -o-animation: blurText 1.8s ease-in-out forwards; 
+}
+
+@keyframes blurText {
+    from {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        color: var(--text-color);
+        text-shadow: none;
+    }
+} 
+
+/* .HashLink:nth-child(5) {
+    animation: blurText .3s ease-in-out forwards;
+    -webkit-animation: blurText .3s ease-in-out forwards;
+    -moz-animation: blurText .3s ease-in-out forwards;
+    -o-animation: blurText .3s ease-in-out forwards; 
+} */
 
 
 .HashLink span {
@@ -100,7 +151,7 @@
         top: 0;
         right: 0;
         width: 100%;
-        background: linear-gradient(184deg, var(--plate-color) 15%, rgba(255, 255, 255, 0.1) 100%);
+        background: linear-gradient(184deg, var(--background-color) 15%, rgba(255, 255, 255, 0.1) 100%);
         backdrop-filter: blur(4px);
         padding: 0.5em 1.1em;
         height: 100%;

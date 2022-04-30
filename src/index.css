@@ -6,22 +6,30 @@
   box-sizing: border-box;
   --ff-primary: Quicksand, NanumMyeongjo, sans-serif;
   --ff-accent: Comfortaa, Nunito, cursive;
-  transition: background-color .1s ease-out;
+  --box-shadow: 0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02),
+  1.8px 2px 5.3px rgba(0, 0, 0, 0.028),
+  3.4px 3.8px 10px rgba(0, 0, 0, 0.035),
+  6px 6.7px 17.9px rgba(0, 0, 0, 0.042),
+  11.3px 12.5px 33.4px rgba(0, 0, 0, 0.05),
+  27px 30px 80px rgba(0, 0, 0, 0.07);
+  /* transition: background-color .1s ease-out; */
 }
 
 [data-theme='light'] {
   --text-color: #262526;
   --text-secondary: #73594B;
   --selected-text-background: #525073;
-  --background-color: #D9D9D9;
-  --plate-color: white;
+  --background-color: #f8f8f8;
+  --plate-color: transparent;
   --header-color: #807CBF;
   --hover-accent: #c3b1ff;
   --button-color: #C2DEBD;
+  --show-details-background-color: rgb(100%, 100%, 100%, 0.07);
+  --show-details-color: var(--progress-accent);
   --shadow-color: rgb(195, 177, 255, 0.25);
-  --border-color: #DFFFD9;
+  --border-color: transparent;
   --progress-accent: #DFFFD9;
-  --timeline-detail: var(--background-color);
+  --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
   --testimonial-gradient: linear-gradient(180deg, var(--plate-color) 0%, rgba(247, 245, 245, 1) 50%);
   --controls-color: #D9D9D9;
@@ -31,15 +39,17 @@
   --text-color: #D9D9D9;
   --text-secondary: #EDD9CE;
   --selected-text-background: #c3b1ff;
-  --background-color: #121212;
-  --plate-color: #1D1D1D;  
-  --header-color: #b7b1cd;
+  --background-color: #1D1D1D;
+  --show-details-background-color: rgb(100%, 100%, 100%, 0.07);
+  --show-details-color: var(--background-color);
+  --plate-color: transparent;  
+  --header-color: #cdc3f1;
   --hover-accent: #807CBF;
   --button-color: #A7BFA3;
   --shadow-color: #151516;
   --border-color: var(--plate-color);
   --progress-accent: #c7e7c1;
-  --timeline-detail: #DFFFD9;
+  --timeline-detail: #9494941c;
   --testimonial-gradient: linear-gradient(180deg, #2D2D2D 0%, #49445a 50%);
   --testimonial-border: thin transparent solid;
   --controls-color: #2D2D2D;
@@ -58,7 +68,7 @@ body {
 #root_ {
   width: 100%;
   height: 100%;
-  background-color: var(--background-color);
+  background-color: var(--background-color); 
   color: var(--text-color);
 }
 
@@ -82,4 +92,9 @@ section:last-child {
 ::selection {
   background-color: var(--selected-text-background);
   color: var(--background-color);
+}
+
+.Wave {
+  background: url('./../public/img/wave.png') bottom no-repeat;
+  background-size: 100%;
 }

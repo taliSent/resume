@@ -1,4 +1,5 @@
 import React from 'react';
+import Links from '../links/Links';
 import About from './sections/about/About';
 import ContactMe from './sections/contactMe/ContactMe';
 import Experience from './sections/education/Experience';

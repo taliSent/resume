@@ -6,6 +6,7 @@ import MediaQuery from 'react-responsive';
 import { BsArrowUpCircle } from 'react-icons/bs';
 import { HashLink } from 'react-router-hash-link';
 import styles from "./ContactMe.module.css";
+import Links from "../../../links/Links";
 
 const ContactMe = () => {
   return (
@@ -18,7 +19,8 @@ const ContactMe = () => {
       <Contacts />
       <MediaQuery minWidth={849}>
         <HashLink to="#top" className={styles.LinkToTheTop} smooth><BsArrowUpCircle size="22" /></HashLink>
-      </MediaQuery>
+      </MediaQuery>   
+      <Links />
     </section>
   );
 };

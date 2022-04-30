@@ -1,17 +1,17 @@
 
 .Container {
     padding: 1.1em 5%; 
-    width: clamp(300px, 90%, 40.5rem); 
+    width: clamp(300px, 90%, 45.5rem); 
     margin-inline: auto; 
-    border-radius: 0 0 8px 8px;
-    -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    background-color: var(--plate-color);
+    border-radius: 0.5em;
     margin-bottom: 2em;
     border: 4px var(--border-color) solid;
-    transition: background-color .3s ease-in-out;
 }
+
+.Wave {
+    background: url('./../public/img/wave.png') bottom no-repeat;
+    background-size: 100%;
+  }
 
 @media screen and (max-device-width: 480px) {
     .Container {

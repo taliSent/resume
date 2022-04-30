@@ -1,15 +1,14 @@
 .About {
     display: flex;
     justify-content: center;
+    margin-top: 3em;
 }
 
 .Photo {
     width: clamp(7em, 8vw, 8em);
     height: clamp(7em, 8vw, 8em);
     border-radius: 50%;
-    box-shadow: 4px 4px .25em var(--shadow-color);
-    -webkit-box-shadow: 4px 4px .25em var(--shadow-color);
-    -moz-box-shadow: 4px 4px .25em var(--shadow-color);
+    box-shadow: var(--box-shadow);
     border: 4px white solid;
     animation: fadePhoto 1.5s ease-in-out forwards;
     -webkit-animation: fadePhoto 1.5s ease-in-out forwards;
@@ -31,16 +30,16 @@
 
 .Text {
     align-self: center;
-    margin-left: clamp(1.4em, 1vw, 2.1em);
+    margin-left: clamp(1.4em, 5vw, 2.5em);
 }
 
 
 .Profession {
     color: var(--header-color);
     font-family: var(--ff-accent);
-    font-size: clamp(calc(0.2vw + .8em), 3.2vw, 1em);
+    font-size: clamp(calc(0.2vw + .8em), 3.2vw, 1.3em);
     text-align: right;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
     font-weight: 400;
     transform: translateY(-25%);
     opacity: 0;
@@ -79,7 +78,7 @@
 .Stack {
     font-size: clamp(0.6em, .4vw, 1.2em);
     text-align: right;
-    margin-bottom: 1.8em;
+    margin-bottom: 2em;
     letter-spacing: .19rem;
     opacity: 0;
     animation: fadeStack 1.5s ease-in-out 1.8s forwards;

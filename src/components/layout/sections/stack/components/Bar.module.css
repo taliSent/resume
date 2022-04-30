@@ -13,8 +13,8 @@
     display: inline-block;
     position: relative;
     border-radius: 15px;
-    background-color: var(--background-color);
-    box-shadow: 2px 2px 4px 0px var(--shadow-color);
+    background-color: var(--timeline-detail);
+    box-shadow: var(--box-shadow);
 }
 
 .ProgressLevel {
@@ -24,3 +24,6 @@
     background: linear-gradient(41deg, var(--button-color) 0%,  var(--progress-accent) 50%); 
 }
 
+.Bar:nth-child(1) .Scrolled {
+
+}

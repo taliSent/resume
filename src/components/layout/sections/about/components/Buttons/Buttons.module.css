@@ -16,6 +16,7 @@
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
+    box-shadow: var(--box-shadow);
     transition: letter-spacing 0.3s ease-in-out;
 }
 
@@ -58,7 +59,7 @@
 
 .ShowDetails {
     color: var(--text-color);
-    background-color: var(--button-background-color);
+    background-color: var(--show-details-background-color);
     border-bottom: 6px var(--button-color) solid;
     animation: fadeButton 0.5s ease-in-out 3.5s forwards;
     -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
@@ -83,7 +84,7 @@
 }
 
 .ShowDetails:hover {
-    color: var(--background-color);
+    color: var(--show-details-color);
     background-color: rgb(128, 124, 191);
     border-bottom: 6px var(--progress-accent) solid;
     transition: all 0.3s ease-out;
