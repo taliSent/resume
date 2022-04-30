@@ -24,6 +24,21 @@
     background: linear-gradient(41deg, var(--button-color) 0%,  var(--progress-accent) 50%); 
 }
 
-.Bar:nth-child(1) .Scrolled {
+.Bar:nth-child(1).Scrolled {
+    animation: scroll 1.5s ease-in-out forwards;
+    -webkit-animation: scroll 1.5s ease-in-out forwards;
+    -moz-animation: scroll 1.5s ease-in-out forwards;
+    -o-animation: scroll 1.5s ease-in-out forwards;
+}
 
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

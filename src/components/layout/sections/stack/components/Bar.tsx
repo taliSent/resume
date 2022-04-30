@@ -7,10 +7,11 @@ type BarProps = {
 };
 
 const Bar: React.FC<BarProps> = ({ technologyName, className }: BarProps) => {
+  // const [isScrolled, setIsScrolled ] isScrolled && 
   return (
     <li>
       <div className={styles.Name}>{technologyName}</div>
-      <div className={styles.Bar}><div className={`${styles.ProgressLevel} ${className}`}></div></div>
+      <div className={styles.Bar}><div className={`${styles.ProgressLevel} ${className} ${styles.Scrolled}`}></div></div>
     </li>
   );
 };

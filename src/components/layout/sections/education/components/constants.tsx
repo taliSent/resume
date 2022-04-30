@@ -33,7 +33,7 @@ export const PROGRESS_WORK: ProgressUnitProps[] = [
 
 export const PROGRESS_EDUCATION: ProgressUnitProps[] = [
   {
-    name: "React Maraphon",
+    name: "React Marathon",
     place: "Zar Zacharov",
     achievement: "A month of\xa0intense work on a\xa0card game.",
     years: "2021",

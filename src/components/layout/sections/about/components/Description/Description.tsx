@@ -17,7 +17,7 @@ const Description: React.FC<DescriptionProps> = ({ showDetails }: DescriptionPro
       <br />
       I work remotely just as effective as in office. Currently, I live in Armenia, but I would prefer to <span className={styles.Underline}>relocate.</span>
       <br />
-      Web-development is not only my job, it's also my <span className={styles.Underline}>hobby</span>. I like learning new features, taking courses and running marathons.
+      Web-development is not only my job, it's also my <span className={styles.Underline}>hobby</span>. I like learning new features, taking courses and challenges.
       <br />
       My goal is to create a <span className={styles.Underline}>comfortable</span> workspace for my colleagues, my customers, and myself.
     </div>
