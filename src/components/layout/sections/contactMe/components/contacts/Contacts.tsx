@@ -13,7 +13,9 @@ const Contacts: React.FC = () => {
           textSecondary={textSecondary}
           icon={icon}
           key={href}
-        />)}
+        />
+        )}
+
     </div>
   );
 };

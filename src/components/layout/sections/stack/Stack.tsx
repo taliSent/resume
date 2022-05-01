@@ -5,10 +5,6 @@ import Bar from "./components/Bar";
 import styles from "./Stack.module.css";
 
 const Stack: React.FC = () => {
-  // const handleScroll = () => {
-
-  // }
-
   return (
     <section id="stack">
       <Header
@@ -16,14 +12,13 @@ const Stack: React.FC = () => {
         icon={<GiTechnoHeart className="icon" />}
         textSecondary="technologies I use"
       />
-      <ul className={styles.Stack}>
-        <Bar technologyName="React" className={styles.React} />
-        <Bar technologyName="Typescript" className={styles.Typescript} />
-        <Bar technologyName="Vanilla&nbsp;Js" className={styles.Js} />
-        <Bar technologyName="CSS" className={styles.CSS} />
-        <Bar technologyName="HTML" className={styles.HTML} />
-
-      </ul>
+        <ul className={styles.Stack}>
+          <Bar technologyName="React" className={styles.React} />      
+          <Bar technologyName="Typescript" className={styles.Typescript} />
+          <Bar technologyName="Vanilla&nbsp;Js" className={styles.Js} />
+          <Bar technologyName="CSS" className={styles.CSS} />
+          <Bar technologyName="HTML" className={styles.HTML} />
+        </ul>
     </section>
   );
 };

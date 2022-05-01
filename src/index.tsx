@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeWrapper>
-        <App />
+          <App />
       </ThemeWrapper>
     </BrowserRouter>
   </React.StrictMode>,

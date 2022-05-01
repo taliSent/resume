@@ -15,13 +15,14 @@ const Contact: React.FC<ContactProps> = ({
   icon,
 }: ContactProps) => {
   return (
+    <div data-aos="fade-up">
       <a href={href} className={styles.Contact}>
         {icon}
         <div className={styles.TextContainer}>
           <div className={styles.TextPrimary}>{textPrimary}</div>
           <div className={styles.TextSecondary}>{textSecondary}</div>
         </div>
-      </a>
+      </a></div>
   );
 };
 export default Contact;

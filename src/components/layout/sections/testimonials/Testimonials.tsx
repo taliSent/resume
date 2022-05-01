@@ -14,6 +14,7 @@ const Testimonials = () => {
         icon={<RiDoubleQuotesR className="icon" />}
         textSecondary="what my colleagues say"
       />
+      <div data-aos="fade-up">
       <Carousel
         defaultControlsConfig={{
           nextButtonText: ">",
@@ -37,6 +38,7 @@ const Testimonials = () => {
           />
         )}
       </Carousel>
+      </div>
     </section>
   );
 };

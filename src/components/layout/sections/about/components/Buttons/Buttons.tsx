@@ -27,7 +27,9 @@ const Buttons: React.FC<ButtonsProps> = ({
   return (
     <div className={styles.ButtonContainer}>
       <a href={`${process.env.PUBLIC_URL}/CV_Sentemova.pdf`} download>  <button className={`${styles.Button} ${styles.Download}`}>
-        <div>Download CV <HiDownload /></div>
+        <div>
+          Download CV <HiDownload />
+        </div>
       </button>
       </a>
       <button

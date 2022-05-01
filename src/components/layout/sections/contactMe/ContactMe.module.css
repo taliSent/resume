@@ -1,5 +1,6 @@
 .LinkToTheTop {
-    display: flex;
-    justify-content: end;
+    position: fixed;
+    bottom: 2%;
+    right: 10%;
     color: var(--text-secondary);
 }

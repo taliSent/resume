@@ -75,7 +75,7 @@
     bottom: 0;
     left: 0;
     transform: scaleY(0);
-    background-color: rgb(128, 124, 191);
+    background-color: var(--header-color);
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -85,7 +85,7 @@
 
 .ShowDetails:hover {
     color: var(--show-details-color);
-    background-color: rgb(128, 124, 191);
+    background-color: var(--header-color);
     border-bottom: 6px var(--progress-accent) solid;
     transition: all 0.3s ease-out;
 }

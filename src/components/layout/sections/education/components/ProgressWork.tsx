@@ -8,18 +8,19 @@ type ProgressWorkProps = {
 
 const ProgressWork: React.FC<ProgressWorkProps> = ({ className }) => {
   return (
-    <div className={className}>
-      {PROGRESS_WORK.map(({ name, place, years, achievement, isLast, isMirrored, }) =>
-        <ProgressUnit
-          name={name}
-          place={place}
-          achievement={achievement}
-          years={years}
-          isLast={isLast}
-          isMirrored={isMirrored}
-          key={name}
-        />
-      )}
+    <div data-aos="fade-up" data-aos-duration="300">
+      <div className={className}>
+        {PROGRESS_WORK.map(({ name, place, years, achievement, isLast, isMirrored, }) =>
+          <ProgressUnit
+            name={name}
+            place={place}
+            achievement={achievement}
+            years={years}
+            isLast={isLast}
+            isMirrored={isMirrored}
+            key={name}
+          />
+        )}</div>
     </div>
   );
 };

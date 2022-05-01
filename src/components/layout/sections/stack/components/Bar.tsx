@@ -7,12 +7,13 @@ type BarProps = {
 };
 
 const Bar: React.FC<BarProps> = ({ technologyName, className }: BarProps) => {
-  // const [isScrolled, setIsScrolled ] isScrolled && 
   return (
+    <div data-aos="fade-up">
     <li>
       <div className={styles.Name}>{technologyName}</div>
       <div className={styles.Bar}><div className={`${styles.ProgressLevel} ${className} ${styles.Scrolled}`}></div></div>
     </li>
+    </div>
   );
 };
 export default Bar;
