@@ -8,7 +8,7 @@ import { ThemeContext } from "./context/context";
 
 const App = () => {
   useEffect(()=> {
-    AOS.init({easing: "ease-in-out", duration: 700 });
+    AOS.init({easing: "ease-in-out", duration: 700, once: true });
   }, [])
 
   const { theme } = useContext(ThemeContext);
