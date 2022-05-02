@@ -1,13 +1,14 @@
 .Link {
-    margin-right: 1.2em;
+    margin-top: 1.2em;
     transform: translateY(0);
     transition: transform 0.4s ease-in-out;
 }
 
-.Link:hover {
-    transform: translateY(-10%);
-    transition: transform 0.4s ease-in-out; 
-
+@media screen and (min-device-width: 857px) {
+    .Link:hover {
+        transform: translateY(-10%);
+        transition: transform 0.4s ease-in-out;
+    }
 }
 
 .Links {
@@ -15,6 +16,6 @@
     align-content: center;
     justify-content: center;
     flex-direction: row;
+    gap: 0.5em;
     padding-top: 2em;
-    padding-bottom: 2em;
 }
