@@ -1,6 +1,13 @@
 .Link {
     margin-right: 1.2em;
-    color: var(--header-color);
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.Link:hover {
+    transform: translateY(-10%);
+    transition: transform 0.4s ease-in-out; 
+
 }
 
 .Links {

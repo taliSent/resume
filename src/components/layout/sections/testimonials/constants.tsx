@@ -18,7 +18,7 @@ const CARDS = [
     photoSrc: "img/Masha.jpg",
     coworkerName: "Maria Condaurova",
     coworkerPosition: "frontend developer",
-    text: <>I've been working with Natalya in Cinimex for about half a year. Natalya appeared to be a responsible developer. 
+    text: <>I've been working with Natalya in Cinimex for about half a year. Natalya appeared to be a reliable developer. 
     She responded appropriately to the code-review, made suggestions to tasks solution.
     <br />
     She might want to speak louder on meet-ups :)       
