@@ -1,13 +1,21 @@
-.Link {
-    margin-right: 1.2em;
-    color: var(--header-color);
-}
-
 .Links {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: row;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    gap: 0.5em;
+    margin-top: 3.2em;
+    margin-bottom: 2em;
 }
+
+.Link {
+    transition: transform 0.4s ease-in-out;
+}
+
+ @media screen and (min-device-width: 857px) {
+    .Link:hover {
+        transform: translateY(-10%);
+        transition: transform 0.4s ease-in-out;
+    }
+} 
+
