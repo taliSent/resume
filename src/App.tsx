@@ -8,11 +8,11 @@ import { ThemeContext } from "./context/context";
 
 const App = () => {
   useEffect(()=> {
-    AOS.init({easing: "ease-in-out"});
+    AOS.init({easing: "ease-in-out", duration: 700 });
   }, [])
 
   const { theme } = useContext(ThemeContext);
-  
+
   return (
     <div data-theme={theme} id="root_">
       <div className={styles.Wave}>

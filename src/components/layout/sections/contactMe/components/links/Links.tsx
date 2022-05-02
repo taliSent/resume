@@ -22,7 +22,7 @@ const Links: React.FC = () => {
         </a>
       </div>
 
-      <div data-aos="fade-up" data-aos-duration="500">
+      <div data-aos="fade-up" data-aos-duration="800">
         <a
           href={linkedinLink}
           className={styles.Link}
