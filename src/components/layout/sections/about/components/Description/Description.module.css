@@ -41,9 +41,29 @@
 }
 
 .Underline {
-    text-decoration: var(--header-color) underline 4px;
+    text-decoration: var(--header-color) underline 2px;
 }
 
 .Interchangeble {
     position: relative;
+}
+
+.Arrow {
+    transform: translate(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.Arrow:hover {
+    transform: translate(5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.HashLink {
+    letter-spacing: 0.09rem;
+    transition: letter-spacing 0.3s ease-in-out;
+}
+
+.HashLink:hover {
+    letter-spacing: 0.13rem;
+    transition: letter-spacing 0.3s ease-in-out;
 }
