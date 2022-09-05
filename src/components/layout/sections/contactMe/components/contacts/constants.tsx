@@ -2,32 +2,32 @@ import { BsTelegram } from "react-icons/bs";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
-const myTg = "https://t.me/TaliSent";
-const myMail = "ns.sent@yandex.ru";
-const myPhone = "+3043068596";
+const MY_TG = "https://t.me/TaliSent";
+const MY_MAIL = "ns.sent@yandex.ru";
+const MY_PHONE = "+79688899087";
 
 const style = {
-  marginRight: '12px',
-}
+  marginRight: "12px",
+};
 
 const CONTACTS = [
   {
-    href: myTg,
+    href: MY_TG,
     textPrimary: "Text me",
     textSecondary: "TaliSent",
-    icon: <BsTelegram style={style} size="30" />
+    icon: <BsTelegram style={style} size="30" />,
   },
   {
-    href: `mailto: ${myMail}`,
+    href: `mailto: ${MY_MAIL}`,
     textPrimary: "Email me",
     textSecondary: "ns.sent@yandex.ru",
-    icon: <MdOutlineAlternateEmail style={style} size="30" />
+    icon: <MdOutlineAlternateEmail style={style} size="30" />,
   },
   {
-    href: `tel: ${myPhone}`,
+    href: `tel: ${MY_PHONE}`,
     textPrimary: "Call me",
-    textSecondary: myPhone,
-    icon: <FiPhone style={style} size="30" />
+    textSecondary: MY_PHONE,
+    icon: <FiPhone style={style} size="30" />,
   },
 ];
 

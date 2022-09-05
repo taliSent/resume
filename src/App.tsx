@@ -1,5 +1,5 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import React, { useContext, useEffect } from "react";
 import styles from "./App.module.css";
 import Layout from "./components/layout/Layout";
@@ -7,9 +7,9 @@ import Menu from "./components/menu/Menu";
 import { ThemeContext } from "./context/context";
 
 const App = () => {
-  useEffect(()=> {
-    AOS.init({easing: "ease-in-out", duration: 700, once: true });
-  }, [])
+  useEffect(() => {
+    AOS.init({ easing: "ease-in-out", duration: 700, once: true });
+  }, []);
 
   const { theme } = useContext(ThemeContext);
 
@@ -22,7 +22,6 @@ const App = () => {
         </div>
       </div>
     </div>
-
   );
 };
 

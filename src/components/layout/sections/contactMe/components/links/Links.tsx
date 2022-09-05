@@ -3,22 +3,17 @@ import { FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import styles from "./Links.module.css";
 
-const LINKS_COLOR = 'rgb(128, 124, 191)';
+const LINKS_COLOR = "rgb(128, 124, 191)";
 
 const Links: React.FC = () => {
-  const gitHubLink = "https://github.com/taliSent/";
-  const linkedinLink =
-    "https://www.linkedin.com/in/natalya-sentemova-131a2baa/";
-
+  const GITHUB = "https://github.com/taliSent/";
+  const LINKEDIN = "https://www.linkedin.com/in/natalya-sentemova-131a2baa/";
 
   return (
     <div className={styles.Links}>
       <div className={styles.Link}>
-        <div data-aos="fade-up" >
-          <a
-            href={gitHubLink}
-            target="_blank"
-            rel="noreferrer">
+        <div data-aos="fade-up">
+          <a href={GITHUB} target="_blank" rel="noreferrer">
             <FiGithub size="45" color={LINKS_COLOR} />
           </a>
         </div>
@@ -27,10 +22,11 @@ const Links: React.FC = () => {
       <div data-aos="fade-up" data-aos-duration="800">
         <div className={styles.Link}>
           <a
-            href={linkedinLink}
+            href={LINKEDIN}
             className={styles.Link}
             target="_blank"
-            rel="noreferrer">
+            rel="noreferrer"
+          >
             <FaLinkedin size="45" color={LINKS_COLOR} />
           </a>
         </div>
