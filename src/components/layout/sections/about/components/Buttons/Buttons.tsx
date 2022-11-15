@@ -3,7 +3,9 @@ import { AiOutlineEye } from "react-icons/ai";
 import { HiDownload } from "react-icons/hi";
 import { RiEyeCloseLine } from "react-icons/ri";
 import styles from "./Buttons.module.css";
+
 const DOWNLOAD_CV_URL = `${process.env.PUBLIC_URL}/CV_Sentemova.pdf`;
+
 type ButtonsProps = {
   showDetails: boolean;
   onClick: () => void;
