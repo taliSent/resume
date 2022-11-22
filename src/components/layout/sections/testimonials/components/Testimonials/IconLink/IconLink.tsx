@@ -1,5 +1,4 @@
 import React, { ReactElement } from "react";
-import styles from "./IconLink.module.css";
 
 type IconLinkProps = {
   href?: string;
