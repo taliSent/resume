@@ -1,12 +1,4 @@
 
-.Container {
-    padding: 1.1em 5%; 
-    width: clamp(300px, 90%, 45.5rem); 
-    margin-inline: auto; 
-    border-radius: 0.5em;
-    border: 4px var(--border-color) solid;
-}
-
 .Wave {
     background: url('./../public/img/wave.png') bottom no-repeat;
     background-size: 100%;

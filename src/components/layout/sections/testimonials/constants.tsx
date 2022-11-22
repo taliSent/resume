@@ -1,8 +1,8 @@
 import React from "react";
-
+const PHOTO_PATH = "img/testimonials";
 const CARDS = [
   {
-    photoSrc: "img/Denis.jpg",
+    photoSrc: `${PHOTO_PATH}/Denis.jpg`,
     coworkerName: "Denis Dyagilev",
     coworkerPosition: "frontend developer",
     text: (
@@ -22,7 +22,7 @@ const CARDS = [
     instagram: "purpleleech",
   },
   {
-    photoSrc: "img/Masha.jpg",
+    photoSrc: `${PHOTO_PATH}/Masha.jpg`,
     coworkerName: "Maria Condaurova",
     coworkerPosition: "frontend developer",
     text: (
@@ -39,7 +39,7 @@ const CARDS = [
     habr: "https://career.habr.com/momomash",
   },
   {
-    photoSrc: "img/Sveta.jpg",
+    photoSrc: `${PHOTO_PATH}/Sveta.jpg`,
     coworkerName: "Svetlana Pedan",
     coworkerPosition: "senior QA",
     text: (
@@ -51,29 +51,6 @@ const CARDS = [
         Natalya is very comfortable.
       </>
     ),
-  },
-  {
-    photoSrc: "img/Nizami.jpg",
-    coworkerName: "Nizami Mamedov",
-    coworkerPosition: "senior product manager",
-    text: (
-      <>
-        During my work with Natalya I've got the following impression of her:
-        <ul>
-          <li>
-            She's got great communication soft skills (life and work
-            communications are pleasant)
-          </li>
-          <li>She's a team player</li>
-          <li>
-            She quickly puzzled out the project and started to deal with serious
-            tasks
-          </li>
-        </ul>
-        <br />
-      </>
-    ),
-    telegram: "@Jessie_Fox",
   },
 ];
 

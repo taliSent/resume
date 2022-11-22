@@ -6,9 +6,12 @@ import Layout from "./components/layout/Layout";
 import Menu from "./components/menu/Menu";
 import { ThemeContext } from "./context/context";
 
+const initAnimations = () =>
+  AOS.init({ easing: "ease-in-out", duration: 700, once: true });
+
 const App = () => {
   useEffect(() => {
-    AOS.init({ easing: "ease-in-out", duration: 700, once: true });
+    initAnimations();
   }, []);
 
   const { theme } = useContext(ThemeContext);
@@ -17,9 +20,7 @@ const App = () => {
     <div data-theme={theme} id="root_">
       <div className={styles.Wave}>
         <Menu />
-        <div className={styles.Container}>
-          <Layout />
-        </div>
+        <Layout />
       </div>
     </div>
   );
