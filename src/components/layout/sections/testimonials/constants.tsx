@@ -17,7 +17,7 @@ const CARDS = [
         together again.
       </>
     ),
-    telegram: "@purpleleech",
+    telegram: "purpleleech",
     linkedIn: "https://www.linkedin.com/in/denis-dyagilev-63b562168",
     instagram: "purpleleech",
   },
