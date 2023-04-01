@@ -12,22 +12,28 @@ const Links: React.FC = () => {
   return (
     <div className={styles.Links}>
       <div className={styles.Link}>
-        <div data-aos="fade-up">
-          <a href={GITHUB} target="_blank" rel="noreferrer">
-            <FiGithub size="45" color={LINKS_COLOR} />
+        <div data-aos='fade-up'>
+          <a
+            href={GITHUB}
+            target='_blank'
+            rel='noreferrer'
+            aria-label='link to github'
+          >
+            <FiGithub size='45' color={LINKS_COLOR} />
           </a>
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-duration="800">
+      <div data-aos='fade-up' data-aos-duration='800'>
         <div className={styles.Link}>
           <a
             href={LINKEDIN}
             className={styles.Link}
-            target="_blank"
-            rel="noreferrer"
+            target='_blank'
+            rel='noreferrer'
+            aria-label='link to linkedin'
           >
-            <FaLinkedin size="45" color={LINKS_COLOR} />
+            <FaLinkedin size='45' color={LINKS_COLOR} />
           </a>
         </div>
       </div>

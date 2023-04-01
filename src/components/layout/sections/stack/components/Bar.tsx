@@ -8,16 +8,14 @@ type BarProps = {
 
 const Bar: React.FC<BarProps> = ({ technologyName, className }: BarProps) => {
   return (
-    <div data-aos='fade-up'>
-      <li>
-        <div className={styles.Name}>{technologyName}</div>
-        <div className={styles.Bar}>
-          <div
-            className={`${styles.ProgressLevel} ${className} ${styles.Scrolled}`}
-          ></div>
-        </div>
-      </li>
-    </div>
+    <li data-aos='fade-up'>
+      <div className={styles.Name}>{technologyName}</div>
+      <div className={styles.Bar}>
+        <div
+          className={`${styles.ProgressLevel} ${className} ${styles.Scrolled}`}
+        ></div>
+      </div>
+    </li>
   );
 };
 export default Bar;

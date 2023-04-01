@@ -5,6 +5,7 @@
 }
 
 .TextContainer {
+    margin-left: 12px;
     display: grid;
     gap: .17em;
 }

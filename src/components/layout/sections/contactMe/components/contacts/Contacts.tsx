@@ -5,8 +5,8 @@ import styles from "./Contacts.module.css";
 
 const Contacts: React.FC = () => {
   return (
-    <div className={styles.Contacts}>
-      {CONTACTS.map(({ href, textPrimary, textSecondary, icon }) =>
+    <ul className={styles.Contacts}>
+      {CONTACTS.map(({ href, textPrimary, textSecondary, icon }) => (
         <Contact
           href={href}
           textPrimary={textPrimary}
@@ -14,9 +14,8 @@ const Contacts: React.FC = () => {
           icon={icon}
           key={href}
         />
-        )}
-
-    </div>
+      ))}
+    </ul>
   );
 };
 export default Contacts;

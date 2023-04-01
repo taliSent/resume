@@ -29,8 +29,8 @@ const Description: React.FC<DescriptionProps> = ({
       <span className={styles.Underline}>study</span> the new and break through
       my comfort zone.
       <br />
-      <span className={styles.Underline}>Code cleanliness</span> is important to
-      me, so I adhere to KISS, DRY & separation of concerns.
+      <span className={styles.Underline}>Code quality</span> is important to me,
+      so I adhere to KISS, DRY & MVC.
       <br />
       Most often, colleagues describe me as a "nice to communicate with" : ){" "}
       <div className={styles.LinkContainer}>

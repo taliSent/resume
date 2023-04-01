@@ -9,7 +9,7 @@ const IconLink: React.FC<IconLinkProps> = ({ href, icon }: IconLinkProps) => {
   return (
     <>
       {href && (
-        <a href={href} target="_blank" rel="noreferrer">
+        <a href={href} target='_blank' rel='noreferrer' aria-label={href}>
           {icon}
         </a>
       )}

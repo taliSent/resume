@@ -5,8 +5,8 @@
 }
 
 .Photo {
-    width: clamp(7em, 8vw, 8em);
-    height: clamp(7em, 8vw, 8em);
+    /* width: clamp(7em, 8vw, 8em);
+    height: clamp(7em, 8vw, 8em); */
     border-radius: 50%;
     box-shadow: var(--box-shadow);
     border: 4px white solid;

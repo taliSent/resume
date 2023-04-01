@@ -70,6 +70,11 @@ body {
   color: var(--text-color);
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .icon {
   margin-left: 0.35em;
 }

@@ -10,16 +10,21 @@ import Links from "./components/links/Links";
 
 const ContactMe = () => {
   return (
-    <section id="contact-me">
+    <section id='contact-me'>
       <Header
-        name="Contact me"
-        icon={<FiMail className="icon" size="28" />}
-        textSecondary="Natalya Sentemova"
+        name='Contact me'
+        icon={<FiMail className='icon' size='28' />}
+        textSecondary='Natalya Sentemova'
       />
       <Contacts />
       <MediaQuery minWidth={849}>
-        <HashLink to="#top" className={styles.LinkToTheTop} smooth>
-          <BsArrowUpCircle size="22" />
+        <HashLink
+          to='#top'
+          className={styles.LinkToTheTop}
+          aria-label='to the top of the page'
+          smooth
+        >
+          <BsArrowUpCircle size='22' />
         </HashLink>
       </MediaQuery>
       <Links />

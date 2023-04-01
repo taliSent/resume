@@ -9,9 +9,15 @@ const About: React.FC = () => {
   const handleClick = () => setShowDetails((prev) => !prev);
 
   return (
-    <section id="about">
+    <section id='about'>
       <div className={styles.About}>
-        <img src={`${process.env.PUBLIC_URL}/img/photo.jpg`} alt="" className={styles.Photo} loading="lazy" />
+        <img
+          src={`${process.env.PUBLIC_URL}/img/photo.jpg`}
+          alt=''
+          width='200px'
+          height='200px'
+          className={styles.Photo}
+        />
         <div className={styles.Text}>
           <div className={styles.Profession}>Frontend&nbsp;developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>
