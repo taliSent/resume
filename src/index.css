@@ -96,3 +96,7 @@ section:last-child {
   background-color: var(--selected-text-background);
   color: var(--background-color);
 }
+
+button {
+  border:none;
+}

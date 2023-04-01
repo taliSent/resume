@@ -4,7 +4,6 @@ import styles from "./Header.module.css";
 type HeaderProps = {
   name: string;
   icon: ReactNode;
-  onClick?: () => void;
   h2?: boolean;
   textSecondary?: string | ReactNode;
 };
@@ -12,7 +11,6 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({
   name,
   icon,
-  onClick,
   h2,
   textSecondary,
 }: HeaderProps) => {
@@ -42,10 +40,6 @@ const Header: React.FC<HeaderProps> = ({
     </>
   );
 
-  return (
-    <div className={styles.Header} onClick={onClick}>
-      {h2 ? HeaderH2 : HeaderH1}
-    </div>
-  );
+  return <div className={styles.Header}>{h2 ? HeaderH2 : HeaderH1}</div>;
 };
 export default Header;

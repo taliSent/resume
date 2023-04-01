@@ -17,30 +17,32 @@ const Buttons: React.FC<ButtonsProps> = ({
 }: ButtonsProps) => {
   const showDetailsLabel = (
     <div className={styles.ButtonLabel}>
-      Show details <AiOutlineEye className="icon" />
+      Show details <AiOutlineEye className='icon' />
     </div>
   );
   const hideDetailsLabel = (
     <div className={styles.ButtonLabel}>
-      Hide Details <RiEyeCloseLine className="icon" />
+      Hide Details <RiEyeCloseLine className='icon' />
     </div>
   );
 
   return (
     <div className={styles.ButtonContainer}>
-      <a href={DOWNLOAD_CV_URL} download>
-        <button className={`${styles.Button} ${styles.Download}`}>
-          <div>
-            Download CV <HiDownload />
-          </div>
-        </button>
+      <a
+        className={`${styles.Button} ${styles.Download}`}
+        href={DOWNLOAD_CV_URL}
+        aria-label='Download CV'
+        download
+      >
+        Download CV <HiDownload />
       </a>
-      <button
+      <div
         className={`${styles.Button} ${styles.ShowDetails}`}
         onClick={onClick}
+        aria-label='Show/hide Details'
       >
         {showDetails ? hideDetailsLabel : showDetailsLabel}
-      </button>
+      </div>
     </div>
   );
 };
