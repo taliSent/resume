@@ -43,13 +43,13 @@ const Menu: React.FC = () => {
             <span>{name}</span>
           </HashLink>
         ))}
-        <button className={styles.ToggleThemeButton} aria-label='toggle theme'>
+        <div className={styles.ToggleThemeButton} aria-label='toggle theme'>
           {theme === "dark" ? (
             <BsFillSunFill size='20' onClick={toggleTheme} />
           ) : (
             <RiMoonFill size='20' onClick={toggleTheme} />
           )}
-        </button>
+        </div>
       </div>
       <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>
     </div>

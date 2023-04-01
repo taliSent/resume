@@ -28,21 +28,17 @@ const Buttons: React.FC<ButtonsProps> = ({
 
   return (
     <div className={styles.ButtonContainer}>
-      <a
-        className={`${styles.Button} ${styles.Download}`}
-        href={DOWNLOAD_CV_URL}
-        aria-label='Download CV'
-        download
-      >
-        Download CV <HiDownload />
+      <a href={DOWNLOAD_CV_URL} download>
+        <button className={`${styles.Button} ${styles.Download}`}>
+          Download CV <HiDownload />
+        </button>
       </a>
-      <div
+      <button
         className={`${styles.Button} ${styles.ShowDetails}`}
         onClick={onClick}
-        aria-label='Show/hide Details'
       >
         {showDetails ? hideDetailsLabel : showDetailsLabel}
-      </div>
+      </button>
     </div>
   );
 };
