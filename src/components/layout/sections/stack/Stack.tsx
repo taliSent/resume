@@ -6,19 +6,19 @@ import styles from "./Stack.module.css";
 
 const Stack: React.FC = () => {
   return (
-    <section id="stack">
+    <section id='stack'>
       <Header
-        name="Stack"
-        icon={<GiTechnoHeart className="icon" />}
-        textSecondary="technologies I use"
+        name='Stack'
+        icon={<GiTechnoHeart className='icon' />}
+        textSecondary='technologies I use'
       />
-        <ul className={styles.Stack}>
-          <Bar technologyName="React" className={styles.React} />      
-          <Bar technologyName="Typescript" className={styles.Typescript} />
-          <Bar technologyName="Vanilla&nbsp;Js" className={styles.Js} />
-          <Bar technologyName="CSS" className={styles.CSS} />
-          <Bar technologyName="HTML" className={styles.HTML} />
-        </ul>
+      <ul className={styles.Stack}>
+        <Bar technologyName='React' className={styles.React} />
+        <Bar technologyName='Typescript' className={styles.Typescript} />
+        <Bar technologyName='Vanilla&nbsp;Js' className={styles.Js} />
+        <Bar technologyName='CSS' className={styles.CSS} />
+        <Bar technologyName='HTML' className={styles.HTML} />
+      </ul>
     </section>
   );
 };

@@ -17,7 +17,7 @@ const App = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div data-theme={theme} id="root_">
+    <div data-theme={theme} id='root_'>
       <div className={styles.Wave}>
         <Menu />
         <Layout />

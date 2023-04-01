@@ -8,36 +8,47 @@ import styles from "./Testimonials.module.css";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials">
+    <section id='testimonials'>
       <Header
-        name="Testimonials"
-        icon={<RiDoubleQuotesR className="icon" />}
-        textSecondary="what my colleagues say"
+        name='Testimonials'
+        icon={<RiDoubleQuotesR className='icon' />}
+        textSecondary='what my colleagues say'
       />
-      <div data-aos="fade-up">
-      <Carousel
-        defaultControlsConfig={{
-          nextButtonText: ">",
-          nextButtonClassName: styles.Button,
-          prevButtonText: "<",
-          prevButtonClassName: styles.Button,
-        }}
-        wrapAround={true}
-      >
-        {CARDS.map(({ photoSrc, coworkerName, coworkerPosition, text, telegram, linkedIn, habr, instagram }) =>
-          <Testimonial
-            photoSrc={photoSrc}
-            coworkerName={coworkerName}
-            coworkerPosition={coworkerPosition}
-            text={text}
-            telegram={telegram}
-            linkedIn={linkedIn}            
-            habr={habr}
-            instagram={instagram}
-            key={coworkerName}
-          />
-        )}
-      </Carousel>
+      <div data-aos='fade-up'>
+        <Carousel
+          defaultControlsConfig={{
+            nextButtonText: ">",
+            nextButtonClassName: styles.Button,
+            prevButtonText: "<",
+            prevButtonClassName: styles.Button,
+          }}
+          wrapAround={true}
+        >
+          {CARDS.map(
+            ({
+              photoSrc,
+              coworkerName,
+              coworkerPosition,
+              text,
+              telegram,
+              linkedIn,
+              habr,
+              instagram,
+            }) => (
+              <Testimonial
+                photoSrc={photoSrc}
+                coworkerName={coworkerName}
+                coworkerPosition={coworkerPosition}
+                text={text}
+                telegram={telegram}
+                linkedIn={linkedIn}
+                habr={habr}
+                instagram={instagram}
+                key={coworkerName}
+              />
+            )
+          )}
+        </Carousel>
       </div>
     </section>
   );
