@@ -99,4 +99,5 @@ section:last-child {
 
 button {
   border:none;
+  background-color: transparent;
 }
