@@ -8,7 +8,7 @@ import styles from "./Testimonials.module.css";
 
 const Testimonials = () => {
   return (
-    <section id='testimonials'>
+    <section id='testimonials' aria-label='testimonials'>
       <Header
         name='Testimonials'
         icon={<RiDoubleQuotesR className='icon' />}

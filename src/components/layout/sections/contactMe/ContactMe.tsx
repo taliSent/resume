@@ -10,7 +10,7 @@ import Links from "./components/links/Links";
 
 const ContactMe = () => {
   return (
-    <section id='contact-me'>
+    <section id='contact-me' aria-label='contact me'>
       <Header
         name='Contact me'
         icon={<FiMail className='icon' size='28' />}

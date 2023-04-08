@@ -29,7 +29,7 @@ const Menu: React.FC = () => {
   }`;
 
   const navigation = (
-    <div className={menuClasses}>
+    <nav className={menuClasses}>
       <div className={hashLinksClasses}>
         {LINKS.map(({ name, anchor }) => (
           <HashLink
@@ -52,7 +52,7 @@ const Menu: React.FC = () => {
         </div>
       </div>
       <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>
-    </div>
+    </nav>
   );
   return <>{navigation}</>;
 };

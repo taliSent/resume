@@ -11,20 +11,18 @@ const HeaderEducation = () => (
   <Header
     name='Education'
     icon={<FaGraduationCap className='icon' size='36' />}
-    h2={true}
   />
 );
 const HeaderExperience = () => (
   <Header
     name='Experience'
     icon={<MdOutlineWork className='icon' size='28' />}
-    h2={true}
   />
 );
 
 const Experience: React.FC = () => {
   return (
-    <section id='experience'>
+    <section id='experience' aria-label='my experience'>
       <MediaQuery minWidth={849}>
         <div className={styles.Headers}>
           <HeaderEducation />

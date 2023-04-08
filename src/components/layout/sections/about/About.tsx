@@ -9,11 +9,11 @@ const About: React.FC = () => {
   const handleClick = () => setShowDetails((prev) => !prev);
 
   return (
-    <section id='about'>
+    <section id='about' aria-label='about me'>
       <div className={styles.About}>
         <img
           src={`${process.env.PUBLIC_URL}/img/photo.jpg`}
-          alt=''
+          alt='my portrait'
           width='200px'
           height='200px'
           className={styles.Photo}

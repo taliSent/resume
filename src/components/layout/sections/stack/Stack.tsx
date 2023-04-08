@@ -6,7 +6,7 @@ import styles from "./Stack.module.css";
 
 const Stack: React.FC = () => {
   return (
-    <section id='stack'>
+    <section id='stack' aria-label='my stack'>
       <Header
         name='Stack'
         icon={<GiTechnoHeart className='icon' />}
