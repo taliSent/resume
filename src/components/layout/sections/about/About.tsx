@@ -4,20 +4,18 @@ import Buttons from "./components/Buttons/Buttons";
 import Description from "./components/Description/Description";
 import Numbers from "./components/Numbers/Numbers";
 
-const About: React.FC = () => {
+type AboutProps = {
+  photo: JSX.Element;
+};
+
+const About: React.FC<AboutProps> = ({ photo }: AboutProps) => {
   const [showDetails, setShowDetails] = useState<boolean>(true);
   const handleClick = () => setShowDetails((prev) => !prev);
 
   return (
     <section id='about' aria-label='about me'>
       <div className={styles.About}>
-        <img
-          src={`${process.env.PUBLIC_URL}/img/photo.jpg`}
-          alt='my portrait'
-          width='200px'
-          height='200px'
-          className={styles.Photo}
-        />
+        {photo}
         <div className={styles.Text}>
           <div className={styles.Profession}>Frontend&nbsp;developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>

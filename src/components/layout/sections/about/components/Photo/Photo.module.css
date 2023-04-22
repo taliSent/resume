@@ -1,0 +1,21 @@
+.Photo {
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    border: 4px white solid;
+    animation: fadePhoto 1.5s ease-in-out forwards;
+    -webkit-animation: fadePhoto 1.5s ease-in-out forwards;
+    -moz-animation: fadePhoto 1.5s ease-in-out forwards;
+    -o-animation: fadePhoto 1.5s ease-in-out forwards;
+}
+
+@keyframes fadePhoto {
+    from {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -5,11 +5,12 @@ import Experience from "./sections/education/Experience";
 import Stack from "./sections/stack/Stack";
 import Testimonials from "./sections/testimonials/Testimonials";
 import styles from "./Layout.module.css";
+import { photo } from "./sections/about/components/Photo/Photo";
 
 const Layout: React.FC = () => {
   return (
     <div className={styles.Container}>
-      <About />
+      <About photo={photo} />
       <Stack />
       <Experience />
       <Testimonials />
