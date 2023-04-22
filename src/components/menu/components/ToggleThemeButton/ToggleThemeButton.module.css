@@ -1,0 +1,30 @@
+
+.ToggleThemeButton {
+    display: flex;
+    align-self: baseline;
+}
+
+.ToggleThemeButton:hover {
+    animation: pulse 1s ease-in-out infinite; 
+    cursor: pointer;
+
+}
+
+@keyframes pulse {
+    100% {
+        color: var(--text-color);
+    }
+    50% {
+        color: var(--header-color);
+    }
+    0% {
+        color: var(--text-color);
+    }
+}
+
+
+@media screen and (max-device-width: 857px) {
+    .ToggleThemeButton {
+        align-self: center;
+    }
+}

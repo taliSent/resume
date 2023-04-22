@@ -19,3 +19,16 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 480px) {
+    .Photo {
+        margin-top: .9em;
+    }
+}
+
+
+@media screen and (max-device-width: 857px) {
+    .Photo {
+        margin-bottom: 2em;
+    }
+}

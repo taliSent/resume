@@ -47,10 +47,6 @@
         margin-left: 0;
     }
 
-    .Photo {
-        margin-top: .9em;
-    }
-
 }
 
 .Stack {
@@ -76,10 +72,6 @@
     .About {
         margin-top: 1em;
         flex-wrap: wrap;
-    }
-
-    .Photo {
-        margin-bottom: 2em;
     }
 
     .Text .Stack {
