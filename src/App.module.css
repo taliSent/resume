@@ -9,6 +9,5 @@
         width: 100%;
         padding: 1em .5em; 
         box-shadow: none;
-        border: 4px var(--plate-color) solid;
     }
 }

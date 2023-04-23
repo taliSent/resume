@@ -21,7 +21,6 @@
   --text-secondary: #73594B;
   --selected-text-background: #525073;
   --background-color: #f8f8f8;
-  --plate-color: transparent;
   --header-color: rgb(128, 124, 191);
   --hover-accent: #c3b1ff;
   --button-color: #C2DEBD;
@@ -42,7 +41,6 @@
   --background-color: #1D1D1D;
   --show-details-background-color: rgb(100%, 100%, 100%, 0.07);
   --show-details-color: var(--background-color);
-  --plate-color: transparent;  
   --header-color: #cdc3f1;
   --hover-accent: #807CBF;
   --button-color: #A7BFA3;

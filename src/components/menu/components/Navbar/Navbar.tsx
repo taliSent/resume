@@ -16,12 +16,11 @@ const Navbar: React.FC<NavbarT> = ({ children, isMenuOpen, closeMenu }) => {
   return (
     <ul className={hashLinksClasses}>
       {LINKS.map(({ name, anchor }) => (
-        <li>
+        <li className={styles.HashLink}>
           <HashLink
             onClick={closeMenu}
             to={anchor}
             smooth
-            className={styles.HashLink}
             data-replace={name}
             key={name}
           >
