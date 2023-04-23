@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.HashLink {
+.li {
     padding: 0 0 1vw;
     transition: all .3s ease;
     text-align: center;
@@ -21,27 +21,27 @@
     opacity: 0;
 }
 
-.HashLink:nth-child(1) {
+.li:nth-child(1) {
     animation: blurText 1.5s ease-in-out forwards;
     -webkit-animation: blurText 1.5s ease-in-out forwards;
     -moz-animation: blurText 1.5s ease-in-out forwards;
     -o-animation: blurText 1.5s ease-in-out forwards; 
 }
 
-.HashLink:nth-child(2) {
+.li:nth-child(2) {
     animation: blurText .5s ease-in-out forwards;
     -webkit-animation: blurText .5s ease-in-out forwards;
     -moz-animation: blurText .5s ease-in-out forwards;
     -o-animation: blurText .5s ease-in-out forwards; 
 }
 
-.HashLink:nth-child(3) {
+.li:nth-child(3) {
     animation: blurText 1s ease-in-out forwards;
     -webkit-animation: blurText 1s ease-in-out forwards;
     -moz-animation: blurText 1s ease-in-out forwards;
     -o-animation: blurText 1s ease-in-out forwards; 
 }
-.HashLink:nth-child(4) {
+.li:nth-child(4) {
     animation: blurText 1.8s ease-in-out forwards;
     -webkit-animation: blurText 1.8s ease-in-out forwards;
     -moz-animation: blurText 1.8s ease-in-out forwards;

@@ -28,9 +28,14 @@ const Menu: React.FC = () => {
 
   return (
     <nav className={menuClasses}>
-      <Navbar closeMenu={closeMenu} isMenuOpen={isMenuOpen}>
-        <ToggleThemeButton theme={theme} toggleTheme={toggleTheme} />
-      </Navbar>
+      <Navbar
+        closeMenu={closeMenu}
+        isMenuOpen={isMenuOpen}
+        toggleTheme={
+          <ToggleThemeButton theme={theme} toggleTheme={toggleTheme} />
+        }
+      />
+
       <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>
     </nav>
   );
