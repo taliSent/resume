@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header className={styles.Header}>
       <>
-        <h1>{titleIcon}</h1>
+        <h2>{titleIcon}</h2>
         {textSecondaryWrapper}
       </>
     </header>

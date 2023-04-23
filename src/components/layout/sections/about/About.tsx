@@ -3,12 +3,9 @@ import styles from "./About.module.css";
 import Buttons from "./components/Buttons/Buttons";
 import Description from "./components/Description/Description";
 import Numbers from "./components/Numbers/Numbers";
+import { photo } from "./components/Photo/Photo";
 
-type AboutProps = {
-  photo: JSX.Element;
-};
-
-const About: React.FC<AboutProps> = ({ photo }: AboutProps) => {
+const About: React.FC = () => {
   const [showDetails, setShowDetails] = useState<boolean>(true);
   const handleClick = () => setShowDetails((prev) => !prev);
 
