@@ -3,4 +3,5 @@
     bottom: 2%;
     right: 10%;
     color: var(--text-secondary);
+    mix-blend-mode: difference;
 }
