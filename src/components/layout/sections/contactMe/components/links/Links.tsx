@@ -7,7 +7,7 @@ const LINKS_COLOR = "rgb(128, 124, 191)";
 
 const Links: React.FC = () => {
   const GITHUB = "https://github.com/taliSent/";
-  const LINKEDIN = "https://www.linkedin.com/in/natalya-sentemova-131a2baa/";
+  const LINKEDIN = "https://www.linkedin.com/in/natalya-sentemova/";
 
   return (
     <div className={styles.Links}>
