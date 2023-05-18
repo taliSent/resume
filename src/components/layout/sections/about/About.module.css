@@ -6,6 +6,7 @@
 
 
 .Text {
+    max-width:  25em;
     align-self: center;
     margin-left: clamp(1.4em, 5vw, 2.5em);
 }

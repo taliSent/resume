@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarT> = ({ toggleTheme, isMenuOpen, closeMenu }) => {
           </HashLink>
         </li>
       ))}
-      {toggleTheme}
+      <li>{toggleTheme}</li>
     </ul>
   );
 };

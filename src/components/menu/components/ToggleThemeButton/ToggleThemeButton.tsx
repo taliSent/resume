@@ -14,11 +14,11 @@ const ToggleThemeButton: FC<ToggleThemeButtonT> = ({
   toggleTheme,
 }: ToggleThemeButtonT) => {
   return (
-    <div className={styles.ToggleThemeButton} aria-label='toggle theme'>
+    <div className={styles.ToggleThemeButton}>
       {theme === "dark" ? (
-        <BsFillSunFill size='20' onClick={toggleTheme} />
+        <BsFillSunFill role='button' size='20' onClick={toggleTheme} />
       ) : (
-        <RiMoonFill size='20' onClick={toggleTheme} />
+        <RiMoonFill role='button' size='20' onClick={toggleTheme} />
       )}
     </div>
   );

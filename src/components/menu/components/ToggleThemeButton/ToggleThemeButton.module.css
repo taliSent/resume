@@ -27,4 +27,7 @@
     .ToggleThemeButton {
         align-self: center;
     }
+    .ToggleThemeButton svg {
+        margin: 0 auto;
+    }
 }
