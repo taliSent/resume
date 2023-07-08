@@ -13,7 +13,7 @@ const Menu: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(!isTabletOrMobile);
   const handleClick = () => isTabletOrMobile && setIsMenuOpen((prev) => !prev);
   const closeMenu = () => isTabletOrMobile && setIsMenuOpen(false);
-
+  const toggleMenucolor = theme === "dark" ? "#D9D9D9" : "#262526";
   const menuClasses = `${styles.Menu} ${!isMenuOpen && styles.MenuClosing}`;
 
   const openCloseButton = (
@@ -22,7 +22,11 @@ const Menu: React.FC = () => {
       onClick={handleClick}
       aria-label='open/close menu'
     >
-      {isMenuOpen ? <IoMdClose size={23} /> : <RiMenu3Line size={23} />}
+      {isMenuOpen ? (
+        <IoMdClose size={23} color={toggleMenucolor} />
+      ) : (
+        <RiMenu3Line size={23} color={toggleMenucolor} />
+      )}
     </button>
   );
 
