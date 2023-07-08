@@ -24,30 +24,9 @@ const Testimonials = () => {
           }}
           wrapAround={true}
         >
-          {CARDS.map(
-            ({
-              photoSrc,
-              coworkerName,
-              coworkerPosition,
-              text,
-              telegram,
-              linkedIn,
-              habr,
-              instagram,
-            }) => (
-              <Testimonial
-                photoSrc={photoSrc}
-                coworkerName={coworkerName}
-                coworkerPosition={coworkerPosition}
-                text={text}
-                telegram={telegram}
-                linkedIn={linkedIn}
-                habr={habr}
-                instagram={instagram}
-                key={coworkerName}
-              />
-            )
-          )}
+          {CARDS.map((props, index) => (
+            <Testimonial key={index} {...props} />
+          ))}
         </Carousel>
       </div>
     </section>

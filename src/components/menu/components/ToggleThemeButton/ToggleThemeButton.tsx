@@ -15,12 +15,15 @@ const ToggleThemeButton: FC<ToggleThemeButtonT> = ({
 }: ToggleThemeButtonT) => {
   return (
     <div className={styles.ToggleThemeButton}>
-      {theme === "dark" ? (
-        <BsFillSunFill role='button' size='20' onClick={toggleTheme} />
-      ) : (
-        <RiMoonFill role='button' size='20' onClick={toggleTheme} />
-      )}
+      <button onClick={toggleTheme}>
+        {theme === "dark" ? (
+          <BsFillSunFill size='20' color='#D9D9D9' />
+        ) : (
+          <RiMoonFill size='20' />
+        )}
+      </button>
     </div>
   );
 };
+
 export default ToggleThemeButton;
