@@ -14,7 +14,7 @@ const ContactMe = () => {
       <Header
         name='Contact me'
         icon={<FiMail className='icon' size='28' />}
-        textSecondary='Natalya Sentemova'
+        textSecondary='Natalia Sentemova'
       />
       <Contacts />
       <MediaQuery minWidth={849}>
