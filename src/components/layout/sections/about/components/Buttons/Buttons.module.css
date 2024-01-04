@@ -18,7 +18,7 @@
   align-items: center;
   box-shadow: var(--box-shadow);
   transition: letter-spacing 0.3s ease-in-out;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 
 .Button:hover {
