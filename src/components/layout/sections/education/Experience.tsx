@@ -9,20 +9,20 @@ import styles from "./Experience.module.css";
 
 const HeaderEducation = () => (
   <Header
-    name='Education'
-    icon={<FaGraduationCap className='icon' size='36' />}
+    name="Education"
+    icon={<FaGraduationCap className="icon" size="36" />}
   />
 );
 const HeaderExperience = () => (
   <Header
-    name='Experience'
-    icon={<MdOutlineWork className='icon' size='28' />}
+    name="Experience"
+    icon={<MdOutlineWork className="icon" size="28" />}
   />
 );
 
 const Experience: React.FC = () => {
   return (
-    <section id='experience' aria-label='my experience'>
+    <section id="experience" aria-label="my experience">
       <MediaQuery minWidth={849}>
         <div className={styles.Headers}>
           <HeaderEducation />

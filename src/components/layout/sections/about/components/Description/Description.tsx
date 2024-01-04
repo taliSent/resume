@@ -3,25 +3,18 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { HashLink } from "react-router-hash-link";
 import styles from "./Description.module.css";
 
-type DescriptionProps = {
-  showDetails: boolean;
-};
-
-const Description: React.FC<DescriptionProps> = ({
-  showDetails,
-}: DescriptionProps) => {
+const Description: React.FC = () => {
   const contactMeAnchor = "#contact-me";
   return (
-    <div className={`${styles.Description} ${!showDetails && styles.Hidden}`}>
-      I started as QA, worked as a designer, and made my way to front-end
+    <div className={styles.Description}>
+      I started as QA, worked as a designer, and made my way to the front-end
       development.
       <br />
-      Today I develop complex React components, such as multi-step forms, tables
-      with filters, sorts, pagination and editing, full pages of content.
-      {"  "}I created a{" "}
-      <span className={styles.Underline}>whole application</span>, designed for
-      configuring and signing bank documents, as a sole developer. However, I
-      prefer to work <span className={styles.Underline}>in a team</span>.
+      Today I create <span className={styles.Underline}>complex</span> React
+      applications, such as video editor, or a whole application, designed for
+      configuring and signing bank documents. I work as a{" "}
+      <span className={styles.Underline}>sole developer</span> and{" "}
+      <span className={styles.Underline}>in a team</span>.
       <br />I worked with various libraries and technologies, such as{" "}
       <span className={styles.Underline}>TypeScript</span>, Redux, Node.js,
       Strorybook, Thrifts, Sass, BEM, Styled Components, material-ui, etc.{" "}
@@ -36,7 +29,7 @@ const Description: React.FC<DescriptionProps> = ({
       <div className={styles.LinkContainer}>
         <HashLink className={styles.HashLink} to={contactMeAnchor} smooth>
           Communicate?{" "}
-          <AiOutlineArrowRight size='15' className={styles.Arrow} />
+          <AiOutlineArrowRight size="15" className={styles.Arrow} />
         </HashLink>
       </div>
     </div>

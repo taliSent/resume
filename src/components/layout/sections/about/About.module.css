@@ -1,94 +1,89 @@
 .About {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 }
-
 
 .Text {
-    max-width:  25em;
-    align-self: center;
-    margin-left: clamp(1.4em, 5vw, 2.5em);
+  width: 18em;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
 }
-
 
 .Profession {
-    color: var(--header-color);
-    font-family: var(--ff-accent);
-    font-size: clamp(calc(0.2vw + .8em), 3.2vw, 1.3em);
-    text-align: right;
-    margin-bottom: 0.5em;
-    font-weight: 400;
-    transform: translateY(-25%);
-    opacity: 0;
-    animation: fadeProfession 2s ease-in 0.7s forwards;
-    -webkit-animation: fadeProfession 2s ease-in 0.7s forwards;
-    -moz-animation: fadeProfession 2s ease-in 0.7s forwards;
-    -o-animation: fadeProfession 2s ease-in 0.7s forwards;
+  color: var(--header-color);
+  font-family: var(--ff-accent);
+  font-size: clamp(calc(0.2vw + 0.8em), 3.2vw, 1.3em);
+  text-align: right;
+  margin-bottom: 0.5em;
+  font-weight: 400;
 }
 
-@keyframes fadeProfession {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* @keyframes fadeProfession {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 
 @media screen and (max-width: 480px) {
-    .About {
-        margin-top: 0;
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-    }
+  .About {
+    margin-top: 0;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  .Text {
+    width: 10em;
+  }
 
-    .Text,
-    .Profession {
-        margin-left: 0;
-    }
-
+  .Text,
+  .Profession {
+    margin-left: 0;
+  }
 }
 
 .Stack {
-    font-size: clamp(0.6em, .4vw, 1.2em);
-    text-align: right;
-    margin-bottom: 2em;
-    letter-spacing: .19rem;
-    opacity: 0;
-    animation: fadeStack 1.5s ease-in-out 1.8s forwards;
-    -webkit-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
-    -moz-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
-    -o-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+  font-size: clamp(0.6em, 0.4vw, 1.2em);
+  text-align: right;
+  margin-bottom: 2em;
+  letter-spacing: 0.19rem;
+  opacity: 0;
+  animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+  -webkit-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+  -moz-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
+  -o-animation: fadeStack 1.5s ease-in-out 1.8s forwards;
 }
 
 @keyframes fadeStack {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-
 @media screen and (max-device-width: 857px) {
-    .About {
-        margin-top: 1em;
-        flex-wrap: wrap;
-    }
+  .About {
+    margin-top: 1em;
+    flex-wrap: wrap;
+  }
 
-    .Text .Stack {
-        text-align: center;
-    }
+  .Text .Stack {
+    text-align: center;
+  }
 
-    .Text .Profession {
-        text-align: center;
-    }
+  .Text .Profession {
+    text-align: center;
+  }
 
-    .ButtonContainer {
-        display: grid;
-        gap: 1em;
-        justify-content: center;
-    }
+  .ButtonContainer {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+  }
 
-    .Download {
-        margin-right: 0;
-    }
+  .Download {
+    margin-right: 0;
+  }
 }
