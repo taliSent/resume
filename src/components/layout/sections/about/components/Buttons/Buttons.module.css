@@ -8,7 +8,7 @@
   font-weight: 500;
   font-size: 0.5em;
   width: 18ch;
-  padding: 1.2em 0;
+  padding: 1.4em 0;
   border: 0;
   letter-spacing: 0.09em;
   justify-content: center;
@@ -62,7 +62,6 @@
 .ShowDetails {
   color: white;
   background-color: var(--show-details-background-color);
-  border-bottom: 6px var(--button-color) solid;
   animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   -moz-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
@@ -86,8 +85,7 @@
 
 .ShowDetails:hover {
   color: var(--show-details-color);
-  background-color: var(--header-color);
-  border-bottom: 6px var(--progress-accent) solid;
+  background-color: var(--show-background-color);
   transition: all 0.3s ease-out;
 }
 

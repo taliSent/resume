@@ -24,10 +24,11 @@
   --hover-accent: #bde2f5;
   --button-color: #66ccff;
   --show-details-background-color: #f2055c;
+  --show-background-color: #5d59d9;
   --show-details-color: var(--progress-accent);
   --border-color: transparent;
-  --progress-main: #b0f2a0;
-  --progress-accent: #dfffd9;
+  --progress-main: hsla(212, 93%, 49%, 1);
+  --progress-accent: hsla(210, 90%, 80%, 1);
   --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
   --testimonial-gradient: linear-gradient(
@@ -43,14 +44,15 @@
   --text-secondary: #edd9ce;
   --selected-text-background: #c3b1ff;
   --background-color: #1d1d1d;
-  --show-details-background-color: rgb(100%, 100%, 100%, 0.07);
+  --show-details-background-color: #f2055c;
+  --show-background-color: #807cbf;
   --show-details-color: var(--background-color);
-  --header-color: #cdc3f1;
+  --header-color: #b7add8;
   --hover-accent: #807cbf;
-  --button-color: #a7bfa3;
+  --button-color: #f2055c;
   --border-color: var(--plate-color);
-  --progress-main: #b0f2a0;
-  --progress-accent: #c7e7c1;
+  --progress-main: hsla(212, 93%, 49%, 1);
+  --progress-accent: rgb(133, 169, 204);
   --timeline-detail: #9494941c;
   --testimonial-gradient: linear-gradient(180deg, #2d2d2d 0%, #49445a 50%);
   --testimonial-border: thin transparent solid;
