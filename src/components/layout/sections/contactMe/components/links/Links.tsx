@@ -10,7 +10,7 @@ const LINKEDIN = "https://www.linkedin.com/in/natalya-sentemova/";
 const Links: React.FC = () => {
   const { theme } = useContext(ThemeContext);
 
-  const LINKS_COLOR = theme === "light" ? "#5D59D9" : "lightblue";
+  const LINKS_COLOR = theme === "light" ? "#5D59D9" : "#bde2f5";
 
   return (
     <div className={styles.Links}>
