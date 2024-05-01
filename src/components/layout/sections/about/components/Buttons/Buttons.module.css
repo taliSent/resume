@@ -12,18 +12,37 @@
   border: 0;
   letter-spacing: 0.09em;
   justify-content: center;
-  opacity: 1;
   transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
   box-shadow: var(--box-shadow);
   transition: letter-spacing 0.3s ease-in-out;
   border-radius: 10px;
+  color: white;
+  background-image: linear-gradient(to left bottom, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c);
 }
 
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
 .Button:hover {
-  letter-spacing: 0.13em;
-  transition: letter-spacing 0.3s ease-in-out;
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
 
 .Button:active {
@@ -35,24 +54,6 @@
   align-items: center;
 }
 
-/* .Download {
-  background-color: var(--button-color);
-  border: 6px transparent solid;
-  margin-right: 1.5em;
-  animation: fadeButton 0.5s ease-in-out 3s forwards;
-  -webkit-animation: fadeButton 0.5s ease-in-out 3s forwards;
-  -moz-animation: fadeButton 0.5s ease-in-out 3s forwards;
-  -o-animation: fadeButton 0.5s ease-in-out 3s forwards;
-  position: relative;
-}
-
-
-.Download:hover {
-  background-color: var(--progress-accent);
-  border: 6px transparent solid;
-  transition: all 0.2s ease;
-} */
-
 @keyframes fadeButton {
   100% {
     opacity: 1;
@@ -61,12 +62,12 @@
 
 .ShowDetails {
   color: white;
-  background-color: var(--show-details-background-color);
   animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   -moz-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   -o-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   position: relative;
+
 }
 
 .ShowDetails:after {
@@ -84,8 +85,6 @@
 }
 
 .ShowDetails:hover {
-  color: var(--show-details-color);
-  background-color: var(--show-background-color);
   transition: all 0.3s ease-out;
 }
 

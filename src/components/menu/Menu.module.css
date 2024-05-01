@@ -1,7 +1,7 @@
 .Menu {
     padding: 1.2em 0 0.8em;
     width: 60vw;
-    margin-inline: auto; 
+    margin-inline: auto;
 }
 
 @media screen and (max-device-width: 857px) {

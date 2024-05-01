@@ -4,7 +4,7 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 
 const MY_TG = "https://t.me/TaliSent";
 const MY_MAIL = "ns.sent@yandex.ru";
-const MY_PHONE = "+79688899087";
+const MY_PHONE = "0552576608";
 
 const CONTACTS = [
   {

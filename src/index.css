@@ -31,11 +31,9 @@
   --progress-accent: hsla(210, 90%, 80%, 1);
   --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
-  --testimonial-gradient: linear-gradient(
-    180deg,
-    var(--plate-color) 0%,
-    #e7e6eb 50%
-  );
+  --testimonial-gradient: linear-gradient(180deg,
+      var(--plate-color) 0%,
+      #e7e6eb 50%);
   --controls-color: #d9d9d9;
 }
 

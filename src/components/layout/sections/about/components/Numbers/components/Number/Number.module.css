@@ -6,11 +6,9 @@
 
 .Number {
   background: hsla(210, 90%, 80%, 1);
-  background: -webkit-linear-gradient(
-    45deg,
-    hsla(210, 90%, 80%, 1) 0%,
-    hsla(212, 93%, 49%, 1) 100%
-  );
+  background: -webkit-linear-gradient(45deg,
+      hsla(210, 90%, 80%, 1) 0%,
+      hsla(212, 93%, 49%, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -27,22 +25,7 @@
   text-align: center;
 }
 
-.One {
-  opacity: 0;
-  animation: fadeOne 0.8s ease-in-out 1.2s forwards;
-}
-
-.Two {
-  opacity: 0;
-  animation: fadeOne 1.5s ease-in-out 2s forwards;
-}
-
-.Three {
-  opacity: 0;
-  animation: fadeOne 1s ease-in-out 1.6s forwards;
-}
-
-@keyframes fadeOne {
+/* @keyframes fadeOne {
   from {
     opacity: 0;
     transform: translateY(15%);
@@ -52,4 +35,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
