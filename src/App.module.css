@@ -1,6 +1,12 @@
 .Wave {
   background: url("./../public/img/wave2.png") bottom no-repeat;
   background-size: 100%;
+  z-index: 2;
+}
+
+.Pattern {
+  background: url("./../public/img/4.png") repeat;
+  background-size: 100%;
 }
 
 @media screen and (max-device-width: 480px) {
