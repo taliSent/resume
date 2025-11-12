@@ -21,6 +21,9 @@
   color: white;
   background-image: linear-gradient(to left bottom, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c);
 }
+.Button a {
+    color: white;
+}
 
 @keyframes pulsate-bck {
   0% {

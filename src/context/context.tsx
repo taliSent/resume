@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import { Themes } from "../constants/constants";
 
 const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-export const ThemeContext = React.createContext({
+export const ThemeContext = createContext({
   theme: Themes.light,
   toggleTheme: () => {},
 });

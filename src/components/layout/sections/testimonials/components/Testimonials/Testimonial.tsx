@@ -30,7 +30,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   return (
     <div className={styles.Testimonial}>
       <img
-        src={`${process.env.PUBLIC_URL}/${photoSrc}`}
+        src={`${photoSrc}`}
         alt=""
         className={styles.Photo}
         loading="lazy"

@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import styles from "./App.module.css";
 import Layout from "./components/layout/Layout";
 import Menu from "./components/menu/Menu";
