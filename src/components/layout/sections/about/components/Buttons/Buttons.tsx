@@ -15,10 +15,6 @@ const Buttons: React.FC = () => {
         </button> */}
       <a href={DOWNLOAD_CV_URL} target="_blank" download rel="noreferrer">
         <motion.button
-          //   initial={{ maskImage: "linear-gradient(to right, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)" }}
-          // animate={{ maskImage: "linear-gradient(to right, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%)" }}
-          // whileHover={{ scale: 1.1 }}
-          // whileTap={{ scale: 0.95 }}
           style={{
             background:
               "linear-gradient(40deg, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c)",
@@ -28,7 +24,7 @@ const Buttons: React.FC = () => {
             backgroundPosition: ["0% 0%", "100% 0%"],
           }}
           transition={{
-            duration: 3,
+            duration: 2,
             repeat: Infinity,
             repeatType: "reverse",
           }}

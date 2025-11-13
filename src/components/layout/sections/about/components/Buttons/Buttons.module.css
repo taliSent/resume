@@ -6,9 +6,8 @@
 .Button {
   font-family: var(--ff-primary);
   font-weight: 500;
-  font-size: 0.5em;
-  width: 18ch;
-  padding: 1.4em 0;
+  font-size: 16px;
+  padding: 1em;
   border: 0;
   letter-spacing: 0.09em;
   justify-content: center;

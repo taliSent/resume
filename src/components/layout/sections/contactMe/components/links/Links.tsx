@@ -36,7 +36,7 @@ const Links: React.FC = () => {
       <div>
         <motion.div
           className={styles.Link}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{ y: -10 }}
           transition={{ease: "easeInOut", duration: 0.4}}
