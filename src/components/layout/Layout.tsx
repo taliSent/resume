@@ -5,6 +5,7 @@ import Experience from "./sections/education/Experience";
 import Stack from "./sections/stack/Stack";
 import Testimonials from "./sections/testimonials/Testimonials";
 import styles from "./Layout.module.css";
+import { Route, Routes } from "react-router";
 
 const Layout: React.FC = () => {
   return (

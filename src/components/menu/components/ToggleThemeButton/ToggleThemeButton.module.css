@@ -21,7 +21,7 @@
 }
 
 
-@media screen and (max-device-width: 857px) {
+@media screen and (max-width: 857px) {
     .ToggleThemeButton {
         align-self: center;
     }

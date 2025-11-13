@@ -15,8 +15,9 @@
     letter-spacing: .1rem;
     display: inline-block;
     position: relative;
-    display: inline-block;
     overflow: hidden;
+    width: fit-content;
+    margin-inline: auto;
 }
 
 span {
@@ -70,7 +71,7 @@ span {
 
 
 
-@media screen and (max-device-width: 857px) {
+@media screen and (max-width: 857px) {
     .ToggleButton {
         position: absolute;
         top: 0.7em;

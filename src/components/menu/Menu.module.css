@@ -4,16 +4,16 @@
     margin-inline: auto;
 }
 
-@media screen and (max-device-width: 857px) {
+@media screen and (max-width: 857px) {
     .Menu {
         position: fixed;
-        z-index: 2;
+        z-index: 20;
         top: 0;
         right: 0;
         width: 100%;
         background: linear-gradient(184deg, var(--background-color) 15%, rgba(255, 255, 255, 0.1) 100%);
         backdrop-filter: blur(4px);
-        padding: 0.5em 1.1em;
+        padding: 0.6em 1.1em;
         height: 100%;
         transition: all 0.3s ease-in;
     }
@@ -23,6 +23,8 @@
         backdrop-filter: none;
         background: transparent;
         transition: all 0.3s ease-in;
+        background-color: var(--background-color);
+        border: 1px solid var(--background-color);
     }
 
     .ToggleButton {
@@ -34,7 +36,7 @@
 }
 
 
-@media screen and (min-device-width: 857px) {
+@media screen and (min-width: 857px) {
     .ToggleButton {
         opacity: 0;
         right: 2em;

@@ -5,13 +5,39 @@
 }
 
 .Text {
-  width: 18em;
+  width: 16em;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
 }
 
+.Photo {
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 50%;
+    anchor-name: --anchor;
+    z-index: 3;
+
+}
+
+.PhotoFrame {
+    width: 8.6em;
+    height: 8.6em;
+    border-radius: 50%;
+    position: absolute;
+    position-anchor: --anchor;
+    position-area: center center;
+    background-color: var(--frame-accent);
+    z-index: 1;
+    -webkit-mask-image: radial-gradient(circle, transparent 69%, black 42%);
+    mask-image: radial-gradient(circle, transparent 69%, black 42%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .Profession {
   color: var(--header-color);
   font-family: var(--ff-accent);
@@ -54,10 +80,11 @@
 }
 
 
-@media screen and (max-device-width: 857px) {
+@media screen and (max-width: 857px) {
   .About {
     margin-top: 1em;
     flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .Text .Stack {

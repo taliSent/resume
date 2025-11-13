@@ -5,9 +5,9 @@ import styles from "./Numbers.module.css";
 const Numbers: React.FC = () => {
   return (
     <div className={styles.Numbers}>
-      <Number number="3+" text="years of experience" className="One" />
-      <Number number="6+" text="projects" className="Two" />
-      <Number number="3" text="specialties" className="Three" />
+      <Number number={4} withPlus text="years of experience" className="One" />
+      <Number number={7} withPlus text="projects" className="Two" />
+      <Number number={3} text="specialties" className="Three" />
     </div>
   );
 };

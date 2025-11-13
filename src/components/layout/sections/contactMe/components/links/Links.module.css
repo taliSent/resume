@@ -8,14 +8,3 @@
     margin-bottom: 2em;
 }
 
-.Link {
-    transition: transform 0.4s ease-in-out;
-}
-
- @media screen and (min-device-width: 857px) {
-    .Link:hover {
-        transform: translateY(-10%);
-        transition: transform 0.4s ease-in-out;
-    }
-} 
-

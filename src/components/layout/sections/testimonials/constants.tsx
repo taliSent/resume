@@ -1,4 +1,3 @@
-import React from "react";
 const PHOTO_PATH = "img/testimonials";
 const CARDS = [
   {

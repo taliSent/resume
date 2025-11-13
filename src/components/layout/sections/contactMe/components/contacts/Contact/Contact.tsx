@@ -15,7 +15,7 @@ const Contact: React.FC<ContactProps> = ({
   icon,
 }: ContactProps) => {
   return (
-    <li data-aos='fade-up'>
+    <li>
       <a href={href} className={styles.Contact} aria-label={textSecondary}>
         {icon}
         <div className={styles.TextContainer}>

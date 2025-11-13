@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ProgressUnit.module.css";
+import { motion } from "motion/react";
 
 export type ProgressUnitProps = {
   name: string;
@@ -19,7 +20,10 @@ const ProgressUnit: React.FC<ProgressUnitProps> = ({
   isMirrored,
 }: ProgressUnitProps) => {
   return (
-    <div className={`${styles.Unit} ${isMirrored && styles.isMirrored}`}>
+     <motion.div
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "none" }} 
+            className={`${styles.Unit} ${isMirrored && styles.isMirrored}`}>
       <div className={styles.Time}>
         <div className={styles.TimePoint} />
         {!isLast && <div className={styles.TimeLine} />}
@@ -30,7 +34,7 @@ const ProgressUnit: React.FC<ProgressUnitProps> = ({
         <div className={styles.Years}>{place}</div>
         <div className={styles.Achievement}>{achievement}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

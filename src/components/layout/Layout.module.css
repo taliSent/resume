@@ -5,3 +5,9 @@
     border-radius: 0.5em;
     border: 4px var(--border-color) solid;
 }
+
+@media screen and (max-width: 800px) {
+    .Container {
+        padding: 1.1em 5%; 
+    }
+}

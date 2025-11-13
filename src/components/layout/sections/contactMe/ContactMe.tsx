@@ -7,26 +7,28 @@ import { BsArrowUpCircle } from "react-icons/bs";
 import { HashLink } from "react-router-hash-link";
 import styles from "./ContactMe.module.css";
 import Links from "./components/links/Links";
+import { motion } from "motion/react";
 
-const ContactMe = () =>
-  <section id='contact-me' aria-label='contact me'>
+const ContactMe = () => (
+  <section id="contact-me" aria-label="contact me">
     <Header
-      name='Contact me'
-      icon={<FiMail className='icon' size='28' />}
-      textSecondary='Natalia Sentemova'
+      name="Contact me"
+      icon={<FiMail className="icon" size="28" />}
+      textSecondary="Natalia Sentemova"
     />
-    <Contacts />
-    <MediaQuery minWidth={849}>
-      <HashLink
-        to='#top'
-        className={styles.LinkToTheTop}
-        aria-label='to the top of the page'
-        smooth
-      >
-        <BsArrowUpCircle size='22' />
-      </HashLink>
-    </MediaQuery>
-    <Links />
+    <div>
+      <Contacts />
+      <Links />
+    </div>
+    <HashLink
+      to="#top"
+      smooth
+      className={styles.LinkToTheTop}
+      aria-label="to the top of the page"
+    >
+      <BsArrowUpCircle size="22" />
+    </HashLink>
   </section>
+);
 
 export default ContactMe;

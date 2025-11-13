@@ -19,13 +19,13 @@
   transition: letter-spacing 0.3s ease-in-out;
   border-radius: 10px;
   color: white;
-  background-image: linear-gradient(to left bottom, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c);
+  /* background-image: linear-gradient(to left bottom, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c); */
 }
 .Button a {
     color: white;
 }
 
-@keyframes pulsate-bck {
+/* @keyframes pulsate-bck {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -40,13 +40,13 @@
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}
+} */
 
 
-.Button:hover {
+/* .Button:hover {
   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
   animation: pulsate-bck 0.5s ease-in-out infinite both;
-}
+} */
 
 .Button:active {
   font-weight: bold;
@@ -57,13 +57,7 @@
   align-items: center;
 }
 
-@keyframes fadeButton {
-  100% {
-    opacity: 1;
-  }
-}
-
-.ShowDetails {
+/* .ShowDetails {
   color: white;
   animation: fadeButton 0.5s ease-in-out 3.5s forwards;
   -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
@@ -95,9 +89,9 @@
   transform: scaleY(1);
   transform-origin: top;
   transition: transform 0.2s ease-out;
-}
+} */
 
-@media screen and (max-device-width: 810px) {
+@media screen and (max-width: 810px) {
   .ButtonContainer {
     display: grid;
     gap: 1em;

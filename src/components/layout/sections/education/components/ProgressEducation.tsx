@@ -4,7 +4,7 @@ import ProgressUnit from "./ProgressUnit/ProgressUnit";
 
 const ProgressEducation: React.FC = () => {
   return (
-    <div data-aos="fade-up">
+    <div>
       {PROGRESS_EDUCATION.map(({ name, place, years, achievement, isLast, isMirrored, }) =>
         <ProgressUnit
           name={name}

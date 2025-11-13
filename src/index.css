@@ -35,6 +35,7 @@
       var(--plate-color) 0%,
       #e7e6eb 50%);
   --controls-color: #d9d9d9;
+  --frame-accent: white;
 }
 
 [data-theme="dark"] {
@@ -55,6 +56,7 @@
   --testimonial-gradient: linear-gradient(180deg, #2d2d2d 0%, #49445a 50%);
   --testimonial-border: thin transparent solid;
   --controls-color: #2d2d2d;
+  --frame-accent: #9494941c;
 }
 
 html,

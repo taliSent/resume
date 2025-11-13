@@ -5,6 +5,7 @@ import { SiHabr } from "react-icons/si";
 import { ImTelegram } from "react-icons/im";
 import styles from "./Testimonial.module.css";
 import IconLink from "./IconLink/IconLink";
+import { motion } from "motion/react";
 
 type TestimonialProps = {
   photoSrc: string;
@@ -28,12 +29,16 @@ const Testimonial: React.FC<TestimonialProps> = ({
   instagram,
 }: TestimonialProps) => {
   return (
-    <div className={styles.Testimonial}>
+    <motion.div
+        initial={{ opacity: 0,  filter: "blur(30px)" }}
+        whileInView={{ opacity: 1, filter: "none" }}
+        transition={{duration: 0.2}}
+        className={styles.Testimonial}
+        >
       <img
         src={`${photoSrc}`}
-        alt=""
+        alt="coworker's photo"
         className={styles.Photo}
-        loading="lazy"
       />
       <div className={styles.CoworkerName}>{coworkerName}</div>
       <div className={styles.CoworkerPosition}>{coworkerPosition}</div>
@@ -62,7 +67,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
           icon={<SiHabr size="24" className={styles.SiHabr} />}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Testimonial;

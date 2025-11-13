@@ -7,7 +7,7 @@ const Description: React.FC = () => {
   const contactMeAnchor = "#contact-me";
   return (
     <div className={styles.Description}>
-      I started as QA, worked as a designer, and made my way to the front-end
+      I started as QA, worked as a designer, and made my way to the frontend
       development.
       <br />
       Today I create <span className={styles.Underline}>complex</span> React

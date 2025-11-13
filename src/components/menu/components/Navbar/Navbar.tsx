@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import { HashLink } from "react-router-hash-link";
 import LINKS from "../../constants";
 import styles from "./Navbar.module.css";
+import { NavHashLink } from "react-router-hash-link";
 
 type NavbarT = {
   toggleTheme: ReactNode;
@@ -17,15 +17,15 @@ const Navbar: React.FC<NavbarT> = ({ toggleTheme, isMenuOpen, closeMenu }) => {
     <ul className={hashLinksClasses}>
       {LINKS.map(({ name, anchor }) => (
         <li className={styles.li} key={name}>
-          <HashLink
+          <NavHashLink
             onClick={closeMenu}
             to={anchor}
-            smooth
             data-replace={name}
+            smooth
             className={styles.HashLink}
           >
             <span>{name}</span>
-          </HashLink>
+          </NavHashLink>
         </li>
       ))}
       <li>{toggleTheme}</li>
