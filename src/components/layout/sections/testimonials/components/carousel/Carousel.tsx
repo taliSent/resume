@@ -25,7 +25,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className={styles.embla}>
+    <article className={styles.embla}>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
           {CARDS.map((props, index) => (
@@ -43,7 +43,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
         </div>
 
       </div>
-    </section>
+    </article>
   );
 };
 

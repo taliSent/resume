@@ -15,6 +15,7 @@
   user-select: none;
   font-size: clamp(1em, 1.4vw, 1.3em);
   font-weight: bolder;
+  overflow: hidden;
 }
 
 .Text {

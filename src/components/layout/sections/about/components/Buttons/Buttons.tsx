@@ -1,7 +1,7 @@
+import { motion } from "motion/react";
 import React from "react";
 import { HiDownload } from "react-icons/hi";
 import styles from "./Buttons.module.css";
-import { motion } from "motion/react";
 
 const DOWNLOAD_CV_URL = `https://drive.google.com/file/d/1Fr7spdFnohyxuAoMEubrhpCjyb_jhFwT/view?usp=sharing`;
 
@@ -17,14 +17,14 @@ const Buttons: React.FC = () => {
         <motion.button
           style={{
             background:
-              "linear-gradient(40deg, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c)",
-            backgroundSize: "200% 150%",
+              "linear-gradient(40deg, #F28080, #8f5fdf, #f2055c)",
+            backgroundSize: "200% 200%",
           }}
           animate={{
-            backgroundPosition: ["0% 0%", "100% 0%"],
+            backgroundPosition: ["0% 0%", "100% 100%"],
           }}
           transition={{
-            duration: 2,
+            duration: 1,
             repeat: Infinity,
             repeatType: "reverse",
           }}

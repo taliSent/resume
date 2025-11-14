@@ -1,3 +1,4 @@
+// todo: routers to constants
 const LINKS = [
   {
     name: "Stack",
@@ -10,6 +11,10 @@ const LINKS = [
   {
     name: "Testimonials",
     anchor: "#testimonials",
+  },
+  {
+    name: "Bug\xa0Hunt",
+    anchor: "#bug-hunt",
   },
   {
     name: `Contact\xa0me`,

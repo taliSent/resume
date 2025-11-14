@@ -1,7 +1,6 @@
 import { RiDoubleQuotesR } from "react-icons/ri";
 import Header from "../../header/Header";
 import Carousel from "./components/carousel/Carousel";
-import { motion } from "motion/react";
 
 const Testimonials = () => {
   return (

@@ -1,0 +1,42 @@
+.Bug {
+  position: absolute;
+  width: 100px;
+  z-index: 5;
+}
+.ReleaseButton {
+  background-color: var(--show-details-background-color);
+  color: white;
+  font-size: 18px;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.BattleContainer {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.BattleImgContainer {
+  position: relative;
+}
+
+.BattleBackground {
+  max-width: 100%;
+  border-radius: 50px;
+}
+
+.TaliPortrait {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+} 
+
+.BugPortrait {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(60%, -50%);
+}

@@ -1,11 +1,11 @@
-import React, { ReactNode } from "react";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { BsInstagram } from "react-icons/bs";
-import { SiHabr } from "react-icons/si";
-import { ImTelegram } from "react-icons/im";
-import styles from "./Testimonial.module.css";
-import IconLink from "./IconLink/IconLink";
 import { motion } from "motion/react";
+import React, { ReactNode } from "react";
+import { BsInstagram } from "react-icons/bs";
+import { ImTelegram } from "react-icons/im";
+import { SiHabr } from "react-icons/si";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+import IconLink from "./IconLink/IconLink";
+import styles from "./Testimonial.module.css";
 
 type TestimonialProps = {
   photoSrc: string;
@@ -43,7 +43,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className={styles.CoworkerName}>{coworkerName}</div>
       <div className={styles.CoworkerPosition}>{coworkerPosition}</div>
       <span className={styles.Line} />
-      <div className={styles.Review}>{text}</div>
+      <article className={styles.Review}>{text}</article>
       <div className={styles.IconsSocial}>
         <IconLink
           href={telegram && `https://t.me/${telegram}`}

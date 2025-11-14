@@ -4,7 +4,6 @@
 }
 
 .Button {
-  font-family: var(--ff-primary);
   font-weight: 500;
   font-size: 16px;
   padding: 1em;
@@ -18,34 +17,10 @@
   transition: letter-spacing 0.3s ease-in-out;
   border-radius: 10px;
   color: white;
-  /* background-image: linear-gradient(to left bottom, #0975f1, #8f5fdf, #c73fbc, #e7168e, #f2055c); */
 }
 .Button a {
     color: white;
 }
-
-/* @keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(0.99);
-    transform: scale(0.99);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-} */
-
-
-/* .Button:hover {
-  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
-  animation: pulsate-bck 0.5s ease-in-out infinite both;
-} */
 
 .Button:active {
   font-weight: bold;
@@ -55,40 +30,6 @@
   display: flex;
   align-items: center;
 }
-
-/* .ShowDetails {
-  color: white;
-  animation: fadeButton 0.5s ease-in-out 3.5s forwards;
-  -webkit-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
-  -moz-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
-  -o-animation: fadeButton 0.5s ease-in-out 3.5s forwards;
-  position: relative;
-
-}
-
-.ShowDetails:after {
-  content: "";
-  margin: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleY(0);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transform-origin: bottom;
-  transition: transform 0.3s ease-out;
-}
-
-.ShowDetails:hover {
-  transition: all 0.3s ease-out;
-}
-
-.ShowDetails:hover:after {
-  transform: scaleY(1);
-  transform-origin: top;
-  transition: transform 0.2s ease-out;
-} */
 
 @media screen and (max-width: 810px) {
   .ButtonContainer {

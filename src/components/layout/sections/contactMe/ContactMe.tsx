@@ -1,13 +1,10 @@
-import React from "react";
-import { FiMail } from "react-icons/fi";
-import Header from "../../header/Header";
-import Contacts from "./components/contacts/Contacts";
-import MediaQuery from "react-responsive";
 import { BsArrowUpCircle } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
+import Header from "../../header/Header";
 import styles from "./ContactMe.module.css";
+import Contacts from "./components/contacts/Contacts";
 import Links from "./components/links/Links";
-import { motion } from "motion/react";
 
 const ContactMe = () => (
   <section id="contact-me" aria-label="contact me">

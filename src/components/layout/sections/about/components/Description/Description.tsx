@@ -23,7 +23,7 @@ const Description: React.FC = () => {
       my comfort zone.
       <br />
       <span className={styles.Underline}>Code quality</span> is important to me,
-      so I adhere to KISS, DRY & MVC.
+      so I adhere to KISS, DRY & SOLID.
       <br />
       Most often, colleagues describe me as a "nice to communicate with" : ){" "}
       <div className={styles.LinkContainer}>
@@ -36,4 +36,4 @@ const Description: React.FC = () => {
   );
 };
 
-export default React.memo(Description);
+export default Description;

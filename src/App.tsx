@@ -5,7 +5,6 @@ import Menu from "./components/menu/Menu";
 import { ThemeContext } from "./context/context";
 
 const App = () => {
-
   const { theme } = useContext(ThemeContext);
 
   return (

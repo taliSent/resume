@@ -1,8 +1,6 @@
 .Description {
-    margin: 8em;
-    /* padding: 0 clamp(0.2em, 15%, 5rem); */
+    margin: 8em 8em 0 8em;
     font-size: 0.6em;
-    /* margin-top: 1.5em; */
     line-height: 1.6;
 }
 

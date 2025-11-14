@@ -12,6 +12,7 @@
     6px 6.7px 17.9px rgba(0, 0, 0, 0.042),
     11.3px 12.5px 33.4px rgba(0, 0, 0, 0.05), 27px 30px 80px rgba(0, 0, 0, 0.07);
   transition: background-color 0.2s ease-out;
+  font-family: var(--ff-primary);
 }
 
 [data-theme="light"] {
@@ -31,9 +32,11 @@
   --progress-accent: hsla(210, 90%, 80%, 1);
   --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
-  --testimonial-gradient: linear-gradient(180deg,
-      var(--plate-color) 0%,
-      #e7e6eb 50%);
+  --testimonial-gradient: linear-gradient(
+    180deg,
+    var(--plate-color) 0%,
+    #e7e6eb 50%
+  );
   --controls-color: #d9d9d9;
   --frame-accent: white;
 }
@@ -74,6 +77,8 @@ body {
   height: 100%;
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow: hidden;
+  position: relative;
 }
 
 ul,
@@ -94,11 +99,16 @@ a {
 }
 
 section {
+  margin-bottom: 4em;
+}
+section:last-child {
   margin-bottom: 8em;
 }
 
-section:last-child {
-  margin-bottom: 4em;
+@media screen and (min-width: 1800px) {
+  section:last-child {
+    margin-bottom: 12em;
+  }
 }
 
 ::selection {

@@ -13,18 +13,20 @@
 }
 
 .Photo {
-    width: 8em;
-    height: 8em;
+    width: 12em;
+    height: 12em;
     object-fit: cover;
     border-radius: 50%;
     anchor-name: --anchor;
     z-index: 3;
 
 }
-
+.Desaturated {
+  filter: saturate(0.75) !important;
+}
 .PhotoFrame {
-    width: 8.6em;
-    height: 8.6em;
+    width: 12.6em;
+    height: 12.6em;
     border-radius: 50%;
     position: absolute;
     position-anchor: --anchor;
