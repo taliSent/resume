@@ -8,7 +8,7 @@ import { ThemeContext } from "@context/context";
 
 const About: React.FC = () => {
   const {theme} = use(ThemeContext);
-  const src = theme === "light" ? "img/Tali5.png" : "img/Tali4.png"
+  const src = theme === "light" ? "img/TaliLight4.png" : "img/TaliLight4.png"
   return (
     <section id="about" aria-label="about me">
       <div className={styles.About}>
@@ -20,6 +20,7 @@ const About: React.FC = () => {
           className={styles.Photo}
         />
         <div className={styles.PhotoFrame}/>
+        {/* <img src={"img/cloud.png"} /> */}
         <div className={styles.Text}>
           <div className={styles.Profession}>Frontend developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>

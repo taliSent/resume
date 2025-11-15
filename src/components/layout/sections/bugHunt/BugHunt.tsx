@@ -3,8 +3,9 @@ import { useBugs } from "@store/store";
 import { LuBugOff } from "react-icons/lu";
 import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
+import { motion } from "motion/react";
 
-const BugsQuantity = 25;
+const BugsQuantity = 20;
 
 type BugParamsT = {
   x: string;
@@ -63,7 +64,7 @@ const BugHunt = () => {
     }
     releaseBugs(BugsQuantity);
   };
-
+  
   return (
     <section id="bug-hunt" aria-label="bug hunt">
       <Header
@@ -74,18 +75,24 @@ const BugHunt = () => {
       <div className={styles.BattleContainer}>
         <div className={styles.BattleImgContainer}>
           <img
-            src="img/vs.png"
+            src="img/vs2.png"
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />
-          <img
+          <motion.img
             src="img/TaliStanding.png"
             alt="Tali"
+            initial={{ y: "-30%", x: "-125%"}}
+            whileInView={{y: "-50%"}}
+            transition={{duration: 0.7}}
             className={styles.TaliPortrait}
           />
-          <img
-            src="img/bugs/bug4.png"
+          <motion.img
+            src="img/bugs/bug000.png"
             alt="bug"
+            initial={{ y: "-70%", x: "85%"}}
+            whileInView={{y: "-50%"}}
+            transition={{duration: 0.7}}
             className={styles.BugPortrait}
           />
         </div>
@@ -94,11 +101,10 @@ const BugHunt = () => {
           disabled={areBugsOnPage}
           className={styles.ReleaseButton}
         >
-          Release the bugs
+          {areBugsOnPage ?  "Bugs are now free..." : "Release the bugs 🪲" }
         </button>
       </div>
       <Modal isOpen={areBugsCaught} onClose={renewGame}>
-        {" "}
         <img src={"img/you-won2.png"} />
       </Modal>
     </section>

@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   margin-top: 2em;
+
+}
+@media screen and (max-width: 400px) {
+  .About {
+    font-size: 14px;
+  }
 }
 
 .Text {
@@ -13,48 +19,41 @@
 }
 
 .Photo {
-    width: 12em;
-    height: 12em;
-    object-fit: cover;
-    border-radius: 50%;
-    anchor-name: --anchor;
-    z-index: 3;
-
+  width: 12em;
+  height: 12em;
+  object-fit: cover;
+  border-radius: 50%;
+  anchor-name: --anchor;
+  z-index: 3;
 }
 .Desaturated {
   filter: saturate(0.75) !important;
 }
 .PhotoFrame {
-    width: 12.6em;
-    height: 12.6em;
-    border-radius: 50%;
-    position: absolute;
-    position-anchor: --anchor;
-    position-area: center center;
-    background-color: var(--frame-accent);
-    z-index: 1;
-    -webkit-mask-image: radial-gradient(circle, transparent 69%, black 42%);
-    mask-image: radial-gradient(circle, transparent 69%, black 42%);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 12.6em;
+  height: 12.6em;
+  border-radius: 50%;
+  position: absolute;
+  position-anchor: --anchor;
+  position-area: center center;
+  background-color: var(--frame-accent);
+  z-index: 1;
+  -webkit-mask-image: radial-gradient(circle, transparent 69%, black 42%);
+  mask-image: radial-gradient(circle, transparent 69%, black 42%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  box-shadow: var(--box-shadow);
 }
 .Profession {
   color: var(--header-color);
   font-family: var(--ff-accent);
-  font-size: clamp(calc(0.2vw + 0.8em), 3.2vw, 1.3em);
+  font-size: clamp(calc(0.2vw + 1rem), 3.2vw, 1.3rem);
   text-align: right;
   margin-bottom: 0.5em;
   font-weight: 400;
 }
 
-/* @keyframes fadeProfession {
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
 
 @media screen and (max-width: 480px) {
   .About {
@@ -75,12 +74,11 @@
 }
 
 .Stack {
-  font-size: clamp(0.6em, 0.4vw, 1.2em);
+  font-size: clamp(0.6rem, 0.4vw, 1.2rem);
   text-align: right;
   margin-bottom: 2em;
   letter-spacing: 0.19rem;
 }
-
 
 @media screen and (max-width: 857px) {
   .About {

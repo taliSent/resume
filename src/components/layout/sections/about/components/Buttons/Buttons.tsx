@@ -17,16 +17,19 @@ const Buttons: React.FC = () => {
         <motion.button
           style={{
             background:
-              "linear-gradient(40deg, #F28080, #8f5fdf, #f2055c)",
-            backgroundSize: "200% 200%",
+              "linear-gradient(40deg, #D55B22)",
+            // backgroundSize: "180% 180%",
           }}
-          animate={{
-            backgroundPosition: ["0% 0%", "100% 100%"],
-          }}
+          // animate={{
+          //   backgroundPosition: ["0% 0%", "100% 100%"],
+          // }}
           transition={{
-            duration: 1,
+            duration: 0.4,
             repeat: Infinity,
             repeatType: "reverse",
+          }}
+          whileHover={{
+            scale: [1, 1.05]
           }}
           className={styles.Button}
         >
