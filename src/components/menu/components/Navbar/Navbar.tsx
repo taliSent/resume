@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarT> = ({ toggleTheme, isMenuOpen, closeMenu }) => {
           </NavHashLink>
         </li>
       ))}
-      <li>{toggleTheme}</li>
+      <li className={styles.li}>{toggleTheme}</li>
     </ul>
   );
 };

@@ -88,4 +88,9 @@ span {
         transition: all .2s ease-in;
     }
 
+    .li {
+        display: flex;
+        justify-content: center;
+    }
+
 }

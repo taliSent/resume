@@ -25,6 +25,7 @@
   border-radius: 50%;
   anchor-name: --anchor;
   z-index: 3;
+  box-shadow: var(--box-shadow);
 }
 .Desaturated {
   filter: saturate(0.75) !important;
@@ -43,7 +44,7 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  box-shadow: var(--box-shadow);
+  z-index: 3;
 }
 .Profession {
   color: var(--header-color);

@@ -1,7 +1,6 @@
 
 .ToggleThemeButton {
     display: flex;
-    align-self: baseline;
 }
 
 .ToggleThemeButton:hover {

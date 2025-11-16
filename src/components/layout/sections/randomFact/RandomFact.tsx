@@ -39,8 +39,8 @@ const RandomFact = () => {
   return (
     <section id="random-fact" aria-label="random fact">
       <Header
-        name={"Random fact about me"}
-        textSecondary={"roll the dice!"}
+        name={"Random fact"}
+        textSecondary={"about me"}
         icon={<TbClover size={28} className="icon" />}
       />
       <div className={styles.GameContainer}>
@@ -74,7 +74,7 @@ const FACTS = [
   "During 2022-2025, I've lived in 4 countries",
   "I only play very specific short indie video games",
   "I was a Dungeon Master and received a lot of positive feedback",
-  "I have a natural ability to make funny voices",
+  "I have a natural ability to make cartoonish voices",
   "I used to be an actress on a horror quest",
   'My favorite book is "Harry Potter and methods of rationality"',  
   "I used to draw and paint, and there're still traces of that somewhere in the Internet",
@@ -87,32 +87,32 @@ type FactProps = {
   rollDice: () => void;
 };
 
-const Fact = ({diceResult}: {diceResult: number}) => <div>⭐{FACTS[diceResult]}</div>
-
+const Fact = ({diceResult}: {diceResult: number}) => <div className={styles.Fact}>⭐{FACTS[diceResult]}</div>
+// todo: naming?
 const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
   if (result === 20) {
     return (
-      <>
-        <div>This is a critical success! You won 2 facts ✨</div>
+      <div className={styles.FactContainer}>
+        <>This is a critical success! You won 2 facts ✨</>
         <Fact diceResult={18} />
         <Fact diceResult={19} />
-      </>
+      </div>
     );
   }
   // todo: design try again button
   if (result === 1) {
     return (
-      <div>
+      <div className={styles.FactContainer}>
         This is a critical failure! You're welcome to provide a fact about
         yourself{" "}
         <NavHashLink to={"#contact-me"} smooth>
           here ^~^
         </NavHashLink>
-        or <button onClick={rollDice} className={styles.TryAgain}>try again</button>
+        {" "}<br/>or <button onClick={rollDice} className={styles.TryAgain}>try again</button>
       </div>
     );
   }
-  return <Fact diceResult={result+1} />;
+  return <Fact diceResult={result} />;
 };
 
 export default RandomFact;

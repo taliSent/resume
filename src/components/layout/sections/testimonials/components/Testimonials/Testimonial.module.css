@@ -20,7 +20,7 @@
     height: min(2.6em, 14vw);
     border-radius: 100%;
     border: 2px var(--header-color) solid;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow) !important;
     margin-bottom: 1em;
 }
 
