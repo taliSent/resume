@@ -79,6 +79,7 @@ body {
   color: var(--text-color);
   overflow: hidden;
   position: relative;
+  color: --text-color;
 }
 
 ul,
@@ -120,4 +121,5 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-size: inherit;
 }

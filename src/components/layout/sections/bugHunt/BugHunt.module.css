@@ -1,7 +1,10 @@
 .Bug {
   position: absolute;
-  width: 100px;
+  max-width: 200px;
+  max-height: 140px;
+  object-fit: contain;
   z-index: 5;
+  cursor: url("img/cursor-bug-net.png") 2 2, pointer;
 }
 .ReleaseButton {
   background-color: var(--header-color);
@@ -30,14 +33,9 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-}
-.BattleImgShadow {
-  width: 100%;
-  height: 100%;
-  position: relative;
   box-shadow: var(--box-shadow);
+  border-radius: 1em;
 }
-
 .BattleBackground {
   max-width: 100%;
   border-radius: 1em;

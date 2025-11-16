@@ -13,6 +13,7 @@ const Menu: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(!isTabletOrMobile);
   const handleClick = () => isTabletOrMobile && setIsMenuOpen((prev) => !prev);
   const closeMenu = () => isTabletOrMobile && setIsMenuOpen(false);
+  //TODO: separate in another file
   const toggleMenucolor = theme === "dark" ? "#D9D9D9" : "#262526";
   const menuClasses = `${styles.Menu} ${!isMenuOpen && styles.MenuClosing}`;
 

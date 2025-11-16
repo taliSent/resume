@@ -17,6 +17,10 @@ const LINKS = [
     anchor: "#bug-hunt",
   },
   {
+    name: "Random\xa0Fact",
+    anchor: "#random-fact",
+  },
+  {
     name: `Contact\xa0me`,
     anchor: "#contact-me",
   },

@@ -4,8 +4,10 @@ import { LuBugOff } from "react-icons/lu";
 import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 
-const BugsQuantity = 20;
+const MAX_BUGS_QUANTITY = 23;
+const BUG_SPECIES_QUANTITY = 8;
 
 type BugParamsT = {
   x: string;
@@ -20,7 +22,7 @@ const generateBugParams = (container: Element): BugParamsT => {
   const y = `${Math.random() * innerHeight}px`;
   const angle = `${Math.random() * 360}deg`;
   
-  const src = `img/bugs/bug${Math.ceil(Math.random()*7)}.png`;
+  const src = `img/bugs/bug${Math.ceil(Math.random()*BUG_SPECIES_QUANTITY)}.png`;
   return { x, y, src, angle };
 };
 type CreateBugParams = {
@@ -55,15 +57,20 @@ const BugHunt = () => {
   const catchBug = useBugs((state) => state.catchBug);
 
   const handleReleaseBugsClick = () => {
-    for (let index = 0; index < BugsQuantity; index++) {
+    for (let index = 0; index < MAX_BUGS_QUANTITY; index++) {
       const container = document.querySelector("#root_");
       if (!container) return;
       const bugParams = generateBugParams(container);
       const bugEl = createBug({ bugParams, catchBug });
       container?.appendChild(bugEl);
     }
-    releaseBugs(BugsQuantity);
+    releaseBugs(MAX_BUGS_QUANTITY);
   };
+  useEffect(() => {
+    if(!areBugsCaught) return;
+    const timeout = setTimeout(renewGame, 2000);
+    return () => clearTimeout(timeout);
+  }, [areBugsCaught])
   
   return (
     <section id="bug-hunt" aria-label="bug hunt">

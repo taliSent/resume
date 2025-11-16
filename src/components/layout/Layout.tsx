@@ -5,8 +5,8 @@ import Experience from "./sections/education/Experience";
 import Stack from "./sections/stack/Stack";
 import Testimonials from "./sections/testimonials/Testimonials";
 import styles from "./Layout.module.css";
-import { Route, Routes } from "react-router";
 import BugHunt from "./sections/bugHunt/BugHunt";
+import RandomFact from "./sections/randomFact/RandomFact";
 
 const Layout: React.FC = () => {
   return (
@@ -16,6 +16,7 @@ const Layout: React.FC = () => {
       <Experience />
       <Testimonials />
       <BugHunt />
+      <RandomFact />
       <ContactMe />
     </div>
   );

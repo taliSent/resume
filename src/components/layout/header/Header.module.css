@@ -12,7 +12,7 @@
   margin-bottom: 3em;
   color: var(--text-secondary);
   font-size: clamp(0.5em, 3.8vw, 0.8em);
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2em;
 }
 
 h1,
