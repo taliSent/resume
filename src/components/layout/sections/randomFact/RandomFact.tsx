@@ -40,7 +40,7 @@ const RandomFact = () => {
     <section id="random-fact" aria-label="random fact">
       <Header
         name={"Random fact"}
-        textSecondary={"about me"}
+        textSecondary={"roll a dice to know more about me"}
         icon={<TbClover size={28} className="icon" />}
       />
       <div className={styles.GameContainer}>
