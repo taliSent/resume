@@ -106,7 +106,7 @@ section {
   margin-bottom: 4em;
 }
 section[data-screen-width="true"] {
-  width: 100% !important;
+  width: calc(100% - 10vw);
 }
 section:not([data-screen-width]) {
   width: var(--container-width);

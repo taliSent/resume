@@ -87,7 +87,7 @@ type FactProps = {
   rollDice: () => void;
 };
 
-const Fact = ({diceResult}: {diceResult: number}) => <div className={styles.Fact}>⭐{FACTS[diceResult]}</div>
+const Fact = ({diceResult}: {diceResult: number}) => <div className={styles.Fact}>⭐{" "}{FACTS[diceResult]}</div>
 // todo: naming?
 const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
   if (result === 20) {
