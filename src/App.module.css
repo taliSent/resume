@@ -1,5 +1,5 @@
 .Wave {
-  background: url("./../img/wave3.png") bottom no-repeat;
+  background: url("/img/wave3.png") bottom no-repeat;
   background-size: 100%;
   z-index: 2;
   overflow: hidden;

@@ -49,7 +49,7 @@
 .Profession {
   color: var(--header-color);
   font-family: var(--ff-accent);
-  font-size: clamp(calc(0.2vw + 1rem), 3.2vw, 1.3rem);
+  font-size: clamp(calc(0.2vw + 1rem), 3.8vw, 1.3em);
   text-align: right;
   margin-bottom: 0.5em;
   font-weight: 400;
@@ -75,7 +75,7 @@
 }
 
 .Stack {
-  font-size: clamp(0.6rem, 0.4vw, 1.2rem);
+  font-size: clamp(.8em,.4vw,1.2em);
   text-align: right;
   margin-bottom: 2em;
   letter-spacing: 0.19rem;
