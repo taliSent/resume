@@ -16,6 +16,6 @@ const Digit = ({finalValue, duration, withPlus = false} : DigitProps) => {
         return () => controls.stop()
     }, [])
 
-    return <motion.pre transition={{type: "spring"}}>{rounded}</motion.pre>
+    return <motion.pre>{rounded}</motion.pre>
 }
 export default Digit;
