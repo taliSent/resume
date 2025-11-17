@@ -88,7 +88,7 @@ const BugHunt = () => {
           />
           <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>I'm a Senior developer</div>
           <motion.img
-            src="img/TaliStanding.png"
+            src="img/TaliStanding2.png"
             alt="Tali"
             initial={{ y: "-30%", x: "-125%"}}
             whileInView={{y: "-50%"}}

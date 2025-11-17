@@ -4,6 +4,7 @@ import Header from "../../header/Header";
 import { ReactFlow, Background, Controls } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { edges, nodes } from "./constants";
+import styles from './Stack.module.css';
 
 const Stack: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Stack: React.FC = () => {
         icon={<GiTechnoHeart className="icon" />}
         textSecondary="technologies I use"
       />
-      <div style={{ height: "500px", width: "100%" }}>
+      <div className={styles.ReactFlow}>
         <ReactFlow nodes={nodes} edges={edges} fitView>
           <Background />
           <Controls />
