@@ -124,4 +124,6 @@ button {
   background-color: transparent;
   cursor: pointer;
   font-size: inherit;
+  -webkit-tap-highlight-color: transparent;
+
 }
