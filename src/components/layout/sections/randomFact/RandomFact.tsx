@@ -52,7 +52,7 @@ const RandomFact = () => {
           <img src="img/dice3.png" alt="dice d20" className={styles.Dice} />
           <div className={styles.Result}>{diceResult}</div>
         </button>
-        {diceResult && <GameResultFact diceResult={diceResult} rollDice={rollDice} />}
+        {diceResult && <GameResultFact diceResult={1} rollDice={rollDice} />}
       </div>
     </section>
   );
@@ -78,7 +78,7 @@ const FACTS = [
   "I used to be an actress on a horror quest",
   'My favorite book is "Harry Potter and methods of rationality"',  
   "I used to draw and paint, and there're still traces of that somewhere in the Internet",
-  "I used to study psychology and my favorite theme is cognitive distortions",
+  "I used to study psychology and my favorite topic is cognitive distortions",
   "I jumped with a parachute once",
 ];
 
@@ -112,7 +112,8 @@ const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
       </div>
     );
   }
-  return  <div className={styles.FactContainer}><Fact diceResult={result} /></div>;
+  
+  return  <div className={styles.FactContainer}><Fact diceResult={result-2} /></div>;
 };
 
 export default RandomFact;
