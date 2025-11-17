@@ -2,13 +2,13 @@ import { AnimatePresence, motion } from "motion/react";
 import { ReactNode } from "react";
 import styles from "./Modal.module.css";
 
-type ModalT = {
+type ModalProps = {
     isOpen: boolean;
     onClose: () => void;
     children: ReactNode;
 }
 
-const Modal = ({ isOpen, onClose, children }: ModalT) => {
+const Modal = ({ isOpen, onClose, children }: ModalProps) => {
     return <AnimatePresence>
             {isOpen && <motion.div 
                 key="modal" 

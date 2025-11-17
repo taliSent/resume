@@ -1,7 +1,6 @@
 .GameContainer {
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 1rem;
   height: 280px;
   justify-content: space-between;
@@ -43,7 +42,7 @@
     }
 }
  .Fact {
-    font-size: clamp(0.65em, 2vw, 1.1em);
+    font-size: inherit;
 }
 
 .TryAgain {
@@ -51,5 +50,7 @@
 }
 
 .FactContainer {
-    font-size: clamp(0.7em, 2vw, 1.1em);
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    text-align: left;
+    margin-inline: auto;
 }

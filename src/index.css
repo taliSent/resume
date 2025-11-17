@@ -39,6 +39,7 @@
   );
   --controls-color: #d9d9d9;
   --frame-accent: white;
+  --tooltip-background: #2d2d2d;
 }
 
 [data-theme="dark"] {
@@ -60,6 +61,7 @@
   --testimonial-border: thin transparent solid;
   --controls-color: #2d2d2d;
   --frame-accent: #9494941c;
+  --tooltip-background: #2d2d2d;
 }
 
 html,

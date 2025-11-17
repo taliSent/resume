@@ -86,20 +86,22 @@ const BugHunt = () => {
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />
+          <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>I'm a Senior developer</div>
           <motion.img
             src="img/TaliStanding.png"
             alt="Tali"
             initial={{ y: "-30%", x: "-125%"}}
             whileInView={{y: "-50%"}}
-            transition={{duration: 0.7}}
+            transition={{duration: 0.75}}
             className={styles.TaliPortrait}
-          />
+          />          
+          <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>I'm a feature</div>
           <motion.img
             src="img/bugs/bug000.png"
             alt="bug"
-            initial={{ y: "-70%", x: "85%"}}
+            initial={{ y: "-100%", x: "85%"}}
             whileInView={{y: "-50%"}}
-            transition={{duration: 0.7}}
+            transition={{duration: 0.75}}
             className={styles.BugPortrait}
           />
         </div>

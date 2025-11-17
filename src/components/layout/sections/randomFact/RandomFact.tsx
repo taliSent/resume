@@ -61,7 +61,6 @@ const RandomFact = () => {
 // move it to sc
 const FACTS = [
   "I love jogging",
-  "I almost never drink alcohol",
   "I'm almost entirely indifferent about food",
   "I've had dreadlocks for about 5 years",
   "I don't like my first name and prefer to be called Tali, but almost every variation will do",
@@ -75,6 +74,7 @@ const FACTS = [
   "I only play very specific short indie video games",
   "I was a Dungeon Master and received a lot of positive feedback",
   "I have a natural ability to make cartoonish voices",
+  "I learnt to sing, but am too shy to do it in public",
   "I used to be an actress on a horror quest",
   'My favorite book is "Harry Potter and methods of rationality"',  
   "I used to draw and paint, and there're still traces of that somewhere in the Internet",
@@ -112,7 +112,7 @@ const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
       </div>
     );
   }
-  return <Fact diceResult={result} />;
+  return  <div className={styles.FactContainer}><Fact diceResult={result} /></div>;
 };
 
 export default RandomFact;

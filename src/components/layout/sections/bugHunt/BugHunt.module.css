@@ -27,7 +27,6 @@
   gap: 1rem;
 }
 
-
 .BattleImgContainer {
   position: relative;
   display: flex;
@@ -39,21 +38,50 @@
 .BattleBackground {
   max-width: 100%;
   border-radius: 1em;
+  anchor-name: --anchor-battle-img;
 }
 
 .TaliPortrait {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    transform: translate(-125%, -50%);
-} 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-125%, -50%);
+}
 
 .BugPortrait {
   --bugWidth: 20%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(85%, -50%);
-    width: var(--bugWidth);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(85%, -50%);
+  width: var(--bugWidth);
 }
+.Tooltip {
+  position: absolute;
+  background-color: var(--tooltip-background);
+  color: white;
+  position-anchor: --anchor-battle-img;
+  padding: 0.4em;
+  opacity: 0;
+  box-shadow: var(--box-shadow);
+}
+
+.TooltipTali {
+  bottom: 85%;
+  right: 40%;
+  border-radius: 25px 25px 25px 5px;
+}
+
+.TooltipBug {
+  bottom: 15%;
+  right: 10%;
+  border-radius: 5px 25px 25px 25px;
+}
+
+.Tooltip:has(+ img:hover) {
+  opacity: 1;
+}
+/* .TooltipBag:has(+ img:hover) {
+  opacity: 1;
+} */
