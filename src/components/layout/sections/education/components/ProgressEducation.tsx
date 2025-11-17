@@ -13,7 +13,7 @@ const ProgressEducation: React.FC = () => {
           years={years}
           isLast={isLast}
           isMirrored={isMirrored}
-          key={name}
+          key={`${name} ${place}`}
         />
       )}
     </div>

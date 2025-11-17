@@ -17,7 +17,7 @@ const ProgressWork: React.FC<ProgressWorkProps> = ({ className }) => {
             years={years}
             isLast={isLast}
             isMirrored={isMirrored}
-            key={name}
+            key={`${name} ${place}`}
           />
         )}
     </div>
