@@ -52,7 +52,7 @@ const RandomFact = () => {
           <img src="img/dice3.png" alt="dice d20" className={styles.Dice} />
           <div className={styles.Result}>{diceResult}</div>
         </button>
-        {diceResult && <GameResultFact diceResult={1} rollDice={rollDice} />}
+        {diceResult && <GameResultFact diceResult={diceResult} rollDice={rollDice} />}
       </div>
     </section>
   );
@@ -104,9 +104,9 @@ const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
     return (
       <div className={styles.FactContainer}>
         This is a critical failure! You're welcome to provide a fact about
-        yourself{" "}
+        yourself.{" "}
         <NavHashLink to={"#contact-me"} smooth>
-          here ^~^
+          Contact me ^~^
         </NavHashLink>
         {" "}<br/>or <button onClick={rollDice} className={styles.TryAgain}>try again</button>
       </div>

@@ -65,6 +65,7 @@
   padding: 0.4em;
   opacity: 0;
   box-shadow: var(--box-shadow);
+  transition: opacity 0.3s ease-in-out;
 }
 
 .TooltipTali {
@@ -81,7 +82,5 @@
 
 .Tooltip:has(+ img:hover) {
   opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
-/* .TooltipBag:has(+ img:hover) {
-  opacity: 1;
-} */
