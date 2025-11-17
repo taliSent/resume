@@ -41,7 +41,7 @@ const RandomFact = () => {
       <Header
         name={"Random fact"}
         textSecondary={"roll a dice to know more about me"}
-        icon={<TbClover size={28} className="icon" />}
+        icon={<TbClover className="icon" />}
       />
       <div className={styles.GameContainer}>
         <button

@@ -1,24 +1,24 @@
 import React from "react";
 import { GiTechnoHeart } from "react-icons/gi";
 import Header from "../../header/Header";
-import Bar from "./components/Bar";
-import styles from "./Stack.module.css";
+import { ReactFlow, Background, Controls } from "@xyflow/react";
+import "@xyflow/react/dist/style.css";
+import { edges, nodes } from "./constants";
 
 const Stack: React.FC = () => {
   return (
-    <section id='stack' aria-label='my stack'>
+    <section id="stack" aria-label="my stack">
       <Header
-        name='Stack'
-        icon={<GiTechnoHeart className='icon' />}
-        textSecondary='technologies I use'
+        name="Stack"
+        icon={<GiTechnoHeart className="icon" />}
+        textSecondary="technologies I use"
       />
-      <ul className={styles.Stack}>
-        <Bar technologyName='React' className={styles.React} />
-        <Bar technologyName='Typescript' className={styles.Typescript} />
-        <Bar technologyName='Vanilla&nbsp;Js' className={styles.Js} />
-        <Bar technologyName='CSS' className={styles.CSS} />
-        <Bar technologyName='HTML' className={styles.HTML} />
-      </ul>
+      <div style={{ height: "500px", width: "100%" }}>
+        <ReactFlow nodes={nodes} edges={edges} fitView>
+          <Background />
+          <Controls />
+        </ReactFlow>
+      </div>
     </section>
   );
 };

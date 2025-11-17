@@ -20,7 +20,7 @@ export const PROGRESS_WORK: ProgressUnitProps[] = [
   {
     name: "Frontend developer",
     place: "Cinimex",
-    years: "2019-present",
+    years: "2019-2022",
     achievement:
       "Developed a\xa0bank application that allows user to configure, watch as\xa0PDF and\xa0sign documents",
     isMirrored: true,
