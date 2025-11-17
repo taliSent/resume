@@ -6,7 +6,7 @@ import styles from "./BugHunt.module.css";
 import { motion } from "motion/react";
 import { useEffect } from "react";
 
-const MAX_BUGS_QUANTITY = 23;
+const MAX_BUGS_QUANTITY = 16;
 const BUG_SPECIES_QUANTITY = 8;
 
 type BugParamsT = {
@@ -16,8 +16,8 @@ type BugParamsT = {
   angle: string;
 };
 const generateBugParams = (container: Element): BugParamsT => {
-  const innerWidth = container.clientWidth;
-  const innerHeight = container.clientHeight;
+  const innerWidth = container.clientWidth - 100;
+  const innerHeight = container.clientHeight - 100;
   const x = `${Math.random() * innerWidth}px`;
   const y = `${Math.random() * innerHeight}px`;
   const angle = `${Math.random() * 360}deg`;
@@ -118,7 +118,7 @@ const BugHunt = () => {
         </button>
       </div>
       <Modal isOpen={areBugsCaught} onClose={renewGame}>
-        <img src={"img/you-won2.png"} />
+        <img src={import.meta.env.BASE_URL + "img/you-won2.png"} />
       </Modal>
     </section>
   );
