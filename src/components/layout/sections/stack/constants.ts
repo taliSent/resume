@@ -94,7 +94,7 @@ const libNodes = [
   {
     id: "react-query",
     position: { x: 700, y: 400 },
-    data: { label: "React / Tanstack query" },
+    data: { label: "React query" },
   },
   {
     id: "rtk",

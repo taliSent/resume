@@ -8,7 +8,7 @@ import styles from './Stack.module.css';
 
 const Stack: React.FC = () => {
   return (
-    <section id="stack" aria-label="my stack">
+    <section id="stack" aria-label="my stack" data-screen-width={true}>
       <Header
         name="Stack"
         icon={<GiTechnoHeart className="icon" />}

@@ -1,5 +1,7 @@
 .Container {
-    width: clamp(300px, 90%, 45.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-inline: auto;
 }
 
