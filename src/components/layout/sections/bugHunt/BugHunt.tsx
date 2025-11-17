@@ -5,6 +5,7 @@ import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
 import { motion } from "motion/react";
 import { useEffect } from "react";
+import MediaQuery from "react-responsive";
 
 const MAX_BUGS_QUANTITY = 16;
 const BUG_SPECIES_QUANTITY = 8;
@@ -86,9 +87,11 @@ const BugHunt = () => {
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />
-          <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>
-            I'm a Senior developer
-          </div>
+          <MediaQuery minWidth={800}>
+            <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>
+              I'm a Senior developer
+            </div>
+          </MediaQuery>
           <motion.img
             src="img/TaliStanding2.png"
             alt="Tali"
@@ -97,9 +100,11 @@ const BugHunt = () => {
             transition={{ duration: 0.75 }}
             className={styles.TaliPortrait}
           />
-          <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>
-            I'm a feature
-          </div>
+          <MediaQuery maxWidth={800}>
+            <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>
+              I'm a feature
+            </div>
+          </MediaQuery>
           <motion.img
             src="img/bugs/bug000.png"
             alt="bug"
