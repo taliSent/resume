@@ -21,8 +21,8 @@ const generateBugParams = (container: Element): BugParamsT => {
   const x = `${Math.random() * innerWidth}px`;
   const y = `${Math.random() * innerHeight}px`;
   const angle = `${Math.random() * 360}deg`;
-  
-  const src = `/img/bugs/bug${Math.ceil(Math.random()*BUG_SPECIES_QUANTITY)}.png`;
+  const randomIndex = Math.ceil(Math.random() * BUG_SPECIES_QUANTITY);
+  const src = import.meta.env.BASE_URL + `img/bugs/bug${randomIndex}.png`;
   return { x, y, src, angle };
 };
 type CreateBugParams = {
@@ -67,11 +67,11 @@ const BugHunt = () => {
     releaseBugs(MAX_BUGS_QUANTITY);
   };
   useEffect(() => {
-    if(!areBugsCaught) return;
+    if (!areBugsCaught) return;
     const timeout = setTimeout(renewGame, 2000);
     return () => clearTimeout(timeout);
-  }, [areBugsCaught])
-  
+  }, [areBugsCaught]);
+
   return (
     <section id="bug-hunt" aria-label="bug hunt">
       <Header
@@ -86,22 +86,26 @@ const BugHunt = () => {
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />
-          <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>I'm a Senior developer</div>
+          <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>
+            I'm a Senior developer
+          </div>
           <motion.img
             src="img/TaliStanding2.png"
             alt="Tali"
-            initial={{ y: "-30%", x: "-125%"}}
-            whileInView={{y: "-50%"}}
-            transition={{duration: 0.75}}
+            initial={{ y: "-30%", x: "-125%" }}
+            whileInView={{ y: "-50%" }}
+            transition={{ duration: 0.75 }}
             className={styles.TaliPortrait}
-          />          
-          <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>I'm a feature</div>
+          />
+          <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>
+            I'm a feature
+          </div>
           <motion.img
             src="img/bugs/bug000.png"
             alt="bug"
-            initial={{ y: "-100%", x: "85%"}}
-            whileInView={{y: "-50%"}}
-            transition={{duration: 0.75}}
+            initial={{ y: "-100%", x: "85%" }}
+            whileInView={{ y: "-50%" }}
+            transition={{ duration: 0.75 }}
             className={styles.BugPortrait}
           />
         </div>
@@ -110,7 +114,7 @@ const BugHunt = () => {
           disabled={areBugsOnPage}
           className={styles.ReleaseButton}
         >
-          {areBugsOnPage ?  "Bugs are now free..." : "Release the bugs 🪲" }
+          {areBugsOnPage ? "Bugs are now free..." : "Release the bugs 🪲"}
         </button>
       </div>
       <Modal isOpen={areBugsCaught} onClose={renewGame}>
