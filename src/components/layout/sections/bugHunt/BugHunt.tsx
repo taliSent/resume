@@ -22,7 +22,7 @@ const generateBugParams = (container: Element): BugParamsT => {
   const y = `${Math.random() * innerHeight}px`;
   const angle = `${Math.random() * 360}deg`;
   
-  const src = `img/bugs/bug${Math.ceil(Math.random()*BUG_SPECIES_QUANTITY)}.png`;
+  const src = `/img/bugs/bug${Math.ceil(Math.random()*BUG_SPECIES_QUANTITY)}.png`;
   return { x, y, src, angle };
 };
 type CreateBugParams = {
