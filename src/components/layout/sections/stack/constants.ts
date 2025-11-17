@@ -15,9 +15,9 @@ const cssNodes = [
     data: { label: "Tailwind" },
   },
   {
-    id: "modules",
+    id: "styled",
     position: { x: -100, y: 100 },
-    data: { label: "CSS modules" },
+    data: { label: "Styled components" },
   },
 ];
 
@@ -33,9 +33,9 @@ const cssEdges = [
     target: "tailwind",
   },
   {
-    id: "css-modules",
+    id: "css-styled",
     source: "css",
-    target: "modules",
+    target: "styled",
   },
 ];
 
