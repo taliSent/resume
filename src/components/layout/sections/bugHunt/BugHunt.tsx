@@ -100,7 +100,7 @@ const BugHunt = () => {
             transition={{ duration: 0.75 }}
             className={styles.TaliPortrait}
           />
-          <MediaQuery maxWidth={800}>
+          <MediaQuery minWidth={800}>
             <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>
               I'm a feature
             </div>
