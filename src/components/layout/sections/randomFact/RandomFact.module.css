@@ -9,7 +9,6 @@
 .Dice {
   width: 100px;
   position: relative;
-  /* anchor-name: --anchor-dice; */
 }
 
 .Result {
@@ -22,8 +21,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* position-anchor: --anchor-dice;
-  position-area: center center; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34,6 +31,10 @@
 .DiceContainer {
   position: relative;
   margin-top: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 @media screen and (max-width: 600px) {    
     .DiceContainer {
