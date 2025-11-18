@@ -10,7 +10,7 @@ import RandomFact from "./sections/randomFact/RandomFact";
 
 const Layout: React.FC = () => {
   return (
-    <div className={styles.Container} id="container">
+    <main className={styles.Container} id="container">
       <About />
       <Stack />
       <Experience />
@@ -18,7 +18,7 @@ const Layout: React.FC = () => {
       <BugHunt />
       <RandomFact />
       <ContactMe />
-    </div>
+    </main>
   );
 };
 export default Layout;

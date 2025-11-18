@@ -7,9 +7,10 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@context': path.resolve(__dirname, './src/context'),
-      '@store': path.resolve(__dirname, './src/store'),
-      '@components': path.resolve(__dirname, './src/components'),
+      "@context": path.resolve(__dirname, "./src/context"),
+      "@store": path.resolve(__dirname, "./src/store"),
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
     },
   },
   build: {

@@ -51,7 +51,7 @@
   --show-details-background-color: #f2055c;
   --show-background-color: #807cbf;
   --show-details-color: var(--background-color);
-  --header-color: #73FFD7;
+  --header-color: #57d0ad;
   --hover-accent: #807cbf;
   --button-color: #f2055c;
   --border-color: var(--plate-color);
@@ -132,5 +132,4 @@ button {
   cursor: pointer;
   font-size: inherit;
   -webkit-tap-highlight-color: transparent;
-
 }

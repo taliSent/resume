@@ -5,6 +5,7 @@
       "@context/*": ["./src/context/*"],
       "@store/*": ["./src/store/*"],
       "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
     },    
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
