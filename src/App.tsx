@@ -1,11 +1,8 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import styles from "./App.module.css";
 import Layout from "./components/layout/Layout";
 import Menu from "./components/menu/Menu";
 import { ThemeContext } from "./context/context";
-import MediaQuery from "react-responsive";
-import { useParallax } from "@utils/parallax";
-import { motion, useScroll } from "motion/react";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
