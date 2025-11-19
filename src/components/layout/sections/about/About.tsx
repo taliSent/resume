@@ -7,16 +7,16 @@ import Numbers from "./components/Numbers/Numbers";
 import { useParallax } from "@utils/parallax";
 
 const About: React.FC = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 0.1", "end end"],
-  });
-  const y = useParallax(scrollYProgress, 0, -250);
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["start 0.1", "end end"],
+  // });
+  // const y = useParallax(scrollYProgress, 0, -250);
   return (
-    <section id="about" aria-label="about me" ref={ref}>
+    <section id="about" aria-label="about me">
       <div className={styles.About}>
-        <motion.div className={styles.PhotoContainer} style={{ y }}>
+        <motion.div className={styles.PhotoContainer}>
           <motion.img
             src={"img/TaliLight4.png"}
             alt="Tali's picture"
