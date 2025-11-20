@@ -3,7 +3,7 @@ import { useBugs } from "src/store/store";
 import { LuBugOff } from "react-icons/lu";
 import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 import MediaQuery from "react-responsive";
 
@@ -83,7 +83,7 @@ const BugHunt = () => {
       <div className={styles.BattleContainer}>
         <div className={styles.BattleImgContainer}>
           <img
-            src="img/vs2.png"
+            src="img/vs.png"
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />

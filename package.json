@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://taliSent.github.io/resume",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.0",

@@ -1,4 +1,4 @@
-import { MotionValue, useTransform } from "motion/react";
+import { MotionValue, useTransform } from "framer-motion";
 
 export const useParallax = (
   value: MotionValue<number>,

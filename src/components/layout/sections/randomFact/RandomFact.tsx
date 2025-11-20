@@ -1,4 +1,4 @@
-import { useAnimate } from "motion/react";
+import { useAnimate } from "framer-motion";
 import { useState } from "react";
 import { TbClover } from "react-icons/tb";
 import { NavHashLink } from "react-router-hash-link";

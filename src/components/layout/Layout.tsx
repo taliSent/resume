@@ -9,7 +9,7 @@ import BugHunt from "./sections/bugHunt/BugHunt";
 import RandomFact from "./sections/randomFact/RandomFact";
 import MediaQuery from "react-responsive";
 import { useParallax } from "src/utils/parallax";
-import { motion, useScroll } from "motion/react";
+import { motion, useScroll } from "framer-motion";
 
 const Layout: React.FC = () => {
   const refAboutSection = useRef(null);
