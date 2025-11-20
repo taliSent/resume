@@ -26,14 +26,14 @@ const Layout: React.FC = () => {
       >
         <MediaQuery minWidth={847}>
           <motion.img
-            src="img/cloud.png"
+            src="img/cloud2.png"
             className={styles.Cloud1}
             aria-hidden={true}
             style={{ x: xFirstCloud }}
             alt=""
           />
           <motion.img
-            src="img/cloud.png"
+            src="img/cloud2.png"
             className={styles.Cloud2}
             style={{ x: xSecondCloud }}
             aria-hidden={true}

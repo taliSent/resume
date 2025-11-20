@@ -3,6 +3,16 @@
   justify-content: flex-end;
 }
 
+.FollowTheCursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  backdrop-filter: invert(100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 5;
+}
+
 .Button {
   font-weight: 500;
   font-size: 16px;
@@ -17,6 +27,9 @@
   transition: letter-spacing 0.3s ease-in-out;
   border-radius: 10px;
   color: white;
+  background: linear-gradient(51deg, var(--cv-button));
+  position: relative;
+  overflow: hidden;
 }
 .Button a {
   color: white;

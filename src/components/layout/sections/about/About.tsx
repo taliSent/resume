@@ -17,7 +17,7 @@ const About: React.FC = () => {
       <div className={styles.About}>
         <motion.div className={styles.PhotoContainer}>
           <motion.img
-            src={"img/TaliLight4.png"}
+            src={"img/TaliPurple.png"}
             alt="Tali's picture"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "none" }}

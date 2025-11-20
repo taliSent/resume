@@ -22,12 +22,9 @@
   --selected-text-background: #525073;
   --plate-color: #dddbfc;
   --background-color: #f8f8f8;
-  --header-color: #5d59d9;
+  --header-color: #6f2dbd;
   --hover-accent: #bde2f5;
-  --button-color: #66ccff;
-  --show-details-background-color: #f2055c;
-  --show-background-color: #5d59d9;
-  --show-details-color: var(--progress-accent);
+  --cv-button: #f2055c;
   --border-color: transparent;
   --progress-main: hsla(212, 93%, 49%, 1);
   --progress-accent: hsla(210, 90%, 80%, 1);
@@ -40,7 +37,9 @@
   );
   --controls-color: #d9d9d9;
   --frame-accent: white;
-  --tooltip-background: #2d2d2d;
+  --tooltip-color: black;
+  --tooltip-background: white;
+  --testimonial-frame-border: var(--header-color);
 }
 
 [data-theme="dark"] {
@@ -51,9 +50,9 @@
   --show-details-background-color: #f2055c;
   --show-background-color: #807cbf;
   --show-details-color: var(--background-color);
-  --header-color: #57d0ad;
+  --header-color: #b298dc;
   --hover-accent: #807cbf;
-  --button-color: #f2055c;
+  --cv-button: #f2055c;
   --border-color: var(--plate-color);
   --progress-main: hsla(212, 93%, 49%, 1);
   --progress-accent: rgb(133, 169, 204);
@@ -61,8 +60,10 @@
   --testimonial-gradient: linear-gradient(180deg, #2d2d2d 0%, #49445a 50%);
   --testimonial-border: thin transparent solid;
   --controls-color: #2d2d2d;
-  --frame-accent: #9494941c;
-  --tooltip-background: #2d2d2d;
+  --frame-accent: #fff6f68c;
+  --tooltip-color: black;
+  --tooltip-background: white;
+  --testimonial-frame-border: var(--frame-accent);
 }
 
 html,

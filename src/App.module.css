@@ -1,13 +1,5 @@
 .Wave {
-  background: url("/img/wave3.png") bottom no-repeat;
+  background: url("/img/wave2.png") bottom no-repeat;
   background-size: 100%;
   z-index: 2;
-}
-
-@media screen and (max-width: 480px) {
-  .Container {
-    width: 100%;
-    padding: 1em 0.5em;
-    box-shadow: none;
-  }
 }

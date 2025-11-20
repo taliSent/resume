@@ -59,8 +59,8 @@
 }
 .Tooltip {
   position: absolute;
-  background-color: var(--tooltip-background);
-  color: white;
+  background-color: white;
+  color: black;
   position-anchor: --anchor-battle-img;
   padding: 0.4em;
   opacity: 0;
