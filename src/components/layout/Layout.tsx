@@ -15,7 +15,7 @@ const Layout: React.FC = () => {
   const refAboutSection = useRef(null);
   const { scrollYProgress } = useScroll({ target: refAboutSection });
   // todo: separate the cloud components
-  const xFirstCloud = useParallax(scrollYProgress, 0, 200);
+  const xFirstCloud = useParallax(scrollYProgress, 0, 400);
   const xSecondCloud = useParallax(scrollYProgress, 0, 200);
   return (
     <main className={styles.Container} id="container">
