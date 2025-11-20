@@ -1,16 +1,15 @@
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import styles from "./About.module.css";
 import Buttons from "./components/Buttons/Buttons";
 import Description from "./components/Description/Description";
 import Numbers from "./components/Numbers/Numbers";
-import { useParallax } from "@utils/parallax";
 
 const About: React.FC = () => {
   // const ref = useRef(null);
   // const { scrollYProgress } = useScroll({
   //   target: ref,
-  //   offset: ["start 0.1", "end end"],
+  //   offset: ["start 0.3", "end end"],
   // });
   // const y = useParallax(scrollYProgress, 0, -250);
   return (

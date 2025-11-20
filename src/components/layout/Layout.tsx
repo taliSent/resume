@@ -8,7 +8,7 @@ import styles from "./Layout.module.css";
 import BugHunt from "./sections/bugHunt/BugHunt";
 import RandomFact from "./sections/randomFact/RandomFact";
 import MediaQuery from "react-responsive";
-import { useParallax } from "@utils/parallax";
+import { useParallax } from "src/utils/parallax";
 import { motion, useScroll } from "motion/react";
 
 const Layout: React.FC = () => {

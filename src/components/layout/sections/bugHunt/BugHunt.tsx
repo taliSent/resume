@@ -1,5 +1,5 @@
-import Modal from "@components/modal/Modal";
-import { useBugs } from "@store/store";
+import Modal from "src/components/modal/Modal";
+import { useBugs } from "src/store/store";
 import { LuBugOff } from "react-icons/lu";
 import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
@@ -119,7 +119,9 @@ const BugHunt = () => {
           disabled={areBugsOnPage}
           className={styles.ReleaseButton}
         >
-          {areBugsOnPage ? "Bugs are now free..." : "Release the bugs 🪲"}
+          {areBugsOnPage
+            ? "Bugs are now on the loose..."
+            : "Release the bugs 🪲"}
         </button>
       </div>
       <Modal isOpen={areBugsCaught} onClose={renewGame}>
