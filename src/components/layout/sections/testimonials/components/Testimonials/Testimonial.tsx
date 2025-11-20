@@ -36,7 +36,9 @@ const Testimonial: React.FC<TestimonialProps> = ({
       className={styles.Testimonial}
     >
       <img
-        src={`${photoSrc}`}
+        src={photoSrc}
+        width={72}
+        height={72}
         alt="coworker's photo"
         className={styles.Photo}
       />
