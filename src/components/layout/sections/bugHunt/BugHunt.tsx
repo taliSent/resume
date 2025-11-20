@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import MediaQuery from "react-responsive";
 
 const MAX_BUGS_QUANTITY = 16;
-const BUG_SPECIES_QUANTITY = 8;
+const BUG_SPECIES_QUANTITY = 12;
 
 type BugParamsT = {
   x: string;

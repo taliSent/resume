@@ -13,8 +13,8 @@ const Buttons: React.FC = () => {
       if (!refCursorFolower.current || !refbutton.current) return;
       const rect = refbutton.current.getBoundingClientRect();
       if (!e.clientX || !e.clientY) return;
-      refCursorFolower.current.style.left = e.clientX - rect.left - 12.5 + "px";
-      refCursorFolower.current.style.top = e.clientY - rect.top - 12.5 + "px";
+      refCursorFolower.current.style.left = e.clientX - rect.left - 25 + "px";
+      refCursorFolower.current.style.top = e.clientY - rect.top - 25 + "px";
     };
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);

@@ -71,13 +71,13 @@
 .TooltipTali {
   bottom: 85%;
   right: 40%;
-  border-radius: 25px 25px 25px 5px;
+  border-radius: 15px 15px 15px 5px;
 }
 
 .TooltipBug {
   bottom: 15%;
   right: 10%;
-  border-radius: 5px 25px 25px 25px;
+  border-radius: 5px 15px 15px 15px;
 }
 
 .Tooltip:has(+ img:hover) {
