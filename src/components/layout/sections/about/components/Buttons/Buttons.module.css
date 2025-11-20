@@ -11,6 +11,11 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 5;
+  visibility: hidden;
+}
+
+.Button:hover .FollowTheCursor {
+  visibility: visible;
 }
 
 .Button {

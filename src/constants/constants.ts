@@ -11,7 +11,7 @@ export const FACTS = [
   "I don't like my first name and prefer to be called Tali, but almost every variation will do",
   "I am a cat person",
   "I'm a younger sibling in a family with 2 kids",
-  "I have very few pictures of myself, I don't really like to take them",
+  "I have very few photos of myself, I don't really like to take them",
   "I adore house plants and know the names of many species and their sorts",
   "I play tabletop roleplay games, like D&D",
   "I used to study German language, when I was a teen",
