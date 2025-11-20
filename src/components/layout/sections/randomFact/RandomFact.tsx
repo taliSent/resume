@@ -55,7 +55,7 @@ const RandomFact = () => {
       />
       <div className={styles.GameContainer}>
         <button ref={scope} onClick={rollDice} className={styles.DiceContainer}>
-          <img src="img/dice3.png" alt="dice d20" className={styles.Dice} />
+          <img src="img/dice3.webp" alt="dice d20" className={styles.Dice} />
           <div className={styles.Result}>{diceResult}</div>
         </button>
         {diceResult && (

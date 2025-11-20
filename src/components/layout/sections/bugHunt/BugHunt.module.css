@@ -4,7 +4,7 @@
   max-height: 140px;
   object-fit: contain;
   z-index: 5;
-  cursor: url("/img/cursor-bug-net.png") 2 2, pointer;
+  cursor: url("/img/cursor-bug-net.webp") 2 2, pointer;
 }
 .ReleaseButton {
   background-color: var(--header-color);

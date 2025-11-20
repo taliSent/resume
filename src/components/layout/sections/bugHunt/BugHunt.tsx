@@ -23,7 +23,7 @@ const generateBugParams = (container: Element): BugParamsT => {
   const y = `${Math.random() * innerHeight}px`;
   const angle = `${Math.random() * 360}deg`;
   const randomIndex = Math.ceil(Math.random() * BUG_SPECIES_QUANTITY);
-  const src = import.meta.env.BASE_URL + `img/bugs/bug${randomIndex}.png`;
+  const src = import.meta.env.BASE_URL + `img/bugs/bug${randomIndex}.webp`;
   return { x, y, src, angle };
 };
 type CreateBugParams = {
@@ -83,7 +83,7 @@ const BugHunt = () => {
       <div className={styles.BattleContainer}>
         <div className={styles.BattleImgContainer}>
           <img
-            src="img/vs.png"
+            src="img/vs.webp"
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />
@@ -93,7 +93,7 @@ const BugHunt = () => {
             </div>
           </MediaQuery>
           <motion.img
-            src="img/TaliStanding2.png"
+            src="img/TaliStanding2.webp"
             alt="Tali"
             initial={{ y: "-30%", x: "-125%" }}
             whileInView={{ y: "-50%" }}
@@ -106,7 +106,7 @@ const BugHunt = () => {
             </div>
           </MediaQuery>
           <motion.img
-            src="img/bugs/bug000.png"
+            src="img/bugs/bug000.webp"
             alt="bug"
             initial={{ y: "-100%", x: "85%" }}
             whileInView={{ y: "-50%" }}
@@ -125,7 +125,7 @@ const BugHunt = () => {
         </button>
       </div>
       <Modal isOpen={areBugsCaught} onClose={renewGame}>
-        <img src={import.meta.env.BASE_URL + "img/you-won2.png"} />
+        <img src={import.meta.env.BASE_URL + "img/you-won2.webp"} />
       </Modal>
     </section>
   );
