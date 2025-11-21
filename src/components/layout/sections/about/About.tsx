@@ -1,28 +1,33 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useScroll } from "framer-motion";
+import React, { useRef } from "react";
 import styles from "./About.module.css";
 import Buttons from "./components/Buttons/Buttons";
 import Description from "./components/Description/Description";
 import Numbers from "./components/Numbers/Numbers";
+import { useParallax } from "src/utils/parallax";
 
 const About: React.FC = () => {
   // const ref = useRef(null);
   // const { scrollYProgress } = useScroll({
   //   target: ref,
-  //   offset: ["start 0.3", "end end"],
+  //   offset: ["start 0.1", "end end"],
   // });
   // const y = useParallax(scrollYProgress, 0, -250);
   return (
     <section id="about" aria-label="about me">
       <div className={styles.About}>
-        <motion.div className={styles.PhotoContainer}>
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(15px) brightness(2)" }}
+          whileInView={{ opacity: 1, filter: "none" }}
+          transition={{ duration: 0.5 }}
+          // style={{ y }}
+          className={styles.PhotoContainer}
+        >
           <motion.img
             src={"img/TaliPurple.webp"}
             alt="Tali's picture"
             width={275}
             height={275}
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            whileInView={{ opacity: 1, filter: "none" }}
             className={styles.Photo}
           />
           <div className={styles.PhotoFrame} />

@@ -26,8 +26,8 @@
   --hover-accent: #bde2f5;
   --cv-button: #f2055c;
   --border-color: transparent;
-  --progress-main: hsla(212, 93%, 49%, 1);
-  --progress-accent: hsla(210, 90%, 80%, 1);
+  --light-accent: #b9faf8;
+  --midtone: #b298dc;
   --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
   --testimonial-gradient: linear-gradient(
@@ -47,15 +47,10 @@
   --text-secondary: #edd9ce;
   --selected-text-background: #c3b1ff;
   --background-color: #1d1d1d;
-  --show-details-background-color: #f2055c;
-  --show-background-color: #807cbf;
-  --show-details-color: var(--background-color);
   --header-color: #b298dc;
   --hover-accent: #807cbf;
   --cv-button: #f2055c;
   --border-color: var(--plate-color);
-  --progress-main: hsla(212, 93%, 49%, 1);
-  --progress-accent: rgb(133, 169, 204);
   --timeline-detail: #9494941c;
   --testimonial-gradient: linear-gradient(180deg, #2d2d2d 0%, #49445a 50%);
   --testimonial-border: thin transparent solid;

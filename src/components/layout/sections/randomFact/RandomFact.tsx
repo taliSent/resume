@@ -26,7 +26,7 @@ const RandomFact = () => {
         type: "spring",
       }
     );
-    animate(
+    const promise1 = animate(
       scope.current,
       { rotate: 720 },
       {
@@ -37,14 +37,16 @@ const RandomFact = () => {
           const diceResult = Math.ceil(Math.random() * 20);
           const factInd = Math.floor(Math.random() * notWatchedFacts.length);
           watchFact(factInd, diceResult);
+          animate(scope.current, { rotate: 0 }, { duration: 0 });
         },
       }
     );
-    animate(
+    const promise2 = animate(
       scope.current,
       { x: 0, y: 0 },
       { visualDuration: 0.8, bounce: 0.8, type: "spring" }
     );
+    await Promise.all([promise1, promise2]);
   };
   return (
     <section id="random-fact" aria-label="random fact">
