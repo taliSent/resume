@@ -16,19 +16,20 @@ const RandomFact = () => {
   const [scope, animate] = useAnimate();
 
   const rollDice = async () => {
+    const randomDirection = Math.random() > 0.5 ? 1 : -1;
     clearDiceResult();
     await animate(
       scope.current,
-      { rotate: 360, y: "-100%", x: 0 },
+      { rotate: randomDirection * 360, y: "-100%", x: 0 },
       {
         duration: 0.8,
         bounce: 0,
         type: "spring",
       }
     );
-    const promise1 = animate(
+    const promiseSpin = animate(
       scope.current,
-      { rotate: 720 },
+      { rotate: randomDirection * 720 },
       {
         visualDuration: 0.8,
         bounce: 0,
@@ -41,12 +42,12 @@ const RandomFact = () => {
         },
       }
     );
-    const promise2 = animate(
+    const promiseFall = animate(
       scope.current,
       { x: 0, y: 0 },
       { visualDuration: 0.8, bounce: 0.8, type: "spring" }
     );
-    await Promise.all([promise1, promise2]);
+    await Promise.all([promiseSpin, promiseFall]);
   };
   return (
     <section id="random-fact" aria-label="random fact">

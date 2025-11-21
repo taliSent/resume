@@ -9,6 +9,7 @@
 .Dice {
   width: 100px;
   position: relative;
+  pointer-events: none;
 }
 
 .Result {
@@ -36,23 +37,22 @@
   -moz-user-select: none;
   -ms-user-select: none;
 }
-@media screen and (max-width: 600px) {    
-    .DiceContainer {
-          margin-top: 3.5rem;
-
-    }
+@media screen and (max-width: 600px) {
+  .DiceContainer {
+    margin-top: 3.5rem;
+  }
 }
- .Fact {
-    font-size: inherit;
+.Fact {
+  font-size: inherit;
 }
 
 .TryAgain {
-    font-size: inherit;
-    color: inherit;
+  font-size: inherit;
+  color: inherit;
 }
 
 .FactContainer {
-    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
-    text-align: left;
-    margin-inline: auto;
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+  text-align: left;
+  margin-inline: auto;
 }

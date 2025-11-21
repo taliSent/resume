@@ -1,10 +1,9 @@
-import { motion, useScroll } from "framer-motion";
-import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import styles from "./About.module.css";
 import Buttons from "./components/Buttons/Buttons";
 import Description from "./components/Description/Description";
 import Numbers from "./components/Numbers/Numbers";
-import { useParallax } from "src/utils/parallax";
 
 const About: React.FC = () => {
   // const ref = useRef(null);
