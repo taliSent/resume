@@ -1,53 +1,52 @@
 .Description {
-    margin: 8em 8em 0 8em;
-    font-size: 0.6em;
-    line-height: 1.6;
+  margin: 8em 8em 0 8em;
+  font-size: 0.6em;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 800px) {
-    .Description {
-        margin: 8em 2em;
-    }
+  .Description {
+    margin: 8em 2em;
+  }
 }
 
-
 @media screen and (max-width: 420px) {
-    .Description {
-        margin: 8em 0;
-    }
+  .Description {
+    margin: 8em 0;
+  }
 }
 
 .Hidden {
-    opacity: 1;
-    line-height: 1.8;
-    transform: translateY(15%);
-    animation: hideDescription .3s ease-in-out forwards;
+  opacity: 1;
+  line-height: 1.8;
+  transform: translateY(15%);
+  animation: hideDescription 0.3s ease-in-out forwards;
 }
 
 .Underline {
-    text-decoration: var(--header-color) underline 2px;
+  text-decoration: var(--header-color) underline 2px;
 }
 
 .Interchangeble {
-    position: relative;
+  position: relative;
 }
 
 .Arrow {
-    transform: translate(0);
-    transition: transform 0.2s ease-in-out;
+  transform: translate(0);
+  transition: transform 0.2s ease-in-out;
 }
 
 .Arrow:hover {
-    transform: translate(5px);
-    transition: transform 0.3s ease-in-out;
+  transform: translate(5px);
+  transition: transform 0.3s ease-in-out;
 }
 
 .HashLink {
-    letter-spacing: 0.09rem;
-    transition: letter-spacing 0.3s ease-in-out;
+  letter-spacing: 0.09rem;
+  transition: letter-spacing 0.3s ease-in-out;
 }
 
 .HashLink:hover {
-    letter-spacing: 0.13rem;
-    transition: letter-spacing 0.3s ease-in-out;
+  letter-spacing: 0.13rem;
+  transition: letter-spacing 0.3s ease-in-out;
 }

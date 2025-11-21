@@ -1,47 +1,46 @@
 .Menu {
-    padding: 1.2em 0 0.8em;
-    width: min(80vw, 40em);
-    margin-inline: auto;
+  padding: 0 0 0.8em;
+  width: min(80vw, 40em);
+  margin-inline: auto;
 }
 
 @media screen and (max-width: 857px) {
-    .Menu {
-        position: fixed;
-        z-index: 20;
-        top: 0;
-        right: 0;
-        width: 100%;
-        background: linear-gradient(184deg, var(--background-color) 15%, rgba(255, 255, 255, 0.1) 100%);
-        backdrop-filter: blur(4px);
-        padding: 0.6em 1.1em;
-        height: 100%;
-        transition: all 0.3s ease-in;
-    }
+  .Menu {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(
+      184deg,
+      var(--background-color) 15%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    backdrop-filter: blur(4px);
+    padding: 0.6em 1.1em;
+    height: 100%;
+    transition: all 0.3s ease-in;
+  }
 
-    .MenuClosing {
-        height: 0;
-        backdrop-filter: none;
-        background: transparent;
-        transition: all 0.3s ease-in;
-        background-color: var(--background-color);
-        border: 1px solid var(--background-color);
-        pointer-events: none;
-    }
+  .MenuClosing {
+    height: 0;
+    backdrop-filter: none;
+    background: transparent;
+    transition: all 0.3s ease-in;
+    pointer-events: none;
+  }
 
-    .ToggleButton {
-        position: absolute;
-        top: 0.7em;
-        right: 1.1em;
-        pointer-events: all;
-    }
-
+  .ToggleButton {
+    position: absolute;
+    top: 0.7em;
+    right: 1.1em;
+    pointer-events: all;
+  }
 }
 
-
 @media screen and (min-width: 857px) {
-    .ToggleButton {
-        opacity: 0;
-        right: 2em;
-
-    }
+  .ToggleButton {
+    opacity: 0;
+    right: 2em;
+  }
 }

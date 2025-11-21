@@ -40,7 +40,7 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
   bugEl.style.top = y;
   bugEl.style.left = x;
   bugEl.style.rotate = angle;
-  bugEl.style.setProperty("--duration", getRandomIntInclusive(5, 15) + "s");
+  bugEl.style.setProperty("--duration", getRandomIntInclusive(15, 25) + "s");
   bugEl.onclick = () => {
     bugEl.remove();
     catchBug();

@@ -15,14 +15,16 @@ const Navbar: React.FC<NavbarT> = ({ toggleTheme, isMenuOpen, closeMenu }) => {
   }`;
   return (
     <ul className={hashLinksClasses}>
-      {LINKS.map(({ name, anchor }) => (
+      {LINKS.map(({ name, anchor }, index) => (
         <li className={styles.li} key={name}>
           <NavHashLink
             onClick={closeMenu}
             to={anchor}
             data-replace={name}
             smooth
-            className={styles.HashLink}
+            className={
+              index == LINKS.length - 1 ? styles.ContactMe : styles.HashLink
+            }
           >
             <span>{name}</span>
           </NavHashLink>

@@ -10,7 +10,7 @@ const LINKEDIN = "https://www.linkedin.com/in/natalya-sentemova/";
 
 const Links: React.FC = () => {
   // todo: move it to css
-  const LINKS_COLOR = "#5D59D9";
+  const LINKS_COLOR = "#6F2DBD";
   // fade-up x2
   return (
     <div className={styles.Links}>
@@ -19,7 +19,7 @@ const Links: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         whileHover={{ y: -10 }}
-        transition={{ease: "easeInOut", duration: 0.4}}
+        transition={{ ease: "easeInOut", duration: 0.4 }}
       >
         <div>
           <a
@@ -39,7 +39,7 @@ const Links: React.FC = () => {
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{ y: -10 }}
-          transition={{ease: "easeInOut", duration: 0.4}}
+          transition={{ ease: "easeInOut", duration: 0.4 }}
         >
           <a
             href={LINKEDIN}

@@ -18,9 +18,6 @@ const Description: React.FC = () => {
       <br />I worked with various libraries and technologies, such as{" "}
       <span className={styles.Underline}>TypeScript</span>, Redux, Node.js,
       Strorybook, Thrifts, Sass, BEM, Styled Components, material-ui, etc.{" "}
-      <br /> I'm passionate to{"  "}
-      <span className={styles.Underline}>study</span> the new and break through
-      my comfort zone.
       <br />
       <span className={styles.Underline}>Code quality</span> is important to me,
       so I adhere to KISS, DRY & SOLID.

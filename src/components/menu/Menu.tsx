@@ -21,7 +21,7 @@ const Menu: React.FC = () => {
     <button
       className={styles.ToggleButton}
       onClick={handleClick}
-      aria-label='open/close menu'
+      aria-label="open/close menu"
     >
       {isMenuOpen ? (
         <IoMdClose size={23} color={toggleMenucolor} />
@@ -41,7 +41,7 @@ const Menu: React.FC = () => {
         }
       />
 
-      <MediaQuery maxWidth={857}>{openCloseButton}</MediaQuery>
+      <MediaQuery maxWidth={1024}>{openCloseButton}</MediaQuery>
     </nav>
   );
 };

@@ -1,15 +1,17 @@
 import React from "react";
 import { PROGRESS_WORK } from "./constants";
 import ProgressUnit from "./ProgressUnit/ProgressUnit";
+import styles from "./ProgressWork.module.css";
 
 type ProgressWorkProps = {
-  className?: string
-}
+  className?: string;
+};
 
 const ProgressWork: React.FC<ProgressWorkProps> = ({ className }) => {
   return (
-    <div>
-        {PROGRESS_WORK.map(({ name, place, years, achievement, isLast, isMirrored, }) =>
+    <div className={styles.Experience}>
+      {PROGRESS_WORK.map(
+        ({ name, place, years, achievement, isLast, isMirrored }) => (
           <ProgressUnit
             name={name}
             place={place}
@@ -19,7 +21,8 @@ const ProgressWork: React.FC<ProgressWorkProps> = ({ className }) => {
             isMirrored={isMirrored}
             key={`${name} ${place}`}
           />
-        )}
+        )
+      )}
     </div>
   );
 };

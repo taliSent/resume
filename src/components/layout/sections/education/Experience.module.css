@@ -1,17 +1,10 @@
 .Headers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .XP {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media screen and (max-width: 1024px) {
-    .Experience{
-        display: grid;
-        justify-content: end;
-    }
+  display: flex;
+  justify-content: space-between;
 }
