@@ -6,6 +6,7 @@ import styles from "./BugHunt.module.css";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import MediaQuery from "react-responsive";
+import { getRandomIntInclusive } from "src/utils/random";
 
 const MAX_BUGS_QUANTITY = 16;
 const BUG_SPECIES_QUANTITY = 12;
@@ -39,6 +40,7 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
   bugEl.style.top = y;
   bugEl.style.left = x;
   bugEl.style.rotate = angle;
+  bugEl.style.setProperty("--duration", getRandomIntInclusive(5, 15) + "s");
   bugEl.onclick = () => {
     bugEl.remove();
     catchBug();
