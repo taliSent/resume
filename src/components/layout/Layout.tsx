@@ -1,6 +1,10 @@
-import { motion, useScroll } from "framer-motion";
 import React, { useRef } from "react";
-import { useParallax } from "src/utils/parallax";
+import { TALI_RESUME_KEY } from "src/constants/constants";
+import { Achievement } from "src/feature/Achevements";
+import useFirstAchievement from "src/feature/useFirstAchievements";
+import { useLocalStorage } from "usehooks-ts";
+import UserProgress from "../userProgress/UserProgress";
+import { Clouds } from "./Clouds";
 import styles from "./Layout.module.css";
 import About from "./sections/about/About";
 import BugHunt from "./sections/bugHunt/BugHunt";
@@ -11,11 +15,9 @@ import Stack from "./sections/stack/Stack";
 import Testimonials from "./sections/testimonials/Testimonials";
 
 const Layout: React.FC = () => {
-  const refAboutSection = useRef(null);
-  const { scrollYProgress } = useScroll({ target: refAboutSection });
-  // todo: separate the cloud components
-  const xFirstCloud = useParallax(scrollYProgress, 0, 400);
-  const xSecondCloud = useParallax(scrollYProgress, 0, 200);
+  const refAboutSection = useRef<HTMLDivElement>(null);
+  const [value] = useLocalStorage<Achievement[]>(TALI_RESUME_KEY, []);
+  useFirstAchievement();
   return (
     <main className={styles.Container} id="container">
       <div
@@ -23,20 +25,7 @@ const Layout: React.FC = () => {
         className={styles.Container}
         style={{ position: "relative" }}
       >
-        <motion.img
-          src="img/cloud1.webp"
-          className={styles.Cloud1}
-          aria-hidden={true}
-          style={{ x: xFirstCloud, scale: 1.5 }}
-          alt=""
-        />
-        <motion.img
-          src="img/cloud.webp"
-          className={styles.Cloud2}
-          style={{ x: xSecondCloud, scale: 1.5 }}
-          aria-hidden={true}
-          alt=""
-        />
+        <Clouds refAboutSection={refAboutSection} />
         <About />
       </div>
       <Stack />
@@ -45,7 +34,9 @@ const Layout: React.FC = () => {
       <BugHunt />
       <RandomFact />
       <ContactMe />
+      <UserProgress achievements={value} />
     </main>
   );
 };
+
 export default Layout;

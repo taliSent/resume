@@ -6,8 +6,13 @@ import Modal from "src/components/modal/Modal";
 import { useDice } from "src/store/store";
 import Header from "../../header/Header";
 import styles from "./RandomFact.module.css";
+import { Achievement, AchievementId } from "src/feature/Achevements";
+import { findById } from "src/utils/array";
+import { useLocalStorage } from "usehooks-ts";
+import { TALI_RESUME_KEY } from "src/constants/constants";
 
 const RandomFact = () => {
+  const [_, setValue] = useLocalStorage<Achievement[]>(TALI_RESUME_KEY, []);
   const notWatchedFacts = useDice((state) => state.notWatchedFacts);
   const diceResult = useDice((state) => state.diceResult);
   const watchFact = useDice((state) => state.watchFact);
@@ -37,6 +42,15 @@ const RandomFact = () => {
         onComplete: () => {
           const diceResult = Math.ceil(Math.random() * 20);
           const factInd = Math.floor(Math.random() * notWatchedFacts.length);
+          if (notWatchedFacts.length === 0) {
+            const theyKnowAchivement: Achievement = {
+              id: AchievementId.KNOWS_EVERYTHING,
+            };
+            setValue((prev) => {
+              if (findById(prev, AchievementId.KNOWS_EVERYTHING)) return prev;
+              return [...prev, theyKnowAchivement];
+            });
+          }
           watchFact(factInd, diceResult);
           animate(scope.current, { rotate: 0 }, { duration: 0 });
         },

@@ -1,6 +1,7 @@
 .HashLinks {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 0;
   width: 100%;
   height: max-content;

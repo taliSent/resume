@@ -1,0 +1,16 @@
+.Cloud1 {
+  position: absolute;
+  top: -2.4%;
+  right: 77%;
+  scale: -0.65 0.65;
+  pointer-events: none;
+}
+
+.Cloud2 {
+  position: absolute;
+  top: 25%;
+  left: 69%;
+  scale: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}

@@ -1,23 +1,21 @@
+import { motion } from "framer-motion";
+import { LuBugOff } from "react-icons/lu";
+import MediaQuery from "react-responsive";
 import Modal from "src/components/modal/Modal";
 import { useBugs } from "src/store/store";
-import { LuBugOff } from "react-icons/lu";
+import { getRandomIntInclusive } from "src/utils/random";
 import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
-import MediaQuery from "react-responsive";
-import { getRandomIntInclusive } from "src/utils/random";
+import { BUG_SPECIES_QUANTITY, MAX_BUGS_QUANTITY } from "./constants";
+import useBugHuntAchievements from "../../../../feature/useBugHuntAchievement";
 
-const MAX_BUGS_QUANTITY = 16;
-const BUG_SPECIES_QUANTITY = 12;
-
-type BugParamsT = {
+type BugParamsProps = {
   x: string;
   y: string;
   src: string;
   angle: string;
 };
-const generateBugParams = (container: Element): BugParamsT => {
+const generateBugParams = (container: Element): BugParamsProps => {
   const innerWidth = container.clientWidth - 100;
   const innerHeight = container.clientHeight - 100;
   const x = `${Math.random() * innerWidth}px`;
@@ -28,7 +26,7 @@ const generateBugParams = (container: Element): BugParamsT => {
   return { x, y, src, angle };
 };
 type CreateBugParams = {
-  bugParams: BugParamsT;
+  bugParams: BugParamsProps;
   catchBug: () => void;
 };
 const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
@@ -52,10 +50,9 @@ const BugHunt = () => {
   const areBugsOnPage = useBugs((state) =>
     state.bugs ? state.bugs > 0 : false
   );
-  const renewGame = useBugs((state) => state.renewGame);
-  const bugs = useBugs((state) => state.bugs);
-  const areBugsCaught = bugs === 0;
 
+  const renewGame = useBugs((state) => state.renewGame);
+  const areBugsCaught = useBugs((state) => state.bugs === 0);
   const releaseBugs = useBugs((state) => state.releaseBugs);
   const catchBug = useBugs((state) => state.catchBug);
 
@@ -69,11 +66,7 @@ const BugHunt = () => {
     }
     releaseBugs(MAX_BUGS_QUANTITY);
   };
-  useEffect(() => {
-    if (!areBugsCaught) return;
-    const timeout = setTimeout(renewGame, 2000);
-    return () => clearTimeout(timeout);
-  }, [areBugsCaught]);
+  useBugHuntAchievements(areBugsCaught);
 
   return (
     <section id="bug-hunt" aria-label="bug hunt">

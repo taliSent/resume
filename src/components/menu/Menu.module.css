@@ -2,6 +2,8 @@
   padding: 0 0 0.8em;
   width: min(80vw, 40em);
   margin-inline: auto;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 857px) {

@@ -1,0 +1,23 @@
+.ProgressContainer {
+  position: fixed;
+  color: var(--text-color);
+  bottom: 2%;
+  left: 10%;
+}
+
+.CloseButton {
+  align-self: flex-end;
+  aspect-ratio: 1;
+  color: var(--text-color);
+}
+
+.Plate {
+  background-color: var(--plate-color);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem 1.25rem 1.25rem;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+}

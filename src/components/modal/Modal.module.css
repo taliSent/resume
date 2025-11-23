@@ -6,12 +6,16 @@
   background-color: transparent;
   width: fit-content;
   height: fit-content;
-  z-index: 10;
+  z-index: 100;
 }
 
 .Backdrop {
-  position: absolute;
+  position: fixed;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  z-index: 100;
 }

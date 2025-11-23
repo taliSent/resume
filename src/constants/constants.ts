@@ -8,7 +8,7 @@ export const FACTS = [
   "I love jogging",
   "I'm almost entirely indifferent about food",
   "I've had dreadlocks for about 5 years",
-  "I don't like my first name and prefer to be called Tali, but almost every variation will do",
+  "I don't like my first name and prefer to be called Tali",
   "I am a cat person",
   "I'm a younger sibling in a family with 2 kids",
   "I have very few photos of myself, I don't really like to take them",
@@ -26,3 +26,5 @@ export const FACTS = [
   "I used to study psychology and my favorite topic is cognitive distortions",
   "I jumped with a parachute once",
 ];
+
+export const TALI_RESUME_KEY = "tali-resume-key";

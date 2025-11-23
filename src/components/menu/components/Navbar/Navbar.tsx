@@ -1,15 +1,15 @@
-import React, { ReactNode } from "react";
-import LINKS from "../../constants";
-import styles from "./Navbar.module.css";
+import React from "react";
 import { NavHashLink } from "react-router-hash-link";
+import LINKS from "../../constants";
+import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
+import styles from "./Navbar.module.css";
 
 type NavbarT = {
-  toggleTheme: ReactNode;
   isMenuOpen: boolean;
   closeMenu: () => void;
 };
 
-const Navbar: React.FC<NavbarT> = ({ toggleTheme, isMenuOpen, closeMenu }) => {
+const Navbar: React.FC<NavbarT> = ({ isMenuOpen, closeMenu }) => {
   const hashLinksClasses = `${styles.HashLinks} ${
     !isMenuOpen && styles.HidingLinks
   }`;
@@ -30,7 +30,9 @@ const Navbar: React.FC<NavbarT> = ({ toggleTheme, isMenuOpen, closeMenu }) => {
           </NavHashLink>
         </li>
       ))}
-      <li className={styles.li}>{toggleTheme}</li>
+      <li className={styles.li}>
+        <ToggleThemeButton />
+      </li>
     </ul>
   );
 };

@@ -1,22 +1,16 @@
-import { FC } from "react";
+import { FC, use } from "react";
 import { BsFillSunFill } from "react-icons/bs";
 import { RiMoonFill } from "react-icons/ri";
-import { Themes } from "../../../../constants/constants";
 import styles from "./ToggleThemeButton.module.css";
+import { ThemeContext } from "src/context/context";
 
-type ToggleThemeButtonT = {
-  theme: Themes.light | Themes.dark;
-  toggleTheme: () => void;
-};
+const ToggleThemeButton: FC = () => {
+  const { theme, toggleTheme } = use(ThemeContext);
 
-const ToggleThemeButton: FC<ToggleThemeButtonT> = ({
-  theme,
-  toggleTheme,
-}: ToggleThemeButtonT) => {
   return (
     <button onClick={toggleTheme} className={styles.ToggleThemeButton}>
       {theme === "dark" ? (
-        <BsFillSunFill size="20" color="#D9D9D9" />
+        <BsFillSunFill size="20" />
       ) : (
         <RiMoonFill size="20" />
       )}

@@ -20,7 +20,7 @@
   --text-color: #403036;
   --text-secondary: #73594b;
   --selected-text-background: #525073;
-  --plate-color: #dddbfc;
+  --plate-color: #ffffff;
   --background-color: #f8f8f8;
   --header-color: #6f2dbd;
   --hover-accent: #bde2f5;
@@ -30,11 +30,7 @@
   --midtone: #b298dc;
   --timeline-detail: #e0e0e0;
   --testimonial-border: thin var(--header-color) solid;
-  --testimonial-gradient: linear-gradient(
-    180deg,
-    var(--plate-color) 0%,
-    #e7e6eb 50%
-  );
+  --testimonial-gradient: linear-gradient(180deg, #dddbfc 0%, #e7e6eb 50%);
   --controls-color: #d9d9d9;
   --frame-accent: white;
   --tooltip-color: black;
@@ -44,6 +40,7 @@
 
 [data-theme="dark"] {
   --text-color: #d9d9d9;
+  --plate-color: #2e2e2e;
   --text-secondary: #edd9ce;
   --selected-text-background: #c3b1ff;
   --background-color: #1d1d1d;
@@ -130,4 +127,8 @@ button {
   cursor: pointer;
   font-size: inherit;
   -webkit-tap-highlight-color: transparent;
+}
+
+svg {
+  color: var(--text-color);
 }
