@@ -1,5 +1,6 @@
+export const CONTACT_ME_NAME = `Contact\xa0me`;
 // todo: routers to constants
-const LINKS = [
+export const LINKS = [
   {
     name: "Stack",
     anchor: "#stack",
@@ -21,9 +22,7 @@ const LINKS = [
     anchor: "#random-fact",
   },
   {
-    name: `Contact\xa0me`,
+    name: CONTACT_ME_NAME,
     anchor: "#contact-me",
   },
 ];
-
-export default LINKS;

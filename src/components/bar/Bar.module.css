@@ -1,0 +1,31 @@
+.Name {
+  margin-right: 20px;
+  margin-bottom: 5px;
+  width: 120px;
+  font-size: clamp(0.5em, 2vw, 0.7em);
+  border-radius: var(--progress-br);
+}
+
+.Bar {
+  margin: 0;
+  padding: 0;
+  min-height: 0.7em;
+  max-height: 100%;
+  width: 5em;
+  display: inline-block;
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--timeline-detail);
+  box-shadow: var(--box-shadow);
+}
+
+.ProgressLevel {
+  height: 100%;
+  border-radius: var(--progress-br);
+  position: absolute;
+  background: linear-gradient(
+    41deg,
+    var(--header-color) 0%,
+    var(--midtone) 50%
+  );
+}

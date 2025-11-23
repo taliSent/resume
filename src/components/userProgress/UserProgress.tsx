@@ -6,18 +6,26 @@ import {
 } from "src/feature/Achevements";
 import Modal from "../modal/Modal";
 import styles from "./UserProgress.module.css";
+import Bar from "../bar/Bar";
+import { motion } from "framer-motion";
+import { useLocalStorage } from "usehooks-ts";
+import { TALI_RESUME_KEY } from "src/constants/constants";
+import useFirstAchievement from "src/feature/useFirstAchievements";
+import Header from "../layout/header/Header";
+import { GiAchievement } from "react-icons/gi";
 
-type UserProgressProps = {
-  achievements: Achievement[];
-};
-const UserProgress: FC<UserProgressProps> = ({
-  achievements,
-}: UserProgressProps) => {
+const UserProgress: FC = () => {
+  const [value] = useLocalStorage<Achievement[]>(TALI_RESUME_KEY, []);
+  useFirstAchievement();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const allAchievementsQuantity = AchievementUserFacingMap.size;
   return (
-    <div className={styles.ProgressContainer}>
-      <button onClick={() => setIsModalOpen(true)}>
-        {achievements.length}
+    <>
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className={styles.ProgressContainer}
+      >
+        <Bar progress={value.length / allAchievementsQuantity} />
       </button>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <div className={styles.Plate}>
@@ -27,7 +35,12 @@ const UserProgress: FC<UserProgressProps> = ({
           >
             ⨯
           </button>
-          {achievements?.map((achievement) => (
+          <h3 className={styles.PlateHeader}>
+            Achievements
+            <GiAchievement />
+          </h3>
+
+          {value?.map((achievement) => (
             <div>
               {`${AchievementUserFacingMap.get(achievement.id)} ${getQuantity(
                 achievement
@@ -36,7 +49,7 @@ const UserProgress: FC<UserProgressProps> = ({
           ))}
         </div>
       </Modal>
-    </div>
+    </>
   );
 };
 

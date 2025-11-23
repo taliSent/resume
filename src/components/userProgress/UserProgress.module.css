@@ -1,8 +1,5 @@
 .ProgressContainer {
-  position: fixed;
   color: var(--text-color);
-  bottom: 2%;
-  left: 10%;
 }
 
 .CloseButton {
@@ -20,4 +17,10 @@
   padding: 0.25rem 0.5rem 1.25rem 1.25rem;
   color: var(--text-color);
   box-shadow: var(--box-shadow);
+  text-align: left;
+  font-size: 18px;
+}
+
+.PlateHeader {
+  transform: translate(0, -12px);
 }

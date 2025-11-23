@@ -1,8 +1,9 @@
 import React from "react";
 import { NavHashLink } from "react-router-hash-link";
-import LINKS from "../../constants";
+import { CONTACT_ME_NAME, LINKS } from "../../constants";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import styles from "./Navbar.module.css";
+import UserProgress from "src/components/userProgress/UserProgress";
 
 type NavbarT = {
   isMenuOpen: boolean;
@@ -15,7 +16,7 @@ const Navbar: React.FC<NavbarT> = ({ isMenuOpen, closeMenu }) => {
   }`;
   return (
     <ul className={hashLinksClasses}>
-      {LINKS.map(({ name, anchor }, index) => (
+      {LINKS.map(({ name, anchor }) => (
         <li className={styles.li} key={name}>
           <NavHashLink
             onClick={closeMenu}
@@ -23,16 +24,19 @@ const Navbar: React.FC<NavbarT> = ({ isMenuOpen, closeMenu }) => {
             data-replace={name}
             smooth
             className={
-              index == LINKS.length - 1 ? styles.ContactMe : styles.HashLink
+              name === CONTACT_ME_NAME ? styles.ContactMe : styles.HashLink
             }
           >
             <span>{name}</span>
           </NavHashLink>
         </li>
       ))}
-      <li className={styles.li}>
+      <div className={styles.li}>
         <ToggleThemeButton />
-      </li>
+      </div>
+      <div className={`${styles.UserProgress}`}>
+        <UserProgress />
+      </div>
     </ul>
   );
 };

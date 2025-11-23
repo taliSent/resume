@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { LuBugOff } from "react-icons/lu";
 import MediaQuery from "react-responsive";
-import Modal from "src/components/modal/Modal";
 import { useBugs } from "src/store/store";
 import { getRandomIntInclusive } from "src/utils/random";
 import Header from "../../header/Header";
 import styles from "./BugHunt.module.css";
 import { BUG_SPECIES_QUANTITY, MAX_BUGS_QUANTITY } from "./constants";
 import useBugHuntAchievements from "../../../../feature/useBugHuntAchievement";
+import { useEffect } from "react";
+import Modal from "src/components/modal/Modal";
 
 type BugParamsProps = {
   x: string;
@@ -67,6 +68,10 @@ const BugHunt = () => {
     releaseBugs(MAX_BUGS_QUANTITY);
   };
   useBugHuntAchievements(areBugsCaught);
+  useEffect(() => {
+    if (!areBugsCaught) return;
+    renewGame();
+  }, []);
 
   return (
     <section id="bug-hunt" aria-label="bug hunt">

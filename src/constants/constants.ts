@@ -15,7 +15,7 @@ export const FACTS = [
   "I adore house plants and know the names of many species and their sorts",
   "I play tabletop roleplay games, like D&D",
   "I used to study German language, when I was a teen",
-  "During 2022-2025, I've lived in 4 countries",
+  "I don't have a TikTok or Instagram account",
   "I normally play very specific short indie video games",
   "I was a Dungeon Master and received a lot of positive feedback",
   "I have a natural ability to make cartoonish voices",
