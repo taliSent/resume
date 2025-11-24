@@ -7,7 +7,7 @@ export const enum AchievementId {
 }
 
 export const AchievementUserFacingMap = new Map<AchievementId, string>([
-  [AchievementId.FIRST_VISIT, "First visit"],
+  [AchievementId.FIRST_VISIT, "You visited my page for the first time"],
   [AchievementId.BUGS_CAUGHT, "Bugs caught"],
   [AchievementId.KNOWS_EVERYTHING, "You found out all my secrets"],
   // [AchievementId.USER_FACT_SENT, "Sent me a fact"],
