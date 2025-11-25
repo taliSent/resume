@@ -4,6 +4,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import MediaQuery, { useMediaQuery } from "react-responsive";
 import styles from "./Menu.module.css";
 import Navbar from "./components/Navbar/Navbar";
+import UserProgress from "../userProgress/UserProgress";
 
 const Menu: React.FC = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1024px)" });
@@ -24,10 +25,16 @@ const Menu: React.FC = () => {
   );
 
   return (
-    <nav className={menuClasses}>
-      <Navbar closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
-      <MediaQuery maxWidth={1024}>{openCloseButton}</MediaQuery>
-    </nav>
+    <>
+      <nav className={menuClasses}>
+        <Navbar closeMenu={closeMenu} isMenuOpen={isMenuOpen} />{" "}
+        {openCloseButton}
+        <MediaQuery maxWidth={1024}>{openCloseButton}</MediaQuery>
+      </nav>
+      <MediaQuery maxWidth={1024}>
+        <UserProgress />
+      </MediaQuery>
+    </>
   );
 };
 export default Menu;
