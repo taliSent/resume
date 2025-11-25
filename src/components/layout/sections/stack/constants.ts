@@ -147,14 +147,14 @@ const libsEdges = [
 ];
 
 const otherLanguages = [
-   {
+  {
     id: "java",
-    position: { x: 100, y: 300 },
+    position: { x: 900, y: 0 },
     data: { label: "Java" },
   },
   {
     id: "node",
-    position: { x: -100, y: 300 },
+    position: { x: 1100, y: 0 },
     data: { label: "Node.js" },
   },
 ];
