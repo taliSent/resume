@@ -31,7 +31,10 @@ const useFirstAchievement = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("click", handleClick, { once: true });
+    document.addEventListener("click", handleClick, {
+      once: true,
+      capture: true,
+    });
 
     return () => document.removeEventListener("click", handleClick);
   }, []);

@@ -5,6 +5,7 @@ export const enum AchievementId {
   KNOWS_EVERYTHING = "KNOWS_EVERYTHING",
   BUGS_CAUGHT = "BUGS_CAUGHT",
   FORTUNE_CHASER = "FORTUNE_CHASER",
+  DONWLOAD_CV = "DONWLOAD_CV",
   // SCROLLED__EVERYTHING = "SCROLLED__EVERYTHING",
   // USER_FACT_SENT = "USER_FACT_SENT",
 }
@@ -39,6 +40,10 @@ export const AchievementUserFacingMap = new Map<
     AchievementId.FORTUNE_CHASER,
     { img: "🎲", title: "Fortune chaser", subtitle: "Tested their luck" },
   ],
+  [
+    AchievementId.DONWLOAD_CV,
+    { img: "💟", title: "Interested", subtitle: "Let's keep in touch!" },
+  ],
   // "All secrets revealed",
 ]);
 
@@ -53,7 +58,8 @@ export type AchievementT =
       id:
         | AchievementId.FIRST_VISIT
         | AchievementId.KNOWS_EVERYTHING
-        | AchievementId.FORTUNE_CHASER;
+        | AchievementId.FORTUNE_CHASER
+        | AchievementId.DONWLOAD_CV;
     };
 
 export const getQuantity = (achievement: AchievementT): string => {
