@@ -27,7 +27,10 @@ const Tooltip = () => {
     <AnimatePresence>
       {needShowTooltip && (
         <motion.button
-          exit={{ opacity: 0 }}
+          key="tooltip"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.4 }}
           className={styles.Tooltip}
           onClick={closeTooltip}
