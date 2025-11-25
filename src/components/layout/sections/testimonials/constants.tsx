@@ -1,7 +1,7 @@
 const PHOTO_PATH = "img/testimonials";
 const CARDS = [
   {
-    photoSrc: `${PHOTO_PATH}/Denis.jpg`,
+    photoSrc: `${PHOTO_PATH}/Denis.webp`,
     coworkerName: "Denis Dyagilev",
     coworkerPosition: "frontend developer",
     text: (
@@ -21,7 +21,7 @@ const CARDS = [
     instagram: "purpleleech",
   },
   {
-    photoSrc: `${PHOTO_PATH}/Masha.jpg`,
+    photoSrc: `${PHOTO_PATH}/Masha.webp`,
     coworkerName: "Maria Condaurova",
     coworkerPosition: "frontend developer",
     text: (
@@ -38,7 +38,7 @@ const CARDS = [
     habr: "https://career.habr.com/momomash",
   },
   {
-    photoSrc: `${PHOTO_PATH}/Sveta.jpg`,
+    photoSrc: `${PHOTO_PATH}/Sveta.webp`,
     coworkerName: "Svetlana Pedan",
     coworkerPosition: "senior QA",
     text: (

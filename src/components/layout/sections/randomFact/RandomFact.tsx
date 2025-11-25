@@ -116,7 +116,7 @@ const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
           </>
         </div>
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <img src={import.meta.env.BASE_URL + "img/TaliPhoto.jpg"} />
+          <img src={import.meta.env.BASE_URL + "img/TaliPhoto.webp"} />
         </Modal>
       </>
     );
