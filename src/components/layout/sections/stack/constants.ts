@@ -116,6 +116,11 @@ const libNodes = [
     position: { x: 1100, y: 400 },
     data: { label: "Jest" },
   },
+  {
+    id: "framer",
+    position: { x: 1300, y: 400 },
+    data: { label: "Framer-motion" },
+  },
 ];
 
 const libsEdges = [
@@ -143,6 +148,11 @@ const libsEdges = [
     id: "libs-jest",
     source: "libs",
     target: "jest",
+  },
+  {
+    id: "libs-framer",
+    source: "libs",
+    target: "framer",
   },
 ];
 
