@@ -8,7 +8,6 @@ import styles from "./BugHunt.module.css";
 import { BUG_SPECIES_QUANTITY, MAX_BUGS_QUANTITY } from "./constants";
 import useBugHuntAchievements from "../../../../feature/useBugHuntAchievement";
 import { useEffect } from "react";
-import Modal from "src/components/modal/Modal";
 
 type BugParamsProps = {
   x: string;
@@ -124,9 +123,6 @@ const BugHunt = () => {
             : "Release the bugs 🪲"}
         </button>
       </div>
-      <Modal isOpen={areBugsCaught} onClose={renewGame}>
-        <img src={import.meta.env.BASE_URL + "img/you-won2.webp"} />
-      </Modal>
     </section>
   );
 };

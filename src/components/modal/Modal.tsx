@@ -5,6 +5,7 @@ import styles from "./Modal.module.css";
 type ModalProps = {
   isOpen: boolean;
   disableBackdropClick?: boolean;
+  disablePlateClick?: boolean;
   onClose: () => void;
   children: ReactNode;
 };
@@ -12,6 +13,7 @@ type ModalProps = {
 const Modal = ({
   isOpen,
   disableBackdropClick = false,
+  disablePlateClick = false,
   onClose,
   children,
 }: ModalProps) => {
@@ -32,6 +34,11 @@ const Modal = ({
           <motion.div
             className={styles.Modal}
             role="dialog"
+            onClick={(e) => {
+              e.stopPropagation();
+              if (disablePlateClick) return;
+              onClose();
+            }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

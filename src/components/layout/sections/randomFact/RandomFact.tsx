@@ -3,20 +3,25 @@ import { useState } from "react";
 import { TbClover } from "react-icons/tb";
 import { NavHashLink } from "react-router-hash-link";
 import Modal from "src/components/modal/Modal";
-import { useDice } from "src/store/store";
+import { useDice, useTooltip } from "src/store/store";
 import Header from "../../header/Header";
 import styles from "./RandomFact.module.css";
-import { Achievement, AchievementId } from "src/feature/Achevements";
+import {
+  AchievementT,
+  AchievementId,
+  getAchievementData,
+} from "src/feature/Achevements";
 import { findById } from "src/utils/array";
 import { useLocalStorage } from "usehooks-ts";
 import { TALI_RESUME_KEY } from "src/constants/constants";
 
 const RandomFact = () => {
-  const [_, setValue] = useLocalStorage<Achievement[]>(TALI_RESUME_KEY, []);
+  const [_, setValue] = useLocalStorage<AchievementT[]>(TALI_RESUME_KEY, []);
   const notWatchedFacts = useDice((state) => state.notWatchedFacts);
   const diceResult = useDice((state) => state.diceResult);
   const watchFact = useDice((state) => state.watchFact);
   const clearDiceResult = useDice((state) => state.clearDiceResult);
+  const openTooltip = useTooltip((state) => state.openTooltip);
 
   const [scope, animate] = useAnimate();
 
@@ -43,13 +48,17 @@ const RandomFact = () => {
           const diceResult = Math.ceil(Math.random() * 20);
           const factInd = Math.floor(Math.random() * notWatchedFacts.length);
           if (notWatchedFacts.length === 0) {
-            const theyKnowAchivement: Achievement = {
+            const theyKnowAchivement: AchievementT = {
               id: AchievementId.KNOWS_EVERYTHING,
             };
             setValue((prev) => {
               if (findById(prev, AchievementId.KNOWS_EVERYTHING)) return prev;
               return [...prev, theyKnowAchivement];
             });
+            const { img, subtitle, title } = getAchievementData(
+              AchievementId.KNOWS_EVERYTHING
+            );
+            openTooltip({ img, title, subtitle });
           }
           watchFact(factInd, diceResult);
           animate(scope.current, { rotate: 0 }, { duration: 0 });

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { HiDownload } from "react-icons/hi";
 import styles from "./Buttons.module.css";
 
-const DOWNLOAD_CV_URL = `https://drive.google.com/file/d/1Fr7spdFnohyxuAoMEubrhpCjyb_jhFwT/view?usp=sharing`;
+const DOWNLOAD_CV_URL = import.meta.env.BASE_URL + `CV_Sentemova.pdf`;
 
 const Buttons: React.FC = () => {
   const refCursorFolower = useRef<HTMLDivElement>(null);
@@ -24,7 +24,7 @@ const Buttons: React.FC = () => {
     <div className={styles.ButtonContainer}>
       <a href={DOWNLOAD_CV_URL} target="_blank" download rel="noreferrer">
         <button className={styles.Button} ref={refbutton}>
-          Open CV <HiDownload />
+          Download CV <HiDownload />
           <div className={styles.FollowTheCursor} ref={refCursorFolower} />
         </button>
       </a>

@@ -18,8 +18,7 @@ const About: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, filter: "blur(15px) brightness(2)" }}
           whileInView={{ opacity: 1, filter: "none" }}
-          transition={{ duration: 0.5 }}
-          // style={{ y }}
+          transition={{ duration: 0.6 }}
           className={styles.PhotoContainer}
         >
           <motion.img

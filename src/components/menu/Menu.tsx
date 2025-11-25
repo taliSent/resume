@@ -6,10 +6,10 @@ import styles from "./Menu.module.css";
 import Navbar from "./components/Navbar/Navbar";
 
 const Menu: React.FC = () => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 857px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1024px)" });
   const [isMenuOpen, setIsMenuOpen] = useState(!isTabletOrMobile);
-  const handleClick = () => isTabletOrMobile && setIsMenuOpen((prev) => !prev);
-  const closeMenu = () => isTabletOrMobile && setIsMenuOpen(false);
+  const handleClick = () => setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => setIsMenuOpen(false);
   //TODO: separate in another file
   const menuClasses = `${styles.Menu} ${!isMenuOpen && styles.MenuClosing}`;
 

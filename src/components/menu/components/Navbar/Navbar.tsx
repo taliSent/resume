@@ -3,7 +3,7 @@ import { NavHashLink } from "react-router-hash-link";
 import { CONTACT_ME_NAME, LINKS } from "../../constants";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import styles from "./Navbar.module.css";
-// import UserProgress from "src/components/userProgress/UserProgress";
+import UserProgress from "src/components/userProgress/UserProgress";
 
 type NavbarT = {
   isMenuOpen: boolean;
@@ -34,9 +34,9 @@ const Navbar: React.FC<NavbarT> = ({ isMenuOpen, closeMenu }) => {
       <div className={styles.li}>
         <ToggleThemeButton />
       </div>
-      {/* <div className={`${styles.UserProgress}`}>
+      <div className={`${styles.UserProgress}`}>
         <UserProgress />
-      </div> */}
+      </div>
     </ul>
   );
 };

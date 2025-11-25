@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 857px) {
+@media screen and (max-width: 1024px) {
   .Menu {
     position: fixed;
     z-index: 20;
@@ -40,7 +40,7 @@
   }
 }
 
-@media screen and (min-width: 857px) {
+@media screen and (min-width: 1024px) {
   .ToggleButton {
     opacity: 0;
     right: 2em;

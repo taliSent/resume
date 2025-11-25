@@ -1,23 +1,22 @@
 import { FC, useState } from "react";
+import { GiAchievement } from "react-icons/gi";
+import { TALI_RESUME_KEY } from "src/constants/constants";
 import {
-  Achievement,
+  AchievementT,
   AchievementUserFacingMap,
   getQuantity,
 } from "src/feature/Achevements";
+import useFirstAchievement from "src/feature/useFirstAchievements";
+import { useLocalStorage } from "usehooks-ts";
+import Bar from "../bar/Bar";
 import Modal from "../modal/Modal";
 import styles from "./UserProgress.module.css";
-import Bar from "../bar/Bar";
-import { motion } from "framer-motion";
-import { useLocalStorage } from "usehooks-ts";
-import { TALI_RESUME_KEY } from "src/constants/constants";
-import useFirstAchievement from "src/feature/useFirstAchievements";
-import Header from "../layout/header/Header";
-import { GiAchievement } from "react-icons/gi";
 
 const UserProgress: FC = () => {
-  const [value] = useLocalStorage<Achievement[]>(TALI_RESUME_KEY, []);
-  useFirstAchievement();
+  const [achievementIds] = useLocalStorage<AchievementT[]>(TALI_RESUME_KEY, []);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  useFirstAchievement();
+
   const allAchievementsQuantity = AchievementUserFacingMap.size;
   return (
     <>
@@ -25,9 +24,13 @@ const UserProgress: FC = () => {
         onClick={() => setIsModalOpen(true)}
         className={styles.ProgressContainer}
       >
-        <Bar progress={value.length / allAchievementsQuantity} />
+        <Bar progress={achievementIds.length / allAchievementsQuantity} />
       </button>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        disablePlateClick
+      >
         <div className={styles.Plate}>
           <button
             onClick={() => setIsModalOpen(false)}
@@ -39,17 +42,36 @@ const UserProgress: FC = () => {
             Achievements
             <GiAchievement />
           </h3>
-
-          {value?.map((achievement) => (
-            <div>
-              {`${AchievementUserFacingMap.get(achievement.id)} ${getQuantity(
-                achievement
-              )}`}
-            </div>
-          ))}
+          <ul className={styles.List}>
+            {achievementIds?.map((achievement) => (
+              <AchievementLi achievement={achievement} key={achievement.id} />
+            ))}
+          </ul>
         </div>
       </Modal>
     </>
+  );
+};
+
+type AchievementProps = {
+  achievement: AchievementT;
+};
+
+const AchievementLi = ({ achievement }: AchievementProps) => {
+  const achievementData = AchievementUserFacingMap.get(achievement.id);
+  const img = achievementData?.img;
+  const subtitle = achievementData?.subtitle;
+  const title = achievementData?.title;
+  return (
+    <li className={styles.Li}>
+      <strong>{img}</strong>
+      <div>
+        <strong>{title}</strong>
+        <div className={styles.Subtitle}>
+          {`${subtitle} ${getQuantity(achievement)}`}
+        </div>
+      </div>
+    </li>
   );
 };
 

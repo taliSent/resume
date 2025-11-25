@@ -26,6 +26,6 @@
   background: linear-gradient(
     41deg,
     var(--header-color) 0%,
-    var(--midtone) 50%
+    var(--progress-accent) 50%
   );
 }

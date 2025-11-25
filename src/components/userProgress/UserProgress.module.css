@@ -6,15 +6,16 @@
   align-self: flex-end;
   aspect-ratio: 1;
   color: var(--text-color);
+  font-size: 28px;
 }
 
 .Plate {
   background-color: var(--plate-color);
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: min(90vw, 21em);
   border-radius: 10px;
-  padding: 0.25rem 0.5rem 1.25rem 1.25rem;
+  padding: 0.25rem 0.25rem 1.25rem 1.25rem;
   color: var(--text-color);
   box-shadow: var(--box-shadow);
   text-align: left;
@@ -22,5 +23,29 @@
 }
 
 .PlateHeader {
-  transform: translate(0, -12px);
+  font-size: 22px;
+}
+
+@media screen and (max-width: 400px) {
+  .PlateHeader {
+    font-size: 16px;
+  }
+  .List {
+    font-size: 14px;
+  }
+}
+
+.PlateHeader {
+  width: fit-content;
+  transform: translate(0, -1.1em);
+}
+
+.List {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 90%;
+}
+
+.Li {
+  display: flex;
 }

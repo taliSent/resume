@@ -39,3 +39,34 @@ export const useDice = create<DiceSliceT>((set) => ({
       ),
     })),
 }));
+
+type TooltipDataT = {
+  img: string;
+  subtitle: string;
+  title: string;
+};
+
+type TooltipCommonT = {
+  openTooltip: (tooltipData: TooltipDataT) => void;
+  closeTooltip: () => void;
+};
+
+type TooltipT = TooltipCommonT &
+  (
+    | {
+        needShowTooltip: true;
+        tooltipData: TooltipDataT;
+      }
+    | {
+        needShowTooltip: false;
+        tooltipData: undefined;
+      }
+  );
+
+export const useTooltip = create<TooltipT>((set) => ({
+  needShowTooltip: false,
+  tooltipData: undefined,
+  openTooltip: (tooltipData: TooltipDataT) =>
+    set({ needShowTooltip: true, tooltipData: tooltipData }),
+  closeTooltip: () => set({ needShowTooltip: false, tooltipData: undefined }),
+}));

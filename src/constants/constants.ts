@@ -5,18 +5,18 @@ export const enum Themes {
 
 // move it to sc
 export const FACTS = [
-  "I love jogging",
+  "I like jogging",
   "I'm almost entirely indifferent about food",
   "I've had dreadlocks for about 5 years",
   "I don't like my first name and prefer to be called Tali",
   "I am a cat person",
   "I'm a younger sibling in a family with 2 kids",
-  "I have very few photos of myself, I don't really like to take them",
+  "I don't really like to take photos of myself, so I have very few",
   "I adore house plants and know the names of many species and their sorts",
   "I play tabletop roleplay games, like D&D",
   "I used to study German language, when I was a teen",
-  "I don't have a TikTok or Instagram account",
-  "I normally play very specific short indie video games",
+  "I'm not a user of TikTok or Instagram",
+  "I play very specific short indie video games",
   "I was a Dungeon Master and received a lot of positive feedback",
   "I have a natural ability to make cartoonish voices",
   "I learnt to sing, but am too shy to do it in public",
