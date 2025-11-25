@@ -11,8 +11,7 @@ const useFirstAchievement = () => {
   );
 
   const openTooltip = useTooltip((state) => state.openTooltip);
-
-  useEffect(() => {
+  const handleClick = () => {
     if (achivementIds.length > 0) return;
     const firstAchivement: AchievementT = {
       id: AchievementId.FIRST_VISIT,
@@ -29,7 +28,12 @@ const useFirstAchievement = () => {
       subtitle,
       title,
     });
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClick, { once: true });
+
+    return () => document.removeEventListener("click", handleClick);
   }, []);
-  return { isFirstAchievement: achivementIds.length > 0 };
 };
 export default useFirstAchievement;

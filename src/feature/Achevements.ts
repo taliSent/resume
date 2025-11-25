@@ -1,8 +1,11 @@
+import { findById } from "src/utils/array";
+
 export const enum AchievementId {
   FIRST_VISIT = "FIRST_VISIT",
   KNOWS_EVERYTHING = "KNOWS_EVERYTHING",
   BUGS_CAUGHT = "BUGS_CAUGHT",
-  //   SCROLLED__EVERYTHING = "SCROLLED__EVERYTHING",
+  FORTUNE_CHASER = "FORTUNE_CHASER",
+  // SCROLLED__EVERYTHING = "SCROLLED__EVERYTHING",
   // USER_FACT_SENT = "USER_FACT_SENT",
 }
 
@@ -20,19 +23,23 @@ export const AchievementUserFacingMap = new Map<
     AchievementId.FIRST_VISIT,
     {
       img: "🌟",
-      title: "First look",
+      title: "Explorer",
       subtitle: "Visited my page for the first time",
     },
   ],
   [
     AchievementId.BUGS_CAUGHT,
-    { img: "🪲", title: "Bug Hunt", subtitle: "Bugs caught" },
+    { img: "🪲", title: "Bug Hunter", subtitle: "Bugs caught" },
   ],
   [
     AchievementId.KNOWS_EVERYTHING,
     { img: "㊙️", title: "They know", subtitle: "All secrets revealed" },
   ],
-  // [AchievementId.USER_FACT_SENT, "Sent me a fact"],"All secrets revealed"
+  [
+    AchievementId.FORTUNE_CHASER,
+    { img: "🎲", title: "Fortune chaser", subtitle: "Tested their luck" },
+  ],
+  // "All secrets revealed",
 ]);
 
 export type AchievementBugHunt = {
@@ -43,7 +50,10 @@ export type AchievementBugHunt = {
 export type AchievementT =
   | AchievementBugHunt
   | {
-      id: AchievementId.FIRST_VISIT | AchievementId.KNOWS_EVERYTHING;
+      id:
+        | AchievementId.FIRST_VISIT
+        | AchievementId.KNOWS_EVERYTHING
+        | AchievementId.FORTUNE_CHASER;
     };
 
 export const getQuantity = (achievement: AchievementT): string => {

@@ -13,10 +13,13 @@ import {
 } from "src/feature/Achevements";
 import { findById } from "src/utils/array";
 import { useLocalStorage } from "usehooks-ts";
-import { TALI_RESUME_KEY } from "src/constants/constants";
+import { FACTS, TALI_RESUME_KEY } from "src/constants/constants";
 
 const RandomFact = () => {
-  const [_, setValue] = useLocalStorage<AchievementT[]>(TALI_RESUME_KEY, []);
+  const [_, setAchievements] = useLocalStorage<AchievementT[]>(
+    TALI_RESUME_KEY,
+    []
+  );
   const notWatchedFacts = useDice((state) => state.notWatchedFacts);
   const diceResult = useDice((state) => state.diceResult);
   const watchFact = useDice((state) => state.watchFact);
@@ -26,6 +29,19 @@ const RandomFact = () => {
   const [scope, animate] = useAnimate();
 
   const rollDice = async () => {
+    if (notWatchedFacts.length === FACTS.length) {
+      const fortuneAchivement: AchievementT = {
+        id: AchievementId.FORTUNE_CHASER,
+      };
+      setAchievements((prev) => {
+        if (findById(prev, AchievementId.FORTUNE_CHASER)) return prev;
+        const { img, subtitle, title } = getAchievementData(
+          AchievementId.FORTUNE_CHASER
+        );
+        openTooltip({ img, title, subtitle });
+        return [...prev, fortuneAchivement];
+      });
+    }
     const randomDirection = Math.random() > 0.5 ? 1 : -1;
     clearDiceResult();
     await animate(
@@ -48,17 +64,18 @@ const RandomFact = () => {
           const diceResult = Math.ceil(Math.random() * 20);
           const factInd = Math.floor(Math.random() * notWatchedFacts.length);
           if (notWatchedFacts.length === 0) {
+            // todo: separate the callback
             const theyKnowAchivement: AchievementT = {
               id: AchievementId.KNOWS_EVERYTHING,
             };
-            setValue((prev) => {
+            setAchievements((prev) => {
               if (findById(prev, AchievementId.KNOWS_EVERYTHING)) return prev;
+              const { img, subtitle, title } = getAchievementData(
+                AchievementId.KNOWS_EVERYTHING
+              );
+              openTooltip({ img, title, subtitle });
               return [...prev, theyKnowAchivement];
             });
-            const { img, subtitle, title } = getAchievementData(
-              AchievementId.KNOWS_EVERYTHING
-            );
-            openTooltip({ img, title, subtitle });
           }
           watchFact(factInd, diceResult);
           animate(scope.current, { rotate: 0 }, { duration: 0 });
