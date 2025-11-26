@@ -15,6 +15,10 @@ const Description: React.FC = () => {
       configuring and signing bank documents. I work as a{" "}
       <span className={styles.Underline}>sole developer</span> and{" "}
       <span className={styles.Underline}>in a team</span>.
+      <br />I worked with various libraries and technologies, such as{" "}
+      <span className={styles.Underline}>TypeScript</span>, Redux, Node.js,
+      Strorybook, Thrifts, Sass, BEM, Styled Components, material-ui, etc.{" "}
+      <br />
       <span className={styles.Underline}>Code quality</span> is important to me,
       so I adhere to KISS, DRY & SOLID.
       <br />
