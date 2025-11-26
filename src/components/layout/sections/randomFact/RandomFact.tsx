@@ -61,7 +61,7 @@ const RandomFact = () => {
         bounce: 0,
         type: "spring",
         onComplete: () => {
-          const diceResult = 20;
+          const diceResult = Math.ceil(Math.random() * 20);
           const factInd = Math.floor(Math.random() * notWatchedFacts.length);
           if (notWatchedFacts.length === 0) {
             // todo: separate the callback
