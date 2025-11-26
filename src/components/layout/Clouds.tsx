@@ -2,6 +2,7 @@ import { FC, RefObject, ImgHTMLAttributes } from "react";
 import { useParallax } from "src/utils/parallax";
 import { HTMLMotionProps, motion, MotionValue, useScroll } from "framer-motion";
 import styles from "./Clouds.module.css";
+import MediaQuery from "react-responsive";
 
 export const Clouds: FC<{
   refAboutSection: RefObject<HTMLDivElement | null>;
@@ -11,10 +12,10 @@ export const Clouds: FC<{
   const xFirstCloud = useParallax(scrollYProgress, 0, 400);
   const xSecondCloud = useParallax(scrollYProgress, 0, 200);
   return (
-    <>
+    <MediaQuery minWidth={1024}>
       <Cloud src="img/cloud1.webp" x={xFirstCloud} className={styles.Cloud1} />
       <Cloud src="img/cloud.webp" x={xSecondCloud} className={styles.Cloud2} />
-    </>
+    </MediaQuery>
   );
 };
 

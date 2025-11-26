@@ -25,7 +25,7 @@ export const AchievementUserFacingMap = new Map<
     {
       img: "🌟",
       title: "Explorer",
-      subtitle: "Visited my page for the first time",
+      subtitle: "First interaction with my page",
     },
   ],
   [
