@@ -4,6 +4,10 @@
   margin-right: 0;
 }
 
+a {
+  pointer-events: all;
+}
+
 .TextContainer {
   margin-left: 12px;
   display: grid;
