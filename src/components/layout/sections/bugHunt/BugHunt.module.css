@@ -104,20 +104,3 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
-
-.Confetti {
-  width: 400px;
-  height: 246px;
-  animation: disappearance 1.3s ease-in-out forwards;
-}
-@keyframes disappearance {
-  0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, -40px);
-    opacity: 0;
-    display: none;
-  }
-}
