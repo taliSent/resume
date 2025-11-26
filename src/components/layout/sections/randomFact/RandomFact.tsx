@@ -61,7 +61,7 @@ const RandomFact = () => {
         bounce: 0,
         type: "spring",
         onComplete: () => {
-          const diceResult = Math.ceil(Math.random() * 20);
+          const diceResult = 20;
           const factInd = Math.floor(Math.random() * notWatchedFacts.length);
           if (notWatchedFacts.length === 0) {
             // todo: separate the callback
@@ -77,9 +77,8 @@ const RandomFact = () => {
               return [...prev, theyKnowAchivement];
             });
           }
-          if (diceResult !== 1) {
-            watchFact(factInd, diceResult);
-          }
+          watchFact(factInd, diceResult);
+
           animate(scope.current, { rotate: 0 }, { duration: 0 });
         },
       }
