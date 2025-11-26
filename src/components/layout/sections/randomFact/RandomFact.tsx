@@ -77,7 +77,9 @@ const RandomFact = () => {
               return [...prev, theyKnowAchivement];
             });
           }
-          watchFact(factInd, diceResult);
+          if (diceResult !== 1) {
+            watchFact(factInd, diceResult);
+          }
           animate(scope.current, { rotate: 0 }, { duration: 0 });
         },
       }
