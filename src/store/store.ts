@@ -1,4 +1,4 @@
-import { FACTS } from "src/constants/constants";
+import { FACTS, INSTEAD_OF_FACT } from "src/constants/constants";
 import { create } from "zustand";
 
 type BugSliceT = {
@@ -20,6 +20,7 @@ type DiceSliceT = {
   notWatchedFacts: string[];
   currentFact: undefined | string;
   diceResult: undefined | number;
+  replicaNum: number;
   watchFact: (factInd: number, diceResult: number) => void;
   clearDiceResult: () => void;
 };
@@ -28,12 +29,18 @@ export const useDice = create<DiceSliceT>((set) => ({
   notWatchedFacts: FACTS,
   currentFact: undefined,
   diceResult: undefined,
+  replicaNum: 0,
   clearDiceResult: () => set({ diceResult: undefined }),
   watchFact: (factInd: number, diceResult: number) =>
     set((state) => ({
       diceResult: diceResult,
       currentFact:
-        state.notWatchedFacts[factInd] ?? "Now you know EVERYTHING about me!",
+        state.notWatchedFacts[factInd] ?? INSTEAD_OF_FACT[state.replicaNum],
+      replicaNum:
+        !state.notWatchedFacts[factInd] && INSTEAD_OF_FACT[state.replicaNum + 1]
+          ? state.replicaNum + 1
+          : state.replicaNum,
+
       notWatchedFacts: state.notWatchedFacts.filter(
         (_, index) => index !== factInd
       ),

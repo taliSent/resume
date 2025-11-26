@@ -27,4 +27,12 @@ export const FACTS = [
   "I jumped with a parachute once",
 ];
 
+export const INSTEAD_OF_FACT = [
+  "Now you know EVERYTHING about me!",
+  "Hey, facts are over. Go catch some bugs!",
+  "You just like to roll that dice, don't you?",
+  "No more facts! But here's a cat 🐈",
+  "Times change. Cat stays 🐈",
+];
+
 export const TALI_RESUME_KEY = "tali-resume-key";

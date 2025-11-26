@@ -40,7 +40,11 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
   bugEl.style.rotate = angle;
   bugEl.style.setProperty("--duration", getRandomIntInclusive(15, 25) + "s");
   bugEl.onclick = () => {
-    bugEl.remove();
+    bugEl.src = import.meta.env.BASE_URL + `img/confetti.gif`;
+    bugEl.classList.add(styles.Confetti);
+    setTimeout(() => {
+      bugEl.remove();
+    }, 1200);
     catchBug();
   };
   return bugEl;

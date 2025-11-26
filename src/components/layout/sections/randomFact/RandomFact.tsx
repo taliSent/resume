@@ -122,6 +122,7 @@ const Fact = () => {
 const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   if (result === 20) {
+    const photoNum = Math.random() > 0.5 ? 1 : 2;
     return (
       <>
         <div className={styles.FactContainer}>
@@ -133,7 +134,9 @@ const GameResultFact = ({ diceResult: result, rollDice }: FactProps) => {
           </>
         </div>
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <img src={import.meta.env.BASE_URL + "img/TaliPhoto.webp"} />
+          <img
+            src={import.meta.env.BASE_URL + `img/TaliPhoto${photoNum}.webp`}
+          />
         </Modal>
       </>
     );

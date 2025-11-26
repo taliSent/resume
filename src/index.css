@@ -132,6 +132,7 @@ button {
   cursor: pointer;
   font-size: inherit;
   -webkit-tap-highlight-color: transparent;
+  color: var(--text-color);
 }
 
 svg {
