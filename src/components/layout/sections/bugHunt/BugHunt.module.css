@@ -8,6 +8,10 @@
   animation: bugMovement var(--duration) ease-in-out infinite;
 }
 
+.Confetti {
+  filter: hue-rotate(var(--hueDegreeShift)) brightness(1.1);
+  pointer-events: none;
+}
 @keyframes bugMovement {
   0% {
     transform: translate(0, 0) rotate(0deg);

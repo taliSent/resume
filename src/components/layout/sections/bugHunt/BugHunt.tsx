@@ -40,9 +40,16 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
   bugEl.style.rotate = angle;
   bugEl.style.setProperty("--duration", getRandomIntInclusive(15, 25) + "s");
   bugEl.onclick = () => {
-    const photoNum = Math.random() > 0.5 ? 1 : 2;
+    const possibleDegrees = [0, 40, 90, 320];
 
-    bugEl.src = import.meta.env.BASE_URL + `img/confetti${photoNum}.gif`;
+    bugEl.src = import.meta.env.BASE_URL + `img/confetti2.gif`;
+    bugEl.style.setProperty(
+      "--hueDegreeShift",
+      possibleDegrees[Math.floor(Math.random() * possibleDegrees.length)] +
+        "deg"
+    );
+    bugEl.classList.add(styles.Confetti);
+
     setTimeout(() => {
       bugEl.remove();
     }, 1100);
