@@ -77,7 +77,7 @@ const BugHunt = () => {
       <Header
         name="Bug Hunt"
         icon={<LuBugOff className="icon" />}
-        textSecondary="help Natalia find all bugs on a page"
+        textSecondary="help Natalia find all bugs"
       />
       <div className={styles.BattleContainer}>
         <div className={styles.BattleImgContainer}>
