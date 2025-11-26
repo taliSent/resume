@@ -43,11 +43,12 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
     bugEl.src = import.meta.env.BASE_URL + `img/confetti.gif`;
     setTimeout(() => {
       bugEl.remove();
-    }, 1200);
+    }, 1100);
     catchBug();
   };
   return bugEl;
 };
+
 // todo: react
 const BugHunt = () => {
   const areBugsOnPage = useBugs((state) =>
