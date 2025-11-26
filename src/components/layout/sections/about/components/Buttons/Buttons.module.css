@@ -40,6 +40,7 @@
   background: linear-gradient(51deg, var(--cv-button));
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 .Button a {
   color: white;
