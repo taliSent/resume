@@ -26,6 +26,7 @@ const Stack: React.FC = () => {
           colorMode={theme}
           preventScrolling={!isDesktop}
           fitView={true}
+          nodesConnectable={false}
         >
           <Background />
           <Controls />
