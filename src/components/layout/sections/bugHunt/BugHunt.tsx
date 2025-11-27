@@ -104,11 +104,9 @@ const BugHunt = () => {
             alt="background Tali vs bugs"
             className={styles.BattleBackground}
           />
-          <MediaQuery minWidth={800}>
-            <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>
-              I'm a Senior developer
-            </div>
-          </MediaQuery>
+          <div className={`${styles.Tooltip} ${styles.TooltipTali}`}>
+            I'm a Senior developer
+          </div>
           <motion.img
             src="img/TaliStanding2.webp"
             alt="Tali"
@@ -117,11 +115,9 @@ const BugHunt = () => {
             transition={{ duration: 0.75 }}
             className={styles.TaliPortrait}
           />
-          <MediaQuery minWidth={800}>
-            <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>
-              I'm a feature
-            </div>
-          </MediaQuery>
+          <div className={`${styles.Tooltip} ${styles.TooltipBug}`}>
+            I'm a feature
+          </div>
           <motion.img
             src="img/bugs/bug000.webp"
             alt="bug"

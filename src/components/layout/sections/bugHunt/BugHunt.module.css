@@ -121,3 +121,13 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 400px) {
+  .Tooltip {
+    opacity: 1;
+    font-size: 12px;
+  }
+  .TooltipTali {
+    right: 38%;
+  }
+}
