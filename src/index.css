@@ -106,12 +106,16 @@ a {
 section {
   margin-bottom: 4em;
 }
-section[data-screen-width="true"] {
-  width: calc(100% - 10vw);
-}
-section:not([data-screen-width]) {
+section {
   width: var(--container-width);
 }
+section[data-wide="true"] {
+  width: calc(100% - 10vw);
+}
+section[data-screen-width="true"] {
+  width: 100vw;
+}
+
 section:last-child {
   margin-bottom: 8em;
 }

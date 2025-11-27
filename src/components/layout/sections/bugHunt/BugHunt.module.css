@@ -1,3 +1,7 @@
+.SectionBugHunt {
+  width: 100vw;
+}
+
 .Bug {
   position: absolute;
   max-width: 200px;
@@ -9,7 +13,7 @@
 }
 
 .Confetti {
-  filter: hue-rotate(var(--hueDegreeShift)) brightness(1.1);
+  filter: hue-rotate(var(--hueDegreeShift));
   pointer-events: none;
 }
 @keyframes bugMovement {
@@ -58,10 +62,19 @@
   box-shadow: var(--box-shadow);
   border-radius: 1em;
 }
+
 .BattleBackground {
   max-width: 100%;
   border-radius: 1em;
   anchor-name: --anchor-battle-img;
+}
+@media screen and (max-width: 400px) {
+  .BattleImgContainer {
+    border-radius: 0;
+  }
+  .BattleBackground {
+    border-radius: 0;
+  }
 }
 
 .TaliPortrait {

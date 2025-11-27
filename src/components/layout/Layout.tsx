@@ -8,6 +8,7 @@ import Experience from "./sections/education/Experience";
 import RandomFact from "./sections/randomFact/RandomFact";
 import Stack from "./sections/stack/Stack";
 import Testimonials from "./sections/testimonials/Testimonials";
+import MediaQuery from "react-responsive";
 
 const Layout: React.FC = () => {
   const refAboutSection = useRef<HTMLDivElement>(null);
@@ -18,10 +19,13 @@ const Layout: React.FC = () => {
         className={styles.Container}
         style={{ position: "relative" }}
       >
-        <Clouds refAboutSection={refAboutSection} />
+        <MediaQuery minWidth={1024}>
+          <Clouds refAboutSection={refAboutSection} />
+        </MediaQuery>
         <About />
+        <Stack />
       </div>
-      <Stack />
+
       <Experience />
       <Testimonials />
       <BugHunt />

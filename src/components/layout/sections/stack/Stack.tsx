@@ -10,10 +10,10 @@ import { useMediaQuery } from "react-responsive";
 
 const Stack: React.FC = () => {
   const { theme } = use(ThemeContext);
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" }); // Example for mobile breakpoint
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   return (
-    <section id="stack" aria-label="my stack" data-screen-width={true}>
+    <section id="stack" aria-label="my stack" data-wide={true}>
       <Header
         name="Stack"
         icon={<GiTechnoHeart className="icon" />}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { LuBugOff } from "react-icons/lu";
-import MediaQuery from "react-responsive";
+import MediaQuery, { useMediaQuery } from "react-responsive";
 import { useBugs } from "src/store/store";
 import { getRandomIntInclusive } from "src/utils/random";
 import Header from "../../header/Header";
@@ -41,7 +41,6 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
   bugEl.style.setProperty("--duration", getRandomIntInclusive(15, 25) + "s");
   bugEl.onclick = () => {
     const possibleDegrees = [0, 40, 90, 320];
-
     bugEl.src = import.meta.env.BASE_URL + `img/confetti2.gif`;
     bugEl.style.setProperty(
       "--hueDegreeShift",
@@ -60,6 +59,8 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
 
 // todo: react
 const BugHunt = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 524px)" });
+
   const areBugsOnPage = useBugs((state) =>
     state.bugs ? state.bugs > 0 : false
   );
@@ -86,7 +87,11 @@ const BugHunt = () => {
   }, []);
 
   return (
-    <section id="bug-hunt" aria-label="bug hunt">
+    <section
+      id="bug-hunt"
+      aria-label="bug hunt"
+      data-screen-width={isTabletOrMobile}
+    >
       <Header
         name="Bug Hunt"
         icon={<LuBugOff className="icon" />}

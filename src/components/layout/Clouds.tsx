@@ -1,21 +1,33 @@
-import { FC, RefObject, ImgHTMLAttributes } from "react";
-import { useParallax } from "src/utils/parallax";
 import { HTMLMotionProps, motion, MotionValue, useScroll } from "framer-motion";
+import { FC, ImgHTMLAttributes, RefObject } from "react";
+import { useParallax } from "src/utils/parallax";
 import styles from "./Clouds.module.css";
-import MediaQuery from "react-responsive";
 
 export const Clouds: FC<{
   refAboutSection: RefObject<HTMLDivElement | null>;
 }> = ({ refAboutSection }) => {
   const { scrollYProgress } = useScroll({ target: refAboutSection });
-  // todo: separate the cloud components
   const xFirstCloud = useParallax(scrollYProgress, 0, 400);
-  const xSecondCloud = useParallax(scrollYProgress, 0, 200);
+  const xSecondCloud = useParallax(scrollYProgress, 0, 400);
+  const xThirdCloud = useParallax(scrollYProgress, 0, 300);
   return (
-    <MediaQuery minWidth={1024}>
-      <Cloud src="img/cloud1.webp" x={xFirstCloud} className={styles.Cloud1} />
-      <Cloud src="img/cloud.webp" x={xSecondCloud} className={styles.Cloud2} />
-    </MediaQuery>
+    <>
+      <Cloud
+        src="img/cloud1.webp"
+        x={xFirstCloud}
+        className={`${styles.Cloud} ${styles.Cloud1}`}
+      />
+      <Cloud
+        src="img/cloud2.webp"
+        x={xSecondCloud}
+        className={`${styles.Cloud} ${styles.Cloud2}`}
+      />
+      <Cloud
+        src="img/cloud3.webp"
+        x={xThirdCloud}
+        className={`${styles.Cloud} ${styles.Cloud3}`}
+      />
+    </>
   );
 };
 
@@ -31,7 +43,7 @@ const Cloud: FC<CloudProps> = ({ x, src, ...props }) => {
       src={src}
       className={props.className}
       aria-hidden={true}
-      style={{ x, scale: 1.5 }}
+      style={{ x }}
       alt=""
     />
   );
