@@ -3,3 +3,7 @@
   height: 400px;
   color: black;
 }
+
+:global(.react-flow__node) {
+  font-size: 20px;
+}
