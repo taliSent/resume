@@ -110,7 +110,7 @@ section {
   width: var(--container-width);
 }
 section[data-wide="true"] {
-  width: calc(100% - 10vw);
+  width: 95vw;
 }
 section[data-screen-width="true"] {
   width: 100vw;
