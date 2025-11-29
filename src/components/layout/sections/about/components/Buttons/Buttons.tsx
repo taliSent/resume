@@ -10,6 +10,7 @@ import { findById } from "src/utils/array";
 import { TALI_RESUME_KEY } from "src/constants/constants";
 import { useLocalStorage } from "usehooks-ts";
 import { useTooltip } from "src/store/store";
+import MediaQuery from "react-responsive";
 
 const DOWNLOAD_CV_URL = import.meta.env.BASE_URL + `CV_Sentemova.pdf`;
 
@@ -60,7 +61,11 @@ const Buttons: React.FC = () => {
           onClick={handleButtonClick}
         >
           Download CV <HiDownload />
-          <div className={styles.FollowTheCursor} ref={refCursorFolower} />
+          {
+            <MediaQuery minWidth={1024}>
+              <div className={styles.FollowTheCursor} ref={refCursorFolower} />
+            </MediaQuery>
+          }
         </button>
       </a>
     </div>

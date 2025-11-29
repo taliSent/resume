@@ -1,6 +1,5 @@
 import { TreeNodeT } from "./types";
 import styles from "./NodeTree.module.css";
-// import { motion } from "framer-motion";
 
 const traverse = (arr: TreeNodeT[]) => {
   return (
@@ -16,7 +15,7 @@ const Node = ({ name, id, children }: TreeNodeT) => {
   return (
     <>
       <li id={id} style={{ padding: "20px" }}>
-        <details>
+        <details open={true}>
           <summary className={styles.Node}>{name}</summary>
           {children.length > 0 && (
             <div className={styles.Content}>{content}</div>
