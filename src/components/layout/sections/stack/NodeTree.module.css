@@ -1,0 +1,53 @@
+.ReactFlow {
+  width: 100%;
+  height: 400px;
+  color: black;
+}
+
+:global(.react-flow__node) {
+  font-size: 20px;
+}
+
+.Node {
+  background: linear-gradient(
+    41deg,
+    var(--header-color) 0%,
+    var(--progress-accent) 50%
+  );
+  border-radius: 20px;
+  width: fit-content;
+  padding: 0.5em;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: var(--box-shadow);
+}
+
+li li .Node {
+  background: linear-gradient(41deg, rgb(81, 75, 85) 50%, var(--midtone) 100%);
+}
+li li li .Node {
+  background: linear-gradient(31deg, #712f51 30%, var(--midtone) 100%);
+}
+
+summary::marker {
+  content: "◌ ";
+}
+details[open] > summary::marker {
+  content: "● ";
+}
+
+details::details-content {
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 600ms, content-visibility 200ms allow-discrete;
+}
+
+details[open]::details-content {
+  opacity: 1;
+  transform: translateY(12px);
+}
+
+summary:not(:has(+ .Content))::marker {
+  content: " " !important;
+}

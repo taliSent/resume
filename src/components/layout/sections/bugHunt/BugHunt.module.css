@@ -8,7 +8,8 @@
   max-height: 140px;
   object-fit: contain;
   z-index: 5;
-  cursor: url("/img/cursor-bug-net.webp") 2 2, pointer;
+  cursor: url("/img/cursor-bug-net.webp") 2 2,
+    url("/img/cursor-bug-net.png") 2 2, pointer;
   animation: bugMovement var(--duration) ease-in-out infinite;
 }
 

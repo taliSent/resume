@@ -6,7 +6,9 @@ import "@xyflow/react/dist/style.css";
 import { edges, nodes } from "./constants";
 import styles from "./Stack.module.css";
 import { ThemeContext } from "src/context/context";
-import { useMediaQuery } from "react-responsive";
+import MediaQuery, { useMediaQuery } from "react-responsive";
+import NodeTree from "./NodeTree";
+import { initialTreeData } from "./data";
 
 const Stack: React.FC = () => {
   const { theme } = use(ThemeContext);
@@ -19,19 +21,25 @@ const Stack: React.FC = () => {
         icon={<GiTechnoHeart className="icon" />}
         textSecondary="technologies I use"
       />
-      <div className={styles.ReactFlow}>
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          colorMode={theme}
-          preventScrolling={!isDesktop}
-          fitView={true}
-          nodesConnectable={false}
-        >
-          <Background />
-          <Controls />
-        </ReactFlow>
-      </div>
+      <MediaQuery maxWidth={1024}>
+        <NodeTree data={initialTreeData} />
+      </MediaQuery>
+
+      <MediaQuery minWidth={1024}>
+        <div className={styles.ReactFlow}>
+          <ReactFlow
+            nodes={nodes}
+            edges={edges}
+            colorMode={theme}
+            preventScrolling={!isDesktop}
+            fitView={true}
+            nodesConnectable={false}
+          >
+            <Background />
+            <Controls />
+          </ReactFlow>
+        </div>
+      </MediaQuery>
     </section>
   );
 };

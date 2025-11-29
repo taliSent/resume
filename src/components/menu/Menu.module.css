@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
 }
-
 @media screen and (max-width: 1024px) {
   .Menu {
     position: fixed;
@@ -29,11 +28,14 @@
     backdrop-filter: none;
     background: transparent;
     transition: all 0.3s ease-in;
+  }
+  .MenuClosing a {
     pointer-events: none;
   }
 
   .ToggleButton {
     position: absolute;
+
     top: 0.7em;
     right: 1.1em;
     pointer-events: all;
