@@ -37,7 +37,7 @@
   transition: letter-spacing 0.3s ease-in-out;
   border-radius: 10px;
   color: white;
-  background: linear-gradient(51deg, var(--cv-button));
+  background: var(--cv-button);
   position: relative;
   overflow: hidden;
   white-space: nowrap;
