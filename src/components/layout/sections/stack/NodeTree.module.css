@@ -36,7 +36,7 @@ li li .Node {
   );
 }
 li li li .Node {
-  background: linear-gradient(31deg, #5c3f7c 30%, #742cca 100%);
+  background: linear-gradient(31deg, #5480b8 30%, #742cca 100%);
 }
 
 summary::marker {

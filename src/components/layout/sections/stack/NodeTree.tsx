@@ -14,7 +14,7 @@ const Node = ({ name, id, children }: TreeNodeT) => {
   const content = traverse(children);
   return (
     <>
-      <li id={id} style={{ padding: "20px" }}>
+      <li id={id} style={{ padding: "12px" }}>
         <details open={true}>
           <summary className={styles.Node}>{name}</summary>
           {children.length > 0 && (
