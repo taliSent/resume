@@ -2,6 +2,7 @@
   position: absolute;
   pointer-events: none;
   z-index: 0;
+  filter: brightness(0.98);
 }
 .Cloud1 {
   top: -2.4%;
