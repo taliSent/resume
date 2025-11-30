@@ -30,7 +30,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 }: TestimonialProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, filter: "blur(30px)" }}
+      initial={{ opacity: 0, filter: "blur(20px)" }}
       whileInView={{ opacity: 1, filter: "none" }}
       transition={{ duration: 0.2 }}
       className={styles.Testimonial}

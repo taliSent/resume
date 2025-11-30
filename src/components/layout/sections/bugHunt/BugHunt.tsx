@@ -51,7 +51,7 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
 
     setTimeout(() => {
       bugEl.remove();
-    }, 1100);
+    }, 600);
     catchBug();
   };
   return bugEl;

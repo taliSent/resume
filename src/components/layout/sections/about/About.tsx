@@ -16,7 +16,7 @@ const About: React.FC = () => {
     <section id="about" aria-label="about me">
       <div className={styles.About}>
         <motion.div
-          initial={{ opacity: 0, filter: "blur(15px) brightness(2)" }}
+          initial={{ opacity: 0, filter: "blur(4px) brightness(2)" }}
           whileInView={{ opacity: 1, filter: "none" }}
           transition={{ duration: 0.6 }}
           className={styles.PhotoContainer}
