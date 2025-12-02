@@ -23,7 +23,7 @@ export const FACTS = [
   "I used to be an actress on a horror quest",
   'My favorite book is Eliezer S. Yudkowsky\'s "Harry Potter and methods of rationality"',
   "I used to draw and paint, and there're still traces of that somewhere in the Internet",
-  "I used to study psychology and my favorite topic is cognitive distortions",
+  "I used to study psychology and my favorite topic is cognitive biases",
   "I jumped with a parachute once",
 ];
 
