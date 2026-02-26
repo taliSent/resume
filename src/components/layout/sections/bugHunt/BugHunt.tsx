@@ -9,6 +9,8 @@ import { BUG_SPECIES_QUANTITY, MAX_BUGS_QUANTITY } from "./constants";
 import useBugHuntAchievements from "../../../../feature/useBugHuntAchievement";
 import { useEffect } from "react";
 
+const CONFETTI_IMG_URL = import.meta.env.BASE_URL + "img/confetti2.gif";
+
 type BugParamsProps = {
   x: string;
   y: string;
@@ -41,11 +43,11 @@ const createBug = ({ bugParams, catchBug }: CreateBugParams): Element => {
   bugEl.style.setProperty("--duration", getRandomIntInclusive(15, 25) + "s");
   bugEl.onclick = () => {
     const possibleDegrees = [0, 40, 90, 320];
-    bugEl.src = import.meta.env.BASE_URL + `img/confetti2.gif`;
+    bugEl.src = CONFETTI_IMG_URL;
     bugEl.style.setProperty(
       "--hueDegreeShift",
       possibleDegrees[Math.floor(Math.random() * possibleDegrees.length)] +
-        "deg"
+        "deg",
     );
     bugEl.classList.add(styles.Confetti);
 
@@ -62,7 +64,7 @@ const BugHunt = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 524px)" });
 
   const areBugsOnPage = useBugs((state) =>
-    state.bugs ? state.bugs > 0 : false
+    state.bugs ? state.bugs > 0 : false,
   );
 
   const renewGame = useBugs((state) => state.renewGame);
@@ -81,6 +83,10 @@ const BugHunt = () => {
     releaseBugs(MAX_BUGS_QUANTITY);
   };
   useBugHuntAchievements(areBugsCaught);
+  useEffect(() => {
+    const img = new Image();
+    img.src = CONFETTI_IMG_URL;
+  }, []);
   useEffect(() => {
     if (!areBugsCaught) return;
     renewGame();
