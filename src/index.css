@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "DigitalGeometricBold";
+  src: url("fonts/DigitalGeometricBold-51Pev.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DigitalGeometricBold";
+  src: url("fonts/DigitalgeometricBold-z8gPL.otf");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -6,10 +18,11 @@
   box-sizing: border-box;
   font-display: optional;
   -webkit-tap-highlight-color: transparent;
-  --ff-primary: Quicksand, NanumMyeongjo, sans-serif;
-  --ff-accent: Comfortaa, Nunito, cursive;
-  --box-shadow: 0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02),
-    1.8px 2px 5.3px rgba(0, 0, 0, 0.028), 3.4px 3.8px 10px rgba(0, 0, 0, 0.035),
+  --ff-primary: Quicksand, Comfortaa, NanumMyeongjo, sans-serif;
+  --ff-accent: DigitalGeometricBold, Comfortaa, Nunito, serif;
+  --box-shadow:
+    0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02), 1.8px 2px 5.3px rgba(0, 0, 0, 0.028),
+    3.4px 3.8px 10px rgba(0, 0, 0, 0.035),
     6px 6.7px 17.9px rgba(0, 0, 0, 0.042),
     11.3px 12.5px 33.4px rgba(0, 0, 0, 0.05), 27px 30px 80px rgba(0, 0, 0, 0.07);
   transition: background-color 0.2s ease-out;
@@ -48,7 +61,7 @@
   --text-secondary: #edd9ce;
   --selected-text-background: #c3b1ff;
   --background-color: #1d1d1d;
-  --header-color: #b298dc;
+  --header-color: #c4aaef;
   --progress-accent: #a663cc;
   --hover-accent: #807cbf;
   --cv-button: #f2055c;

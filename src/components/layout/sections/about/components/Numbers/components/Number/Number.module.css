@@ -6,9 +6,11 @@
 
 .Number {
   background: hsla(210, 90%, 80%, 1);
-  background: -webkit-linear-gradient(45deg,
-      hsla(210, 90%, 80%, 1) 0%,
-      rgb(109, 9, 241) 100%);
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(210, 90%, 80%, 1) 0%,
+    rgb(109, 9, 241) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,7 +23,6 @@
 .Text {
   color: var(--text-secondary);
   font-size: clamp(0.6em, 1vw, 0.8em);
-  letter-spacing: 0.15rem;
   width: 15ch;
   text-align: center;
 }

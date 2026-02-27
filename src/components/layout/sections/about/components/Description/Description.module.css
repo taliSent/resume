@@ -42,11 +42,13 @@
 }
 
 .HashLink {
-  letter-spacing: 0.09rem;
-  transition: letter-spacing 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap 0.2s ease-in-out;
 }
 
 .HashLink:hover {
-  letter-spacing: 0.13rem;
-  transition: letter-spacing 0.3s ease-in-out;
+  gap: 0.5rem;
+  transition: gap 0.1s ease-in-out;
 }

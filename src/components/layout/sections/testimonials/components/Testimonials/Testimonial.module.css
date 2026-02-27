@@ -25,7 +25,6 @@
 }
 
 .CoworkerName {
-  font-family: var(--ff-accent);
   font-weight: 600;
   font-size: clamp(0.5em, 2.1vw, 0.6em);
   margin-bottom: 0.35em;
@@ -34,7 +33,6 @@
 .CoworkerPosition {
   font-family: var(--ff-primary);
   font-size: clamp(0.4em, 2vw, 0.5em);
-  letter-spacing: 0.15rem;
   margin-bottom: 1.5em;
   text-align: center;
 }
@@ -55,7 +53,7 @@
 
 .IconsSocial {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 0.3em;
   position: absolute;

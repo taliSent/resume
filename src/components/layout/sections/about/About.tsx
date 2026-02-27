@@ -33,6 +33,7 @@ const About: React.FC = () => {
         <div className={styles.Text}>
           <div className={styles.Profession}>Frontend developer</div>
           <div className={styles.Stack}>React.js, Typescript</div>
+          {/* <div className={styles.Name}>Sentemova Natalia</div> */}
           <Buttons />
         </div>
       </div>
