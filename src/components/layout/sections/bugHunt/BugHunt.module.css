@@ -8,8 +8,10 @@
   max-height: 140px;
   object-fit: contain;
   z-index: 5;
-  cursor: url("/img/cursor-bug-net.webp") 2 2,
-    url("/img/cursor-bug-net.png") 2 2, pointer;
+  cursor:
+    url("/img/cursor-bug-net.webp") 2 2,
+    url("/img/cursor-bug-net.png") 2 2,
+    pointer;
   animation: bugMovement var(--duration) ease-in-out infinite;
 }
 
@@ -94,7 +96,7 @@
   transform: translate(85%, -50%);
   width: var(--bugWidth);
 }
-.Tooltip {
+/*.Tooltip {
   position: absolute;
   background-color: white;
   color: black;
@@ -104,18 +106,50 @@
   box-shadow: var(--box-shadow);
   border: 3px solid black;
   transition: opacity 0.3s ease-in-out;
-}
+}*/
 
-.TooltipTali {
+/*.TooltipTali {
   bottom: 85%;
   right: 40%;
   border-radius: 15px 15px 15px 5px;
+} */
+
+/* HTML: <div class="tooltip">This is the same as #8 but with another shape for the tail </div> */
+/* HTML: <div class="tooltip">This is the same as #5 but with another shape for the tail </div> */
+.Tooltip {
+  position: absolute;
+  background-color: white;
+  color: black;
+  position-anchor: --anchor-battle-img;
+  opacity: 0;
+  box-shadow: var(--box-shadow);
+  transition: opacity 0.3s ease-in-out;
+}
+.TooltipTali {
+  opacity: 0;
+  bottom: 85%;
+  right: 40%;
+  padding: 0.5em 0.7em 0.9em 0.7em;
+
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 4% 89%, 0 100%, 0 73%);
+
+  background: white; /* the main color */
 }
 
 .TooltipBug {
   bottom: 15%;
   right: 10%;
-  border-radius: 5px 15px 15px 15px;
+  padding: 0.9em 0.7em 0.6em 0.7em;
+
+  clip-path: polygon(
+    0 16%,
+    30% 16%,
+    36% 0,
+    42% 16%,
+    100% 16%,
+    100% 100%,
+    0 100%
+  );
 }
 
 .Tooltip:has(+ img:hover) {
