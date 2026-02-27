@@ -1,12 +1,12 @@
 @font-face {
   font-family: "DigitalGeometricBold";
-  src: url("fonts/DigitalGeometricBold-51Pev.ttf");
+  src: url("/resume/fonts/DigitalGeometricBold-51Pev.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "DigitalGeometricBold";
-  src: url("fonts/DigitalgeometricBold-z8gPL.otf");
+  src: url("/resume/fonts/DigitalgeometricBold-z8gPL.otf");
   font-display: swap;
 }
 
