@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "DigitalGeometricBold";
-  src: url("/resume/fonts/DigitalGeometricBold-51Pev.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DigitalGeometricBold";
-  src: url("/resume/fonts/DigitalgeometricBold-z8gPL.otf");
-  font-display: swap;
-}
-
 *,
 *::before,
 *::after {
@@ -19,7 +7,7 @@
   font-display: optional;
   -webkit-tap-highlight-color: transparent;
   --ff-primary: Quicksand, Comfortaa, NanumMyeongjo, sans-serif;
-  --ff-accent: DigitalGeometricBold, Comfortaa, Nunito, serif;
+  --ff-accent: Comfortaa, Nunito, serif;
   --box-shadow:
     0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02), 1.8px 2px 5.3px rgba(0, 0, 0, 0.028),
     3.4px 3.8px 10px rgba(0, 0, 0, 0.035),
