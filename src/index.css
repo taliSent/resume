@@ -41,6 +41,7 @@
   --tooltip-background: white;
   --testimonial-frame-border: var(--header-color);
   --tooltip-background-achievement: rgb(81, 81, 81);
+  --summary-bg: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -65,6 +66,7 @@
   --tooltip-background: white;
   --testimonial-frame-border: var(--frame-accent);
   --tooltip-background-achievement: rgb(81, 81, 81);
+  --summary-bg: #444444;
 }
 
 html,
