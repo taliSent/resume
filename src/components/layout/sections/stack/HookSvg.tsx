@@ -20,7 +20,10 @@ const HookSvg = ({ height, style }: HookSvgT) => {
       style={style}
     >
       <path
-        d={`M50 0 Q 50 0 50 ${breakPoint} Q 50 ${breakPoint + 18} 100 ${height}`}
+        d={`M 50,0 
+          L 50,${breakPoint} 
+          Q 50,${height} 
+          100,${height}`}
         stroke={theme === "dark" ? "#818080" : "#9a9797"}
         strokeWidth="1"
         fill="none"
